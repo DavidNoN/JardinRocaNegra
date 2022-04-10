@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "./Shared/Navbar";
 import Footer from "./Shared/Footer";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import NewPlants from "./Screens/NewPlants";
 import Wholesale from "./Screens/Wholesale";
 import Seeds from "./Screens/Seeds";
@@ -11,7 +11,7 @@ import DetailProduct from "./Screens/DetailProduct";
 
 const BlackRockApp = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Navbar/>
             <main className="flex-shrink-0 mb-5 bg-grey pt-10">
                 <div className="container">
@@ -32,7 +32,7 @@ const BlackRockApp = () => {
                 </div>
             </main>
             <Footer/>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 
