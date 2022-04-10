@@ -1,0 +1,461 @@
+[
+  {
+    "id": 1,
+    "name": "Pleiospilos Nelii cv. \"Royal Flush\"",
+    "description": "Pleisopilos nelii cv. Royal Flush es un cultivar de mesemb buscado por los coleccionistas por su coloración púrpura única. Además, la 'Royal Flush' tiene una flor de color rosa intenso con un centro blanco en contraste, mientras que las flores de la verdadera Pleisopilos nelii son de color dorado-albaricoque.",
+    "price-collector": 31000,
+    "price-wholesale": 13000,
+    "discount": 0.2,
+    "discount-wholesale": 0,
+    "size": [
+      "p5",
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade",
+      "shade"
+    ],
+    "wholesale": true,
+    "rating": 5,
+    "photos": [ "1", "1.1", "1.2", "1.4" ],
+    "publishDate": "04/05/2022"
+  },
+  {
+    "id": 2,
+    "name": "Pleiospilos Nelii",
+    "description": "Pleiospilos nelii es una pequeña suculenta casi esférica que recuerda vagamente a un Lithops y que parece una roca agrietada (de ahí el nombre común)",
+    "price-collector": 20000,
+    "price-wholesale": 10000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p5",
+      "p7"
+    ],
+    "quantity": 80,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 2,
+    "photos": [ "2", "2.1", "2.2" ],
+    "publishDate": "04/05/2022"
+  },
+  {
+    "id": 3,
+    "name": "Astrophytum Myriostigma 5 costillas",
+    "description": " El Astrophytum myriostigma multicostatum (con múltiples costillas) se desvía del conocido A. myriostigma estándar por tener seis o más costillas en lugar de cinco, dependiendo de los clones. Se han encontrado plantas con más de 5 costillas en el hábitat (aunque con una frecuencia muy baja), pero la mayoría de las \"multicostatum\" que se encuentran en cultivo no son 100% verdaderas Astrophytum myriostigma sino híbridos que han heredado las costillas adjuntas de uno de los ancestros (presumiblemente Astrophytum ornatum). Las flores son también muy hermosas.\nTallo: Casi esférico, las plantas se convierten en poco tiempo en columnares con la edad. Los tallos son lisos y pueden tener más de 90 cm de altura y 5-10 (-20) cm de diámetro.",
+    "price-collector": 24000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p5",
+      "p8"
+    ],
+    "quantity": 6,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "3", "3.1", "3.2" ],
+    "publishDate": "04/05/2022"
+  },
+  {
+    "id": 4,
+    "name": "Lithops Mix 0.8cm a 1.2cm",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 10000,
+    "price-wholesale": 7000,
+    "discount": 0,
+    "discount-wholesale": 0.2,
+    "size": [
+      "p5"
+    ],
+    "quantity": 100,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 5,
+    "photos": [ "4", "4.1", "4.2", "4.3" ],
+    "publishDate": "04/05/2022"
+  },
+  {
+    "id": 5,
+    "name": "Lithops Grande 1.5cm a 2 cm",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 25000,
+    "price-wholesale": 13000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p5"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 5,
+    "photos": [ "5", "5.2", "5.1" ],
+    "publishDate": "04/05/2022"
+  },
+  {
+    "id": 6,
+    "name": "Lithops Double-Head 1cm",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 18000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p5"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "6", "6.1" ],
+    "publishDate": "04/05/2022"
+  },
+  {
+    "id": 7,
+    "name": "Monadenium Ritchiei subsp. Nyambense",
+    "description": " Monadenium ritchiei subsp. nyambense es una suculenta perenne de pequeño tamaño, con un rizoma grueso y carnoso que forma grandes matas compactas con el tiempo. Es una subespecie enana que se distingue por tener tallos más cortos, más pensantes y más numerosos, muy nudosos y erectos. Las hojas son glabras y tiene ciatias (flores) de color rosa intenso. Es la forma más cultivada.",
+    "price-collector": 6000,
+    "price-wholesale": 3000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "7", "7.1" ],
+    "publishDate": "04/05/2022"
+  },
+  {
+    "id": 8,
+    "name": "Albuca Augrabies",
+    "description": "La Albuca 'Augrabies Hills' tiene hojas finas y glabras, de textura algo carnosa y estrechamente acanaladas. La inflorescencia mide unos 20 cm de altura con un pedúnculo glauco. Cada inflorescencia contiene de 3 a 5 flores. Los bulbos de esta especie se elevan por encima del suelo y las flores florecen cuando hay hojas.",
+    "price-collector": 8000,
+    "price-wholesale": 4000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "8", "8.1" ],
+    "publishDate": "04/05/2022"
+  },
+  {
+    "id": 9,
+    "name": "Agave Seemanniana subs. Pygmaea",
+    "description": "Es un agave enano que a menudo desarrolla rosetas con algunos retoños. Forma parte del complejo variable de Agave seemanniana y podría ser simplemente una forma depauperada, consecuencia de su hábitat árido y calcáreo.",
+    "price-collector": 10000,
+    "price-wholesale": 5000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p10"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "9", "9.1", "9.2" ],
+    "publishDate": "04/02/2022"
+  },
+  {
+    "id": 10,
+    "name": "Monadenium Ellenbeckii ",
+    "description": "Monadenium ellenbeckii es una hierba perenne suculenta de bajo crecimiento con tallos carnosos en forma de serpiente que surgen de una base central",
+    "price-collector": 6000,
+    "price-wholesale": 3000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "10" ],
+    "publishDate": "04/05/2022"
+  },
+  {
+    "id": 11,
+    "name": "Trichocereus Bridgesii fma. Monstruosus",
+    "description": "Este es el clon con articulaciones largas, una de las dos formas de Montrose de T.bridgesii. Es un cactus monstruoso con hábito de crecimiento postrado que se ramifica en la base y puede crecer lentamente hasta 40(-60) cm de altura.",
+    "price-collector": 10000,
+    "price-wholesale": 3000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "11" ],
+    "publishDate": "04/02/2022"
+  },
+  {
+    "id": 12,
+    "name": "Opuntia Cochenillifera Variegada",
+    "description": "Es un conocido cactus arbustivo o arbóreo con varias ramas principales desde la base y una gran copa casi semiesférica de 3 a 4 metros de altura o más. En el pasado se utilizaba para la producción del insecto cochinilla (Dactylopious coccus Costa). De las hembras de los insectos cochinilla se extrae un tinte de color carmesí intenso. La cochinilla produce una gama de tonos escarlata, rosa y otros rojos a partir del colorante que se encuentra en los insectos cochinilla, el ácido carmínico. Se utilizaba para teñir tejidos, fibras y lana. Es posible que esta especie haya sido seleccionada por su falta de espinas en México, al igual que la Opuntia ficus-indica, para facilitar su cultivo.",
+    "price-collector": 10000,
+    "price-wholesale": 6000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "full sun",
+      "p10"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "12", "12.1" ],
+    "publishDate": "04/05/2022"
+  },
+  {
+    "id": 14,
+    "name": "Euphorbia Baionensis",
+    "description": "Forma pequeños arbustos agrupados de hasta 30 cm de altura.",
+    "price-collector": 10000,
+    "price-wholesale": 6000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p10"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "13" ],
+    "publishDate": "04/05/2022"
+  },
+  {
+    "id": 15,
+    "name": "Opuntia Monacantha fma. Monstruosa",
+    "description": "Opuntia Monacantha fma. Monstruosa",
+    "price-collector": 10000,
+    "price-wholesale": 6000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p10"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "15.1", "15" ],
+    "publishDate": "04/05/2022"
+  },
+  {
+    "id": 16,
+    "name": "Haworthiopsis Limifolia",
+    "description": " La Haworthia limifolia es una especie encantadora, con grandes rosetas. Obtuvo su nombre \"limifolia\" (hoja de lima) por sus características hojas de color verde pardo oscuro, con crestas transversales de tubérculos córneos que se asemejan a los de una lima gruesa y le dan un aspecto tan distintivo.",
+    "price-collector": 8000,
+    "price-wholesale": 4000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "16", "16.1", "16.2" ],
+    "publishDate": "04/02/2022"
+  },
+  {
+    "id": 17,
+    "name": "Gasteria Batesiana",
+    "description": "Produce una roseta suculenta que prolifera desde la base formando pequeños grupos, raramente solitarios. Suele ser más grande que alta y crece de 30 a 100 mm de altura y 80-300 mm de diámetro. Las plantas en la naturaleza son muy variables, especialmente por la forma y la rugosidad de las hojas.",
+    "price-collector": 6000,
+    "price-wholesale": 3000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "17" ],
+    "publishDate": "04/02/2022"
+  },
+  {
+    "id": 18,
+    "name": "Haworthiopsis Attenuata var. Radula",
+    "description": "H. attenuata var. radula se diferencia de Haworthia attenuata por sus tubérculos más pequeños y numerosos, mientras que H. attenuata tiene menos tubérculos y más grandes. Además, las hojas son más escabrosas que tuberculadas. También tiene hojas más delgadas y largas. Los numerosos tubérculos dan a la planta un aspecto plateado.",
+    "price-collector": 8000,
+    "price-wholesale": 4000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "18", "18.1" ],
+    "publishDate": "04/02/2022"
+  },
+  {
+    "id": 19,
+    "name": "Haworthiopsis Fasciata",
+    "description": "Es una planta perenne-suculenta de bajo crecimiento y casi sin tallo. Es fácilmente reconocible por las verrugas blancas perladas que cubren densamente las hojas de color verde oscuro. Puede llegar a formar grandes matas y es una de las especies más comunes en el cultivo. Es muy variable, viene en muchas variedades y formas que van desde el verde sólido con sólo unas pequeñas protuberancias blancas hasta formas con bandas horizontales muy blancas, y también una mata individual que tiene rayas horizontales anchas y pesadas a veces arrojará a un cachorro con sólo protuberancias, o algunas serán más suaves, nudosas, etc., y viceversa. Un problema con la Gasteria es que hay tantos híbridos entre especies, variabilidad de plántulas y diferencias entre plantas juveniles y adultas, que resulta casi imposible distinguir muchas formas entre sí. En particular, el nombre \"attenuata\" se utiliza para formas muy diferentes y puede causar confusión.",
+    "price-collector": 6000,
+    "price-wholesale": 3000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "19", "19.1" ],
+    "publishDate": "04/08/2022"
+  },
+  {
+    "id": 20,
+    "name": "Cactus Crestados Mix",
+    "description": "Cactus Crestados Mix en P7",
+    "price-collector": 10000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "20", "20.1", "20.2" ],
+    "publishDate": "04/10/2022"
+  },
+  {
+    "id": 21,
+    "name": "Orbea Sp. Crestada",
+    "description": "Orbea",
+    "price-collector": 10000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p10"
+    ],
+    "quantity": 2,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "22", "22.1" ],
+    "publishDate": "04/10/2022"
+  },
+  {
+    "id": 22,
+    "name": "Opuntia Monacantha fma. Monstruosa variegada",
+    "description":  "La Opuntia monacantha f. monstruosa variegata, conocida comúnmente como \"Joseph's Coat\", es uno de los pocos cactus naturales de color blanco variegado. Se trata de una variante teratológica enana del cactus más grande Opuntia monacantha. Como su nombre indica, este cactus está abigarrado o jaspeado de blanco, blanco-crema, amarillo, verde y, a veces, también de rosa, en distintos patrones.",
+    "price-collector": 10000,
+    "price-wholesale": 6000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p10"
+    ],
+    "quantity": 4,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "21" ],
+    "publishDate": "04/10/2022"
+  },
+  {
+    "id": 23,
+    "name": "Stephania Erecta",
+    "description":  "La Stephania Erecta es una de las plantas de interior de mayor tendencia en los últimos años. Su tubérculo, similar al de la patata, permanece inactivo durante el invierno, pero en la primavera crece con fuerza, enviando vides trepadoras que llenan vigorosamente el espacio. Sus hojas circulares de color verde mate están disecadas con venas de color verde claro en forma de espiga.",
+    "price-collector": 100000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p20"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "23", "23.1" ],
+    "publishDate": "04/10/2022"
+  }
+]
