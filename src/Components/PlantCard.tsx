@@ -3,6 +3,7 @@ import '../Styles/PlantCard.scss'
 import { IPlant } from "../Interfaces/IPlant";
 import { currencyFormat } from "../Utils/PipesNumber";
 import { Link } from "react-router-dom";
+import { dateDiffInDays } from "../Utils/CalcDiffDays";
 
 const PlantCard = ( {
                         plant,
@@ -59,10 +60,17 @@ const PlantCard = ( {
         }
     }
 
+    const calcLastWeekPublished = ( date: string ): boolean => {
+        const plantDate = new Date( date );
+        const currentDate = new Date();
+        const diffDays = dateDiffInDays( plantDate, currentDate );
+        return diffDays <= 7;
+    }
+
     return (
         <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-3">
             <div className="card">
-                <div className="achievement-label">NUEVO</div>
+                { calcLastWeekPublished(plant.publishDate) &&  <div className="achievement-label">NUEVO</div> }
                 <img src={ `../assets/${ plant.photos[0] }.png` } className="card-img-top img-size" alt="..."
                      width="350" height="250"/>
                 <div className="card-body">
