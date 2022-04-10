@@ -17,6 +17,12 @@ const BlackRockApp = () => {
                 <div className="container">
                     <Routes>
                         <Route path="/" element={ <Navigate to="/new-plants"/> }/>
+                        <Route
+                            path="*"
+                            element={
+                                <Navigate to="/new-plants"/>
+                            }
+                        />
                         <Route path="plants-available" element={ <Collectors/> }/>
                         <Route path="wholesale" element={ <Wholesale/> }/>
                         <Route path="new-plants" element={ <NewPlants/> }/>
