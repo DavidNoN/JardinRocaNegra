@@ -73,7 +73,7 @@
     "price-collector": 10000,
     "price-wholesale": 7000,
     "discount": 0,
-    "discount-wholesale": 0.2,
+    "discount-wholesale": 0,
     "size": [
       "p5"
     ],
