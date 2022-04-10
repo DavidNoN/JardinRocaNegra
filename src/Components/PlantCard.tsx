@@ -63,7 +63,7 @@ const PlantCard = ( {
         <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-3">
             <div className="card">
                 <div className="achievement-label">NUEVO</div>
-                <img src={ `./assets/${ plant.photos[0] }.png` } className="card-img-top img-size" alt="..."
+                <img src={ `../../public/assets/${ plant.photos[0] }.png` } className="card-img-top img-size" alt="..."
                      width="350" height="250"/>
                 <div className="card-body">
                     <h5 className="card-title">{ plant.name }</h5>

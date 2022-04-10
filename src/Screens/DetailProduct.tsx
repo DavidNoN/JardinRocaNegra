@@ -60,10 +60,10 @@ const MyComponent = () => {
                             <ul className="image_list">
                                 {
                                     plantDetail.photos.map( ( photo, index ) =>
-                                        <li data-image={ `.././assets/${ photo }` } key={ index }
+                                        <li data-image={ `../../assets/${ photo }` } key={ index }
                                             onClick={ () => changeBetweenImg( photo ) }>
                                             <img
-                                                src={ `../../assets/${ photo }.png` }
+                                                src={ `../../public/assets/${ photo }.png` }
                                                 alt="photoPlant"/>
                                         </li>
                                     )
@@ -72,7 +72,7 @@ const MyComponent = () => {
                         </div>
                         <div className="col-lg-4 order-lg-2 order-1">
                             <div className="image_selected"><img
-                                src={ `../../assets/${ mainImg }.png` }
+                                src={ `../../public/assets/${ mainImg }.png` }
                                 alt=""/>
                             </div>
                         </div>
