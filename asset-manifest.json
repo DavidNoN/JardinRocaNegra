@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/JardinRocaNegra/static/css/main.e422b6ee.css",
+    "main.js": "/JardinRocaNegra/static/js/main.9806314c.js",
+    "static/js/787.53b7fe62.chunk.js": "/JardinRocaNegra/static/js/787.53b7fe62.chunk.js",
+    "static/media/chei.jpg": "/JardinRocaNegra/static/media/chei.4b4e5a258afa7d90d0b8.jpg",
+    "index.html": "/JardinRocaNegra/index.html",
+    "main.e422b6ee.css.map": "/JardinRocaNegra/static/css/main.e422b6ee.css.map",
+    "main.9806314c.js.map": "/JardinRocaNegra/static/js/main.9806314c.js.map",
+    "787.53b7fe62.chunk.js.map": "/JardinRocaNegra/static/js/787.53b7fe62.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e422b6ee.css",
+    "static/js/main.9806314c.js"
+  ]
+}
