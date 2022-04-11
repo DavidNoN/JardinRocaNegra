@@ -2,6 +2,21 @@
   object-fit: cover; overflow: hidden;
 }
 
+.carousel {
+  min-width: 400px;
+  max-width: 400px;
+  max-height: 400px;
+  min-height: 400px;
+  margin: 0 auto;
+}
+
 .carousel-size {
   width: 100%;
+}
+
+.full-width {
+  min-width: 400px;
+  max-width: 400px;
+  max-height: 400px;
+  min-height: 400px;
 }

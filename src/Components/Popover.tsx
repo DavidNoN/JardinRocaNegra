@@ -1,19 +1,10 @@
-import React from 'react';
-import '../Styles/Popover.scss';
+import { Popover } from "react-bootstrap";
 
-const MyComponent = () => {
-    return (
-        <div className="popover__wrapper">
-            <a href="">
-                <h2 className="popover__title">Hover:me</h2>
-            </a>
-            <div className="popover__content">
-                <p className="popover__message">Joseph Francis "Joey" Tribbiani, Jr.</p>
-                <img alt="Joseph Francis Joey Tribbiani, Jr."
-                     src="https://media.giphy.com/media/11SIBu3s72Co8w/giphy.gif" />
-            </div>
-        </div>
+export const popover = ( title: string, body: ( string | JSX.Element )[] | string ) => (
+    <Popover id="popover-basic">
+        <Popover.Header as="h3">{ title }</Popover.Header>
+        <Popover.Body>
+            { body }
+        </Popover.Body>
+    </Popover>
 );
-};
-
-export default MyComponent;

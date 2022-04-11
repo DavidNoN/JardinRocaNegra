@@ -7,6 +7,10 @@ import { currencyFormat } from "../Utils/PipesNumber";
 
 import { FaCloudSun, FaMoon, FaSun } from 'react-icons/fa'
 import '../Styles/Popover.scss';
+import { useWindowSize } from "../Hooks/useWindowSize";
+import Carousel from "./Carousel";
+import { OverlayTrigger } from "react-bootstrap";
+import { popover } from "../Components/Popover";
 
 
 const MyComponent = () => {
@@ -32,7 +36,6 @@ const MyComponent = () => {
         wholesale: false
     } );
 
-
     const getPlantDesc = useCallback(
         () => {
             setPlantDetail( plantList.filter( plant => plant.id.toString() === plantId?.toString() )[0] );
@@ -49,33 +52,42 @@ const MyComponent = () => {
 
     useEffect( () => {
         getPlantDesc();
+
     }, [ getPlantDesc, setPlantDetail ] );
+
+    const windowDimensions = useWindowSize();
 
     return (
         <div className="super_container">
             <div className="single_product">
                 <div className="container-fluid" style={ { backgroundColor: "fff", padding: "11px" } }>
                     <div className="row">
-                        <div className="col-lg-2 order-lg-1 order-2">
-                            <ul className="image_list">
-                                {
-                                    plantDetail.photos.map( ( photo, index ) =>
-                                        <li data-image={ `assets/${ photo }` } key={ index }
-                                            onClick={ () => changeBetweenImg( photo ) }>
-                                            <img
-                                                src={ `assets/${ photo }.png` }
-                                                alt="photoPlant"/>
-                                        </li>
-                                    )
-                                }
-                            </ul>
-                        </div>
-                        <div className="col-lg-4 order-lg-2 order-1">
-                            <div className="image_selected"><img
-                                src={ `assets/${ mainImg }.png` }
-                                alt=""/>
-                            </div>
-                        </div>
+                        {
+                            windowDimensions.width > 942 ?
+                                <>
+                                    <div className="col-lg-2 order-lg-1 order-2">
+                                        <ul className="image_list">
+                                            {
+                                                plantDetail.photos.map( ( photo, index ) =>
+                                                    <li data-image={ `assets/${ photo }` } key={ index }
+                                                        onClick={ () => changeBetweenImg( photo ) }>
+                                                        <img
+                                                            src={ `assets/${ photo }.png` }
+                                                            alt="photoPlant"/>
+                                                    </li>
+                                                )
+                                            }
+                                        </ul>
+                                    </div>
+                                    <div className="col-lg-4 order-lg-2 order-1">
+                                        <div className="image_selected"><img
+                                            src={ `assets/${ mainImg }.png` }
+                                            alt=""/>
+                                        </div>
+                                    </div>
+                                </> :
+                                <Carousel plantPhotos={ plantDetail.photos }/>
+                        }
                         <div className="col-lg-6 order-3">
                             <div className="product_description">
                                 <div className="product_name">
@@ -127,25 +139,37 @@ const MyComponent = () => {
                                             <span className="break-all fw-bold">
                                                 Cultivo: <span className="break-all fw-light"> {
                                                 plantDetail.cultivation.map( ( growing, index ) =>
-                                                    <button key={ index }>
-                                                        { growing === 'full sun' ?
-                                                            <FaSun
-                                                                style={ {
-                                                                    color: '#FFCF01',
-                                                                    fontSize: '20px',
-                                                                    marginRight: '0.5rem'
-                                                                } }
-                                                            />
-                                                            :
-                                                            ( growing === 'light shade' ?
-                                                                    <FaCloudSun style={ {
-                                                                        color: '#008EF7',
+                                                    <OverlayTrigger trigger="click" placement="right"
+                                                                    key={ index }
+                                                                    overlay={ popover(
+                                                                        growing === 'full sun' ? "Sol" : (growing === "shade" ? "Sombra" : "Semi-sombra"),
+                                                                        growing === 'full sun' ? ["Esta planta sobrevive largas horas de", <strong> exposición solar </strong>] :
+                                                                            (growing === "shade" ? ["Esta planta sobrevive en ", <strong>sombra</strong>, " con muy buena ", <strong>sombra</strong>, " iluminación"] :
+                                                                                    ["Esta planta sobrevive algunas horas de", <strong> exposicion solar</strong>, " y otras de ", <strong>sombra</strong>, " con buena ", <strong>iluminación</strong> ]
+                                                                    )) }
+                                                                    >
+                                                        <button key={ index }>
+                                                            { growing === 'full sun' ?
+                                                                <FaSun
+
+                                                                    style={ {
+                                                                        color: '#FFCF01',
                                                                         fontSize: '20px',
                                                                         marginRight: '0.5rem'
-                                                                    } }/> :
-                                                                    <FaMoon style={ { fontSize: '16px' } }/>
-                                                            ) }
-                                                    </button>
+                                                                    } }
+                                                                >
+                                                                </FaSun>
+                                                                :
+                                                                ( growing === 'light shade' ?
+                                                                        <FaCloudSun style={ {
+                                                                            color: '#008EF7',
+                                                                            fontSize: '20px',
+                                                                            marginRight: '0.5rem'
+                                                                        } }/> :
+                                                                        <FaMoon style={ { fontSize: '16px' } }/>
+                                                                ) }
+                                                        </button>
+                                                    </OverlayTrigger>
                                                 ) }
                                             </span>
                                             </span>

@@ -1,4 +1,4 @@
-import React, { ChangeEvent, ChangeEventHandler, useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import plantList from "../data/plants.json";
 import PlantCard from "../Components/PlantCard";
 import { GiKey } from "react-icons/gi";
@@ -28,7 +28,7 @@ const Wholesale = () => {
             <div>
                 <div className="input-group mb-3">
                     <input type="text" className="form-control" onChange={ validateKeyWholesale }
-                           placeholder="Recipient's username"
+                           placeholder="Introduce el Código"
                            aria-label="Recipient's username" aria-describedby="basic-addon2"/>
                     <span className="input-group-text c-pointer" id="basic-addon2"> <GiKey size="24"/> </span>
                 </div>
