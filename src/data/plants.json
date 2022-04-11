@@ -14,8 +14,7 @@
     "quantity": 5,
     "cultivation": [
       "full sun",
-      "light shade",
-      "shade"
+      "light shade"
     ],
     "wholesale": true,
     "rating": 5,

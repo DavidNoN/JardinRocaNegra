@@ -73,6 +73,7 @@ const MyComponent = () => {
                                                         onClick={ () => changeBetweenImg( photo ) }>
                                                         <img
                                                             src={ `assets/${ photo }.png` }
+                                                            loading="lazy"
                                                             alt="photoPlant"/>
                                                     </li>
                                                 )
@@ -82,6 +83,7 @@ const MyComponent = () => {
                                     <div className="col-lg-4 order-lg-2 order-1">
                                         <div className="image_selected"><img
                                             src={ `assets/${ mainImg }.png` }
+                                            loading="lazy"
                                             alt=""/>
                                         </div>
                                     </div>
@@ -142,12 +144,19 @@ const MyComponent = () => {
                                                     <OverlayTrigger trigger="click" placement="right"
                                                                     key={ index }
                                                                     overlay={ popover(
-                                                                        growing === 'full sun' ? "Sol" : (growing === "shade" ? "Sombra" : "Semi-sombra"),
-                                                                        growing === 'full sun' ? ["Esta planta sobrevive largas horas de", <strong> exposición solar </strong>] :
-                                                                            (growing === "shade" ? ["Esta planta sobrevive en ", <strong>sombra</strong>, " con muy buena ", <strong>sombra</strong>, " iluminación"] :
-                                                                                    ["Esta planta sobrevive algunas horas de", <strong> exposicion solar</strong>, " y otras de ", <strong>sombra</strong>, " con buena ", <strong>iluminación</strong> ]
-                                                                    )) }
-                                                                    >
+                                                                        growing === 'full sun' ? "Sol" : ( growing === "shade" ? "Sombra" : "Semi-sombra" ),
+                                                                        growing === 'full sun' ? [ "Esta planta sobrevive largas horas de",
+                                                                                <strong> exposición solar </strong> ] :
+                                                                            ( growing === "shade" ? [ "Esta planta sobrevive en ",
+                                                                                        <strong>sombra</strong>, " con muy buena ",
+                                                                                        <strong>sombra</strong>, " iluminación" ] :
+                                                                                    [ "Esta planta sobrevive algunas horas de",
+                                                                                        <strong> exposicion
+                                                                                            solar</strong>, " y otras de ",
+                                                                                        <strong>sombra</strong>, " con buena ",
+                                                                                        <strong>iluminación</strong> ]
+                                                                            ) ) }
+                                                    >
                                                         <button key={ index }>
                                                             { growing === 'full sun' ?
                                                                 <FaSun
@@ -173,6 +182,15 @@ const MyComponent = () => {
                                                 ) }
                                             </span>
                                             </span>
+                                            <br/>
+                                            <span className="break-all fw-bold">
+                                                Riego:
+                                            </span>
+                                            <br/>
+                                            <span className="break-all fw-bold">
+                                                Sustrato:
+                                            </span>
+                                            <br/>
                                         </div>
                                         <div className="col-md-7"/>
                                     </div>

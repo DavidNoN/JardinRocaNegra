@@ -75,7 +75,8 @@ const PlantCard = ( {
             <div className="card">
                 { calcLastWeekPublished( plant.publishDate ) && <div className="achievement-label">NUEVO</div> }
                 <Link to={ `/detail-plant/${ plant.id }` }>
-                    <img src={ `../assets/${ plant.photos[0] }.png` } className="card-img-top img-size" alt="..."
+                    <img src={ `assets/${ plant.photos[0] }.png` } className="card-img-top img-size" alt="planImg"
+                         loading="lazy"
                          width="350" height="250"/>
                 </Link>
                 <div className="card-body">
