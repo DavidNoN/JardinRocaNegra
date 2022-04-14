@@ -89,7 +89,7 @@
     "id": 5,
     "name": "Lithops Grande 1.5cm a 2 cm",
     "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 25000,
+    "price-collector": 18000,
     "price-wholesale": 13000,
     "discount": 0,
     "discount-wholesale": 0,
@@ -455,5 +455,26 @@
     "rating": 0,
     "photos": [ "23", "23.1" ],
     "publishDate": "04/10/2022"
+  },
+  {
+    "id": 24,
+    "name": "Dorstenia Foetida",
+    "description":  "Es un subarbusto perenne, de tallo suculento que puede estar ramificado o no. Se trata de una especie muy variable, especialmente en cuanto a la forma y el tamaño de las hojas, y la longitud de los pecíolos y las estípulas.\nDado que las distintas formas están conectadas por intermedios, es imposible reconocer taxones infraespecíficos.",
+    "price-collector": 15000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p8"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "shade",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "24"],
+    "publishDate": "04/14/2022"
   }
 ]
