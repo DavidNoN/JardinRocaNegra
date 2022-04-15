@@ -18,7 +18,7 @@
     ],
     "wholesale": true,
     "rating": 5,
-    "photos": [ "pnrf5", "pnrf", "pnrf2", "pnrf4" ],
+    "photos": [ "1", "1.1", "1.2", "1.3", "1.4" ],
     "publishDate": "04/05/2022"
   },
   {
@@ -46,7 +46,7 @@
   {
     "id": 3,
     "name": "Astrophytum Myriostigma 5 costillas",
-    "description": " El Astrophytum myriostigma multicostatum (con múltiples costillas) se desvía del conocido A. myriostigma estándar por tener seis o más costillas en lugar de cinco, dependiendo de los clones. Se han encontrado plantas con más de 5 costillas en el hábitat (aunque con una frecuencia muy baja), pero la mayoría de las \"multicostatum\" que se encuentran en cultivo no son 100% verdaderas Astrophytum myriostigma sino híbridos que han heredado las costillas adjuntas de uno de los ancestros (presumiblemente Astrophytum ornatum). Las flores son también muy hermosas.\nTallo: Casi esférico, las plantas se convierten en poco tiempo en columnares con la edad. Los tallos son lisos y pueden tener más de 90 cm de altura y 5-10 (-20) cm de diámetro.",
+    "description": "El Astrophytum myriostigma multicostatum (con múltiples costillas) se desvía del conocido A. myriostigma estándar por tener seis o más costillas en lugar de cinco, dependiendo de los clones. Se han encontrado plantas con más de 5 costillas en el hábitat (aunque con una frecuencia muy baja), pero la mayoría de las \"multicostatum\" que se encuentran en cultivo no son 100% verdaderas Astrophytum myriostigma sino híbridos que han heredado las costillas adjuntas de uno de los ancestros (presumiblemente Astrophytum ornatum). Las flores son también muy hermosas.\nTallo: Casi esférico, las plantas se convierten en poco tiempo en columnares con la edad. Los tallos son lisos y pueden tener más de 90 cm de altura y 5-10 (-20) cm de diámetro.",
     "price-collector": 24000,
     "price-wholesale": 0,
     "discount": 0,
@@ -476,5 +476,68 @@
     "rating": 0,
     "photos": [ "24"],
     "publishDate": "04/14/2022"
+  },
+  {
+    "id": 25,
+    "name": "Euphorbia Pulvinata",
+    "description":  "Es una suculenta dioica (con ejemplares masculinos y femeninos distintos) de bajo crecimiento, que en la naturaleza forma impresionantes pulvini (cojines) gigantes, compuestos por varios miles de pequeñas cabezas espinosas. En el suelo forma un llamativo cojín de hasta 1,5 (o más) metros de altura y de ancho. ¡¡¡Algunas plantas muy antiguas deben tener 40.000 cabezas o más!!! A veces varias plantas se agregan en masas de hasta tres metros de diámetro.",
+    "price-collector": 12000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p10"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "25", "25.1"],
+    "publishDate": "04/15/2022"
+  },
+  {
+    "id": 26,
+    "name": "Astrophytum Myriostigma Multicostatum Variegado",
+    "description":  "El Astrophytum myriostigma multicostatum variegado (con múltiples costillas) se desvía del conocido A. myriostigma estándar por tener seis o más costillas en lugar de cinco, dependiendo de los clones. Se han encontrado plantas con más de 5 costillas en el hábitat (aunque con una frecuencia muy baja), pero la mayoría de las \\\"multicostatum\\\" que se encuentran en cultivo no son 100% verdaderas Astrophytum myriostigma sino híbridos que han heredado las costillas adjuntas de uno de los ancestros (presumiblemente Astrophytum ornatum). Las flores son también muy hermosas.\\nTallo: Casi esférico, las plantas se convierten en poco tiempo en columnares con la edad. Los tallos son lisos y pueden tener más de 90 cm de altura y 5-10 (-20) cm de diámetro.",
+    "price-collector": 30000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "26", "26.1"],
+    "publishDate": "04/15/2022"
+  },
+  {
+    "id": 27,
+    "name": "Aloe Haworthioides",
+    "description":  "A. hawortioides es una suculenta de hoja lenta que forma pequeñas rosetas compactas (de unos 3-5 cm de diámetro)",
+    "price-collector": 7000,
+    "price-wholesale": 3500,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "shade",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "27", "27.1"],
+    "publishDate": "04/15/2022"
   }
 ]
