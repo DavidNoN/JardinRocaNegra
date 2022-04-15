@@ -469,8 +469,8 @@
     ],
     "quantity": 1,
     "cultivation": [
-      "shade",
-      "light shade"
+      "light shade",
+      "shade"
     ],
     "wholesale": false,
     "rating": 0,
