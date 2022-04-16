@@ -25,7 +25,7 @@ const MyComponent = () => {
                         <h5>Contáctanos</h5>
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2 c-pointer">
-                                <a href="https://api.whatsapp.com/send?phone=573234917873&text=¡Hola Jardín Roca Negra!, Estoy interesado/a en tus plantas" target="_blank">
+                                <a href="https://api.whatsapp.com/send?phone=573106451029&text=¡Hola Jardín Roca Negra!, Estoy interesado/a en tus plantas" target="_blank">
                                     <FontAwesomeIcon icon={ faWhatsapp } className="whatsApp__contact"/>
                                 </a>
                             </li>

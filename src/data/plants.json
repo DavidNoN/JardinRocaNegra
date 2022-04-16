@@ -556,9 +556,30 @@
       "shade",
       "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
     "photos": [ "28", "28.1", "28.2"],
-    "publishDate": "04/18/2022"
+    "publishDate": "04/22/2022"
+  },
+  {
+    "id": 29,
+    "name": "Lithops Lesliei cv. 'Albinica'",
+    "description":  "Floración blanca y forma de cuerpo verde.",
+    "price-collector": 60000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "29", "29.1"],
+    "publishDate": "04/22/2022"
   }
 ]
