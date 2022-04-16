@@ -539,5 +539,26 @@
     "rating": 0,
     "photos": [ "27", "27.1"],
     "publishDate": "04/15/2022"
+  },
+  {
+    "id": 28,
+    "name": "Hoya Kerrii Adulta",
+    "description":  "La Hoya Kerrii es una robusta planta trepadora con unas curiosas y gruesas hojas suculentas y coriáceas en forma de corazón invertido y unas peculiares flores en forma de globo, de color blanco-crema con lóbulos coronales de color rosa-violeta, en verano. Es de crecimiento rápido y puede formarse como topiario. La Hoya kerrii recibe el nombre de Sweetheart Plant o Sweetheart Hoya por sus hojas en forma de corazón o de San Valentín. La Hoya kerrii también se presenta en formas con hojas abigarradas. Está estrechamente relacionada con la Hoya obovata.",
+    "price-collector": 30000,
+    "price-wholesale": 0,
+    "discount": 0.15,
+    "discount-wholesale": 0,
+    "size": [
+      "p14"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "shade",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "28", "28.1", "28.2"],
+    "publishDate": "04/18/2022"
   }
 ]
