@@ -33,7 +33,8 @@ const MyComponent = () => {
         quantity: 0,
         rating: 0,
         size: [],
-        wholesale: false
+        wholesale: false,
+        state: true
     } );
 
     const getPlantDesc = useCallback(

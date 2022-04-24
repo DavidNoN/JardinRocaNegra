@@ -13,6 +13,7 @@ export type IPlant = {
     'discount-wholesale' : number;
     photos: string[];
     publishDate: string;
+    state: boolean;
     // gender?: string;
     // family: string;
 }

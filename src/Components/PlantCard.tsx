@@ -73,7 +73,11 @@ const PlantCard = ( {
     return (
         <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-3">
             <div className="card">
-                { calcLastWeekPublished( plant.publishDate ) && <div className="achievement-label">NUEVO</div> }
+                {
+                    calcLastWeekPublished( plant.publishDate ) && plant.state ?
+                    <div className="achievement-label">NUEVO</div> :
+                        <div className="out-stock-label">AGOTADO</div>
+                }
                 <Link to={ `/detail-plant/${ plant.id }` }>
                     <img src={ `assets/${ plant.photos[0] }.png` } className="card-img-top img-size" alt="planImg"
                          loading="lazy"
