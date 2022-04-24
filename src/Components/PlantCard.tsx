@@ -75,8 +75,8 @@ const PlantCard = ( {
             <div className="card">
                 {
                     calcLastWeekPublished( plant.publishDate ) && plant.state ?
-                    <div className="achievement-label">NUEVO</div> :
-                        <div className="out-stock-label">AGOTADO</div>
+                    <div className="achievement-label">NUEVO</div> : ( !plant.state && <div className="out-stock-label">AGOTADO</div> )
+
                 }
                 <Link to={ `/detail-plant/${ plant.id }` }>
                     <img src={ `assets/${ plant.photos[0] }.png` } className="card-img-top img-size" alt="planImg"
