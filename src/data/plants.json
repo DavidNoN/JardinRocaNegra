@@ -18,7 +18,7 @@
     ],
     "wholesale": true,
     "rating": 5,
-    "photos": [ "1", "1.1", "1.2", "1.3", "1.4" ],
+    "photos": [ "1", "1.1", "1.2", "1.4" ],
     "publishDate": "04/05/2022",
     "state": true
   },
@@ -194,7 +194,7 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "9", "9.1", "9.2" ],
+    "photos": [ "9", "9.1" ],
     "publishDate": "04/02/2022",
     "state": true
   },
@@ -496,7 +496,7 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "24"],
+    "photos": [ "24", "24.1"],
     "publishDate": "04/14/2022",
     "state": true
   },
@@ -612,14 +612,14 @@
   },
   {
     "id": 30,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
+    "name": "Mammillaria Vetula Subsp. Gracilis",
+    "description":  "Mammillaria vetula subsp. gracilis (Mammillaria gracilis), es un pequeño cactus con cuerpo algo delgado, cilíndrico y de color verde brillante que se agrupa y ramifica libremente, pero cuyos vástagos se desprenden con facilidad. Los vástagos se desprenden fácilmente, por lo que la planta debe manejarse con cuidado; sin embargo, estos vástagos enraízan rápidamente si se colocan en el suelo. Los tubérculos son redondeados y cada uno de ellos está rematado por espinas blancas y rígidas, que irradian como una estrella, haciendo que la planta parezca cubierta de encaje. Hay una o varias espinas centrales más largas de color marrón oscuro. Las flores, de color blanco cremoso y con forma de campana, aparecen en primavera o a finales de verano-otoño. Con el tiempo, este cactus forma una gran mata redondeada. Normalmente la subespecie gracilis sólo tiene 11-16 radiales, a menudo carece de espinas centrales y las flores miden menos de 12 mm.",
+    "price-collector": 12000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p7"
+      "p10"
     ],
     "quantity": 1,
     "cultivation": [
@@ -628,20 +628,20 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "30"],
+    "photos": [ "30", "30.1"],
     "publishDate": "04/28/2022",
     "state": true
   },
   {
     "id": 31,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
+    "name": "Titanopsis Calcarea",
+    "description":  "This form has white flat leaves and deep yellow flowers.",
+    "price-collector": 12000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p7"
+      "p10"
     ],
     "quantity": 1,
     "cultivation": [
