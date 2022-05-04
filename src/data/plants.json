@@ -831,28 +831,6 @@
     "state": true
   },
   {
-    "id": 40,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
-    "price-wholesale": 0,
-    "discount": 0,
-    "discount-wholesale": 0,
-    "size": [
-      "p7"
-    ],
-    "quantity": 1,
-    "cultivation": [
-      "full sun",
-      "light shade"
-    ],
-    "wholesale": false,
-    "rating": 0,
-    "photos": [ "40"],
-    "publishDate": "05/06/2022",
-    "state": true
-  },
-  {
     "id": 41,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
