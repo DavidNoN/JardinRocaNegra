@@ -894,5 +894,70 @@
     "photos": [ "41" ],
     "publishDate": "08/15/2022",
     "state": true
+  },
+  {
+    "id": 42,
+    "name": "Adromischus Cooperi",
+    "description": "El Adromischus cooperi (Club-adromischus) es una suculenta perenne enana que se ramifica libremente, de 2 a 7 cm de altura y 15 cm de extensión. Sus hojas son más grandes que las del Adromischus cristatus, son regordetas, se estrechan hacia la base, son de color gris plateado pálido con una pizca de verde huevo de pato y están elegantemente manchadas de un intenso color púrpura oscuro.",
+    "price-collector": 10000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p10"
+    ],
+    "quantity": 2,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "42" ],
+    "publishDate": "08/15/2022",
+    "state": true
+  },
+  {
+    "id": 43,
+    "name": "Euphorbia Flanaganii",
+    "description": "La Euphorbia flanaganii es una suculenta baja, sin espinas, con muchas ramas, de hasta 5 cm de altura y 30 cm de ancho. Se la conoce comúnmente como planta Medusa, porque sus brazos postrados, parecidos a los de una serpiente, parecen mechones de pelo. El tallo central se funde con las raíces formando un cuerpo tuberoso (a menudo llamado caudex) con ramas que irradian de él. Si miras hacia abajo en un espécimen grande, verás lo que parece una flor del sol; es otro ejemplo de espiral de Fibonacci. Una planta bien cultivada es una alegría, especialmente cuando está en flor, pues entonces cada dedo serpenteante se cubre de fragantes flores amarillas y el conjunto es exquisito. Toda la planta produce una savia lechosa cáustica que puede provocar erupciones cutáneas, picores y malestar general.",
+    "price-collector": 35000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p12"
+    ],
+    "quantity": 2,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "43", "43.2" ],
+    "publishDate": "08/15/2022",
+    "state": true
+  },
+  {
+    "id": 44,
+    "name": "Titanopsis Hugo-Schlechteri",
+    "description": "Se trata de una planta suculenta con rosetas de varias cabezas, que formará pequeñas matas a medida que vaya envejeciendo. Las rosetas individuales tienen aproximadamente 4-5 cm de diámetro.",
+    "price-collector": 15000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 2,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "44" ],
+    "publishDate": "08/15/2022",
+    "state": true
   }
 ]
