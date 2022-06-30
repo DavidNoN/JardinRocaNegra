@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import '../index.css';
 import '../Styles/Carousel.scss';
 import {Link} from "react-router-dom";
 
-const Carousel = ({plantPhotos}: { plantPhotos: string[] }) => {
+const Carousel = ({plantId, plantPhotos}: { plantId: number, plantPhotos: string[] }) => {
 
     const [indexPicture, setIndexPicture] = useState(0);
 
@@ -18,7 +18,6 @@ const Carousel = ({plantPhotos}: { plantPhotos: string[] }) => {
             return;
         }
     }
-
 
 
     return (
@@ -43,7 +42,7 @@ const Carousel = ({plantPhotos}: { plantPhotos: string[] }) => {
                                         key={index}
                                         aria-current="true"
                                         aria-label={`Slide ${indexPicture + 1}`}/> :
-                            <></>
+                            <div key={index}></div>
                     )
 
                 }
@@ -53,22 +52,25 @@ const Carousel = ({plantPhotos}: { plantPhotos: string[] }) => {
                 {plantPhotos.map((photo, index) =>
 
                     index === indexPicture ?
-                        <div className="carousel-item active">
-
-                            <img src={`assets/${plantPhotos[indexPicture]}.png`}
-                                 className="d-block img-height"
-                                 style={{objectFit: "cover"}} alt="plantPhoto"
-                                 width="350" height="250"
-                                 loading="lazy"
-                                 key={index}/>
+                        <div className="carousel-item active" key={index}>
+                            <Link to={`/detail-plant/${plantId}`}>
+                                <img src={`assets/${plantPhotos[indexPicture]}.png`}
+                                     className="d-block img-height"
+                                     style={{objectFit: "cover"}} alt="plantPhoto"
+                                     width="350" height="250"
+                                     loading="lazy"
+                                     key={index}/>
+                            </Link>
                         </div> :
-                        <div className="carousel-item">
-                            <img src={`assets/${plantPhotos[indexPicture]}.png`}
-                                 className="d-block img-height"
-                                 style={{objectFit: "cover"}} alt="plantPhoto"
-                                 width="350" height="250"
-                                 loading="lazy"
-                                 key={index}/>
+                        <div className="carousel-item" key={index}>
+                            <Link to={`/detail-plant/${plantId}`}>
+                                <img src={`assets/${plantPhotos[indexPicture]}.png`}
+                                     className="d-block img-height"
+                                     style={{objectFit: "cover"}} alt="plantPhoto"
+                                     width="350" height="250"
+                                     loading="lazy"
+                                     key={index}/>
+                            </Link>
                         </div>
                 )}
             </div>

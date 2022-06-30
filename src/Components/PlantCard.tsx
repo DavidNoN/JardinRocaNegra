@@ -79,7 +79,7 @@ const PlantCard = ({
                             <div className="out-stock-label">AGOTADO</div>)
 
                 }
-                <Carousel plantPhotos={plant.photos} />
+                <Carousel plantId={plant.id} plantPhotos={plant.photos} />
 
                 <div className="card-body">
                     <h5 className="card-title">{plant.name}</h5>
@@ -102,18 +102,21 @@ const PlantCard = ({
                                                     overlay={popover(
                                                         growing === 'full sun' ? "Sol" : (growing === "shade" ? "Sombra" : "Semi-sombra"),
                                                         growing === 'full sun' ? ["Esta planta sobrevive largas horas de",
-                                                                <strong> exposición solar </strong>] :
+                                                                <strong key={index}> exposición solar </strong>] :
                                                             (growing === "shade" ? ["Esta planta sobrevive en ",
-                                                                        <strong>sombra</strong>, " con muy buena ",
-                                                                        <strong>sombra</strong>, " iluminación"] :
+                                                                        <strong
+                                                                            key={index}>sombra</strong>, " con muy buena ",
+                                                                        <strong
+                                                                            key={index}>sombra</strong>, " iluminación"] :
                                                                     ["Esta planta sobrevive algunas horas de",
-                                                                        <strong> exposicion
+                                                                        <strong key={index}> exposicion
                                                                             solar</strong>, " y otras de ",
-                                                                        <strong>sombra</strong>, " con buena ",
-                                                                        <strong>iluminación</strong>]
+                                                                        <strong
+                                                                            key={index}>sombra</strong>, " con buena ",
+                                                                        <strong key={index}>iluminación</strong>]
                                                             ))}
-                                     >
-                                        <button key={index}>
+                                                    defaultShow={false}>
+                                        <button key={index + 2}>
                                             {growing === 'full sun' ?
                                                 <FaSun
                                                     key={index}
@@ -129,11 +132,11 @@ const PlantCard = ({
                                                         <FaCloudSun
                                                             key={index}
                                                             style={{
-                                                            color: '#008EF7',
-                                                            fontSize: '20px',
-                                                            marginRight: '0.5rem'
-                                                        }}/> :
-                                                        <FaMoon style={{fontSize: '16px'}}/>
+                                                                color: '#008EF7',
+                                                                fontSize: '20px',
+                                                                marginRight: '0.5rem'
+                                                            }}/> :
+                                                        <FaMoon key={index} style={{fontSize: '16px'}}/>
                                                 )}
                                         </button>
                                     </OverlayTrigger>
