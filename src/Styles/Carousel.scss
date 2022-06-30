@@ -3,8 +3,8 @@
 }
 
 .carousel {
-  min-width: 300px;
-  max-width: 300px;
+  min-width: available;
+  max-width: available;
   max-height: 300px;
   min-height: 300px;
   margin: 0 auto;
@@ -14,9 +14,8 @@
   width: 100%;
 }
 
-.full-width {
-  min-width: 300px;
-  max-width: 300px;
-  max-height: 300px;
+.img-height {
+  height: 300px;
   min-height: 300px;
+  max-height: 300px;
 }
