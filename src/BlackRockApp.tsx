@@ -16,11 +16,11 @@ const BlackRockApp = () => {
             <main className="flex-shrink-0 mb-5 bg-grey pt-10">
                 <div className="container">
                     <Routes>
-                        <Route path="/" element={ <Navigate to="/new-plants"/> }/>
+                        <Route path="/" element={ <Navigate to="/plants-available"/> }/>
                         <Route
                             path="*"
                             element={
-                                <Navigate to="/new-plants"/>
+                                <Navigate to="/plants-available"/>
                             }
                         />
                         <Route path="plants-available" element={ <Collectors/> }/>
