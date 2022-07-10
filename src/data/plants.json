@@ -891,7 +891,7 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "41" ],
+    "photos": [ "41", "41.1" ],
     "publishDate": "08/15/2022",
     "state": true
   },
@@ -913,7 +913,7 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "42" ],
+    "photos": [ "42", "42.1" ],
     "publishDate": "08/15/2022",
     "state": true
   },
@@ -958,6 +958,49 @@
     "rating": 0,
     "photos": [ "44" ],
     "publishDate": "08/15/2022",
+    "state": true
+  },
+  {
+    "id": 45,
+    "name": "Gasteria gracilis Cv. Variegata Yellow",
+    "description": " La Gasteria minima, la Gasteria gracilis o como quiera que se llame, no se considera actualmente una especie válida. Uno de los problemas de la Gasteria es que hay tantos híbridos entre especies, híbridos con Aloes y Haworthias, variabilidad de plántulas y diferencias entre plantas jóvenes y adultas, que resulta casi imposible distinguir muchas formas entre sí. En particular, el nombre \"gracilis\" se utiliza para formas muy diferentes y puede causar confusión.",
+    "price-collector": 12000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "45" ],
+    "publishDate": "08/25/2022",
+    "state": true
+  },
+  {
+    "id": 46,
+    "name": "Adromischus marianae f. herrei",
+    "description": " Adromischus marianae f. herrei es un pequeño arbusto suculento de crecimiento lento y constreñido en la base, de tamaño variable hasta 10 cm de altura y con muchas ramas finas y muy cortas. Actualmente se cree que no es más que una población de Adromischus marianiae de color marrón rojizo con hojas muy ásperas que parecen pasas secas. Esta especie es variable y cada clon es distinto y vale la pena cultivar más de una muestra.",
+    "price-collector": 60000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 2,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "46" ],
+    "publishDate": "08/26/2022",
     "state": true
   }
 ]
