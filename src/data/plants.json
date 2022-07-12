@@ -849,7 +849,7 @@
     "rating": 0,
     "photos": [ "39", "39.1", "39.2" ],
     "publishDate": "08/15/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 40,
@@ -915,7 +915,7 @@
     "rating": 0,
     "photos": [ "42", "42.1" ],
     "publishDate": "08/15/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 43,
@@ -979,7 +979,7 @@
     "rating": 0,
     "photos": [ "45" ],
     "publishDate": "08/25/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 46,
