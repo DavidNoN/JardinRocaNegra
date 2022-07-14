@@ -196,7 +196,7 @@
     "rating": 0,
     "photos": [ "9", "9.1" ],
     "publishDate": "04/02/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 10,
@@ -389,7 +389,7 @@
     "rating": 0,
     "photos": [ "18", "18.1" ],
     "publishDate": "04/08/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 19,
@@ -411,7 +411,7 @@
     "rating": 0,
     "photos": [ "19", "19.1", "19.2" ],
     "publishDate": "04/10/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 20,
@@ -476,7 +476,7 @@
     "rating": 0,
     "photos": [ "22", "22.1"],
     "publishDate": "04/14/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 23,
@@ -520,7 +520,7 @@
     "rating": 0,
     "photos": [ "24", "24.1"],
     "publishDate": "04/15/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 25,
@@ -564,7 +564,7 @@
     "rating": 0,
     "photos": [ "26"],
     "publishDate": "04/28/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 27,
@@ -586,7 +586,7 @@
     "rating": 0,
     "photos": [ "27", "27.1"],
     "publishDate": "05/06/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 28,
@@ -958,7 +958,7 @@
     "rating": 0,
     "photos": [ "44" ],
     "publishDate": "08/15/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 45,
