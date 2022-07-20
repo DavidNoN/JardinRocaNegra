@@ -326,31 +326,10 @@
     "rating": 0,
     "photos": [ "15", "15.1", "15.2" ],
     "publishDate": "04/02/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 16,
-    "name": "Gasteria Batesiana",
-    "description": "Produce una roseta suculenta que prolifera desde la base formando pequeños grupos, raramente solitarios. Suele ser más grande que alta y crece de 30 a 100 mm de altura y 80-300 mm de diámetro. Las plantas en la naturaleza son muy variables, especialmente por la forma y la rugosidad de las hojas.",
-    "price-collector": 6000,
-    "price-wholesale": 3000,
-    "discount": 0,
-    "discount-wholesale": 0,
-    "size": [
-      "p7"
-    ],
-    "quantity": 5,
-    "cultivation": [
-      "light shade"
-    ],
-    "wholesale": true,
-    "rating": 0,
-    "photos": [ "16" ],
-    "publishDate": "04/02/2022",
-    "state": true
-  },
-  {
-    "id": 17,
     "name": "Haworthiopsis Attenuata var. Radula",
     "description": "H. attenuata var. radula se diferencia de Haworthia attenuata por sus tubérculos más pequeños y numerosos, mientras que H. attenuata tiene menos tubérculos y más grandes. Además, las hojas son más escabrosas que tuberculadas. También tiene hojas más delgadas y largas. Los numerosos tubérculos dan a la planta un aspecto plateado.",
     "price-collector": 8000,
@@ -366,12 +345,12 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "17", "17.1" ],
+    "photos": [ "16", "16.1" ],
     "publishDate": "04/02/2022",
     "state": true
   },
   {
-    "id": 18,
+    "id": 17,
     "name": "Haworthiopsis Fasciata",
     "description": "Es una planta perenne-suculenta de bajo crecimiento y casi sin tallo. Es fácilmente reconocible por las verrugas blancas perladas que cubren densamente las hojas de color verde oscuro. Puede llegar a formar grandes matas y es una de las especies más comunes en el cultivo. Es muy variable, viene en muchas variedades y formas que van desde el verde sólido con sólo unas pequeñas protuberancias blancas hasta formas con bandas horizontales muy blancas, y también una mata individual que tiene rayas horizontales anchas y pesadas a veces arrojará a un cachorro con sólo protuberancias, o algunas serán más suaves, nudosas, etc., y viceversa. Un problema con la Gasteria es que hay tantos híbridos entre especies, variabilidad de plántulas y diferencias entre plantas juveniles y adultas, que resulta casi imposible distinguir muchas formas entre sí. En particular, el nombre \"attenuata\" se utiliza para formas muy diferentes y puede causar confusión.",
     "price-collector": 6000,
@@ -387,14 +366,35 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "18", "18.1" ],
+    "photos": [ "17", "17.1" ],
     "publishDate": "04/08/2022",
     "state": false
   },
   {
+    "id": 18,
+    "name": "Conophytum Hians",
+    "description": "Es una especie enana y apretada que forma esteras. En el cultivo es una planta rápida que produce demasiados cuerpos de forma apresurada. Este hábito persiste incluso con el riego más escaso.",
+    "price-collector": 40000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "18", "18.1" ],
+    "publishDate": "08/08/2022",
+    "state": true
+  },
+  {
     "id": 19,
-    "name": "Cactus Crestados Mix",
-    "description": "Cactus Crestados Mix en P7",
+    "name": "Euphorbia Decaryi",
+    "description": "La Euphorbia decaryi es una suculenta pequeña y perenne, con un desarrollo similar al de un arbusto y hermosas hojas onduladas y con bordes en zigzag. Es una especie formadora de esteras y se extiende casi horizontalmente en el suelo por medio de rizomas. La forma de crecimiento de la Euphorbia decaryi ilustra el típico hábito horizontal de la mayoría de las euforbias malgaches. Es una de las euforbias más populares y cultivadas de Madagascar.",
     "price-collector": 10000,
     "price-wholesale": 0,
     "discount": 0,
@@ -404,14 +404,13 @@
     ],
     "quantity": 5,
     "cultivation": [
-      "full sun",
       "light shade"
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "19", "19.1", "19.2" ],
-    "publishDate": "04/10/2022",
-    "state": false
+    "photos": [ "19", "19.1"],
+    "publishDate": "08/10/2022",
+    "state": true
   },
   {
     "id": 20,
@@ -457,28 +456,6 @@
     "state": false
   },
   {
-    "id": 22,
-    "name": "Dorstenia Foetida",
-    "description":  "Es un subarbusto perenne, de tallo suculento que puede estar ramificado o no. Se trata de una especie muy variable, especialmente en cuanto a la forma y el tamaño de las hojas, y la longitud de los pecíolos y las estípulas.\nDado que las distintas formas están conectadas por intermedios, es imposible reconocer taxones infraespecíficos.",
-    "price-collector": 15000,
-    "price-wholesale": 0,
-    "discount": 0,
-    "discount-wholesale": 0,
-    "size": [
-      "p8"
-    ],
-    "quantity": 1,
-    "cultivation": [
-      "light shade",
-      "shade"
-    ],
-    "wholesale": false,
-    "rating": 0,
-    "photos": [ "22", "22.1"],
-    "publishDate": "04/14/2022",
-    "state": false
-  },
-  {
     "id": 23,
     "name": "Euphorbia Pulvinata",
     "description":  "Es una suculenta dioica (con ejemplares masculinos y femeninos distintos) de bajo crecimiento, que en la naturaleza forma impresionantes pulvini (cojines) gigantes, compuestos por varios miles de pequeñas cabezas espinosas. En el suelo forma un llamativo cojín de hasta 1,5 (o más) metros de altura y de ancho. ¡¡¡Algunas plantas muy antiguas deben tener 40.000 cabezas o más!!! A veces varias plantas se agregan en masas de hasta tres metros de diámetro.",
@@ -502,25 +479,24 @@
   },
   {
     "id": 24,
-    "name": "Aloe Haworthioides",
-    "description":  "A. hawortioides es una suculenta de hoja lenta que forma pequeñas rosetas compactas (de unos 3-5 cm de diámetro)",
-    "price-collector": 7000,
-    "price-wholesale": 3500,
+    "name": "Hoya Kerrii",
+    "description":  "La Hoya kerrii es una robusta planta trepadora con unas curiosas y gruesas hojas suculentas y coriáceas en forma de corazón invertido y unas peculiares flores en forma de globo, de color blanco-crema con lóbulos coronales de color rosa-violeta, en verano. Es de crecimiento rápido y puede formarse como topiario. La Hoya kerrii recibe el nombre de Sweetheart Plant o Sweetheart Hoya por sus hojas en forma de corazón o de San Valentín. La Hoya kerrii también se presenta en formas con hojas abigarradas. Está estrechamente relacionada con la Hoya obovata.",
+    "price-collector": 25000,
+    "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p7"
+      "p12"
     ],
     "quantity": 1,
     "cultivation": [
-      "shade",
       "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
-    "photos": [ "24", "24.1"],
+    "photos": [ "24" ],
     "publishDate": "04/15/2022",
-    "state": false
+    "state": true
   },
   {
     "id": 25,
@@ -546,9 +522,9 @@
   },
   {
     "id": 26,
-    "name": "Titanopsis Calcarea",
-    "description":  "This form has white flat leaves and deep yellow flowers.",
-    "price-collector": 12000,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 35000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -563,36 +539,36 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "26"],
-    "publishDate": "04/28/2022",
-    "state": false
+    "publishDate": "09/30/2022",
+    "state": true
   },
   {
     "id": 27,
-    "name": "Graptopetalum Amethystinum",
-    "description":  "La Suculenta Graptopetalum Amethystinum esta especie originaria de México es bastante rara y muy apetecida entre los coleccionistas por su belleza.\n\nSus hojas tienen una forma obovada y generan una capa de pruina. Esta es una cera que ayuda a disminuir la perdida de agua en sus hojas. Además le otorgan una tonalidad grisácea.",
-    "price-collector": 8000,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 40000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
       "p7"
     ],
-    "quantity": 5,
+    "quantity": 1,
     "cultivation": [
       "full sun",
       "light shade"
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "27", "27.1"],
-    "publishDate": "05/06/2022",
-    "state": false
+    "photos": [ "27"],
+    "publishDate": "09/01/2022",
+    "state": true
   },
   {
     "id": 28,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 40000,
+    "name": "Lithops Karasmontana Double-Head",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 20000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -607,14 +583,14 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "28"],
-    "publishDate": "06/30/2022",
+    "publishDate": "09/02/2022",
     "state": true
   },
   {
     "id": 29,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 40000,
+    "price-collector": 35000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -629,7 +605,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "29"],
-    "publishDate": "07/01/2022",
+    "publishDate": "09/03/2022",
     "state": true
   },
   {
@@ -651,14 +627,14 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "30"],
-    "publishDate": "07/02/2022",
+    "publishDate": "09/04/2022",
     "state": true
   },
   {
     "id": 31,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
+    "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -673,14 +649,14 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "31"],
-    "publishDate": "07/03/2022",
+    "publishDate": "09/05/2022",
     "state": true
   },
   {
     "id": 32,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 40000,
+    "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -695,14 +671,14 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "32"],
-    "publishDate": "07/04/2022",
+    "publishDate": "09/07/2022",
     "state": true
   },
   {
     "id": 33,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
+    "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -717,55 +693,11 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "33"],
-    "publishDate": "07/05/2022",
+    "publishDate": "09/08/2022",
     "state": true
   },
   {
     "id": 34,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
-    "price-wholesale": 0,
-    "discount": 0,
-    "discount-wholesale": 0,
-    "size": [
-      "p7"
-    ],
-    "quantity": 1,
-    "cultivation": [
-      "full sun",
-      "light shade"
-    ],
-    "wholesale": false,
-    "rating": 0,
-    "photos": [ "34"],
-    "publishDate": "07/07/2022",
-    "state": true
-  },
-  {
-    "id": 35,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
-    "price-wholesale": 0,
-    "discount": 0,
-    "discount-wholesale": 0,
-    "size": [
-      "p7"
-    ],
-    "quantity": 1,
-    "cultivation": [
-      "full sun",
-      "light shade"
-    ],
-    "wholesale": false,
-    "rating": 0,
-    "photos": [ "35"],
-    "publishDate": "07/08/2022",
-    "state": true
-  },
-  {
-    "id": 36,
     "name": "Echeveria Cv. 'Culibra'",
     "description":  "Echeveria Culibra, también conocida como Echeveria ‘Culebra’, es una suculenta híbrido de parentales desconocidos. Posee hojas glaucas de color azul pálido con márgenes ondulados de color rosa que forman rosetas de hasta 18 cm de diámetro. Cada hoja tiene una forma de camafeo larga y elevada conocida como «carúncula» en la superficie superior. Con el tiempo, la carúncula hace que la hoja se doble hacia abajo en los márgenes, con la creación resultante de una hoja tubular. Florece en primavera.",
     "price-collector": 70000,
@@ -782,12 +714,12 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "36", "36.1", "36.2", "36.3"],
-    "publishDate": "07/15/2022",
+    "photos": [ "34", "34.1", "34.2", "34.3"],
+    "publishDate": "09/15/2022",
     "state": true
   },
   {
-    "id": 37,
+    "id": 35,
     "name": "Monadenium Ellenbeckii ",
     "description": "Monadenium ellenbeckii es una hierba perenne suculenta de bajo crecimiento con tallos carnosos en forma de serpiente que surgen de una base central",
     "price-collector": 15000,
@@ -803,12 +735,12 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "37", "37.1" ],
+    "photos": [ "35", "35.1" ],
     "publishDate": "07/15/2022",
     "state": true
   },
   {
-    "id": 38,
+    "id": 36,
     "name": "Pseudolithos Cubiformis",
     "description": "El Pseudolithos cubiformis es una pequeña planta muy suculenta que crece hasta formar un característico cubo de color gris granítico, bastante grande y casi perfecto. Es bastante variable en cuanto a forma, color y tamaño. Es una de las especies más bonitas del género, todas ellas extrañas. Una especie muy extraña.",
     "price-collector": 180000,
@@ -825,34 +757,12 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "38", "38.1", "38.2", "38.3" ],
+    "photos": [ "36", "36.1", "36.2", "36.3" ],
     "publishDate": "08/15/2022",
     "state": true
   },
   {
-    "id": 39,
-    "name": "Conophytum Bilobum Subs. Bilobum",
-    "description": "Conophytum bilobum (subs. bilobum) es una planta robusta cespitosa (que cubre el suelo), sin tallo o con tallos cortos con el tiempo. Esta planta es uno de los taxones más extendidos y morfológicamente variables del género. Muchas de sus variantes morfológicas y geográficas fueron clasificadas tempranamente como diferentes especies independientes, pero hoy en día toda esta planta se considera parte de una especie multiforme, donde cada forma está vinculada a otras por poblaciones de plantas con características intermedias.",
-    "price-collector": 80000,
-    "price-wholesale": 0,
-    "discount": 0,
-    "discount-wholesale": 0,
-    "size": [
-      "p7"
-    ],
-    "quantity": 1,
-    "cultivation": [
-      "full sun",
-      "light shade"
-    ],
-    "wholesale": false,
-    "rating": 0,
-    "photos": [ "39", "39.1", "39.2" ],
-    "publishDate": "08/15/2022",
-    "state": false
-  },
-  {
-    "id": 40,
+    "id": 37,
     "name": "Lithops Salicola Cv. 'Sato's Violet' Double-Head",
     "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 25000,
@@ -869,12 +779,12 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "40" ],
+    "photos": [ "37" ],
     "publishDate": "08/15/2022",
     "state": true
   },
   {
-    "id": 41,
+    "id": 38,
     "name": "Orbea Sp. Crestada",
     "description": "Orbea",
     "price-collector": 10000,
@@ -891,34 +801,12 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "41", "41.1" ],
+    "photos": [ "38", "38.1" ],
     "publishDate": "08/15/2022",
     "state": true
   },
   {
-    "id": 42,
-    "name": "Adromischus Cooperi",
-    "description": "El Adromischus cooperi (Club-adromischus) es una suculenta perenne enana que se ramifica libremente, de 2 a 7 cm de altura y 15 cm de extensión. Sus hojas son más grandes que las del Adromischus cristatus, son regordetas, se estrechan hacia la base, son de color gris plateado pálido con una pizca de verde huevo de pato y están elegantemente manchadas de un intenso color púrpura oscuro.",
-    "price-collector": 10000,
-    "price-wholesale": 0,
-    "discount": 0,
-    "discount-wholesale": 0,
-    "size": [
-      "p10"
-    ],
-    "quantity": 2,
-    "cultivation": [
-      "full sun",
-      "light shade"
-    ],
-    "wholesale": false,
-    "rating": 0,
-    "photos": [ "42", "42.1" ],
-    "publishDate": "08/15/2022",
-    "state": false
-  },
-  {
-    "id": 43,
+    "id": 39,
     "name": "Euphorbia Flanaganii",
     "description": "La Euphorbia flanaganii es una suculenta baja, sin espinas, con muchas ramas, de hasta 5 cm de altura y 30 cm de ancho. Se la conoce comúnmente como planta Medusa, porque sus brazos postrados, parecidos a los de una serpiente, parecen mechones de pelo. El tallo central se funde con las raíces formando un cuerpo tuberoso (a menudo llamado caudex) con ramas que irradian de él. Si miras hacia abajo en un espécimen grande, verás lo que parece una flor del sol; es otro ejemplo de espiral de Fibonacci. Una planta bien cultivada es una alegría, especialmente cuando está en flor, pues entonces cada dedo serpenteante se cubre de fragantes flores amarillas y el conjunto es exquisito. Toda la planta produce una savia lechosa cáustica que puede provocar erupciones cutáneas, picores y malestar general.",
     "price-collector": 35000,
@@ -934,55 +822,12 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "43", "43.1" ],
+    "photos": [ "39", "39.1" ],
     "publishDate": "08/15/2022",
     "state": true
   },
   {
-    "id": 44,
-    "name": "Titanopsis Hugo-Schlechteri",
-    "description": "Se trata de una planta suculenta con rosetas de varias cabezas, que formará pequeñas matas a medida que vaya envejeciendo. Las rosetas individuales tienen aproximadamente 4-5 cm de diámetro.",
-    "price-collector": 15000,
-    "price-wholesale": 0,
-    "discount": 0,
-    "discount-wholesale": 0,
-    "size": [
-      "p7"
-    ],
-    "quantity": 2,
-    "cultivation": [
-      "full sun",
-      "light shade"
-    ],
-    "wholesale": false,
-    "rating": 0,
-    "photos": [ "44" ],
-    "publishDate": "08/15/2022",
-    "state": false
-  },
-  {
-    "id": 45,
-    "name": "Gasteria gracilis Cv. Variegata Yellow",
-    "description": " La Gasteria minima, la Gasteria gracilis o como quiera que se llame, no se considera actualmente una especie válida. Uno de los problemas de la Gasteria es que hay tantos híbridos entre especies, híbridos con Aloes y Haworthias, variabilidad de plántulas y diferencias entre plantas jóvenes y adultas, que resulta casi imposible distinguir muchas formas entre sí. En particular, el nombre \"gracilis\" se utiliza para formas muy diferentes y puede causar confusión.",
-    "price-collector": 12000,
-    "price-wholesale": 0,
-    "discount": 0,
-    "discount-wholesale": 0,
-    "size": [
-      "p7"
-    ],
-    "quantity": 1,
-    "cultivation": [
-      "light shade"
-    ],
-    "wholesale": false,
-    "rating": 0,
-    "photos": [ "45" ],
-    "publishDate": "08/25/2022",
-    "state": false
-  },
-  {
-    "id": 46,
+    "id": 40,
     "name": "Adromischus marianae f. herrei",
     "description": " Adromischus marianae f. herrei es un pequeño arbusto suculento de crecimiento lento y constreñido en la base, de tamaño variable hasta 10 cm de altura y con muchas ramas finas y muy cortas. Actualmente se cree que no es más que una población de Adromischus marianiae de color marrón rojizo con hojas muy ásperas que parecen pasas secas. Esta especie es variable y cada clon es distinto y vale la pena cultivar más de una muestra.",
     "price-collector": 60000,
@@ -999,7 +844,7 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "46" ],
+    "photos": [ "30" ],
     "publishDate": "08/26/2022",
     "state": true
   }
