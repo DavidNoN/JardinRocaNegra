@@ -847,5 +847,26 @@
     "photos": [ "40", "40.1" ],
     "publishDate": "08/26/2022",
     "state": true
+  },
+  {
+    "id": 41,
+    "name": "Albuca Spiralis Cv. 'Frizzle Sizzle'",
+    "description": "Albuca spiralis 'Frizzle Sizzle' es una suculenta de bulbo con un distintivo follaje en forma de sacacorchos que puede plantarse en lo alto del suelo con parte del bulbo expuesto. Sus grandes flores de color verde amarillento surgen en primavera sobre robustos tallos y tienen una fuerte fragancia a vainilla.",
+    "price-collector": 60000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 2,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "41", "41.1" ],
+    "publishDate": "08/26/2022",
+    "state": true
   }
 ]
