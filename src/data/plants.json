@@ -496,7 +496,7 @@
     "rating": 0,
     "photos": [ "24" ],
     "publishDate": "04/15/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 25,
@@ -524,7 +524,7 @@
     "id": 26,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
+    "price-collector": 25000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -546,7 +546,7 @@
     "id": 27,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 40000,
+    "price-collector": 25000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -561,7 +561,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "27"],
-    "publishDate": "09/01/2022",
+    "publishDate": "09/30/2022",
     "state": true
   },
   {
@@ -583,14 +583,14 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "28"],
-    "publishDate": "09/02/2022",
+    "publishDate": "09/30/2022",
     "state": true
   },
   {
     "id": 29,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
+    "price-collector": 28000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -612,7 +612,7 @@
     "id": 30,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
+    "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -632,53 +632,53 @@
   },
   {
     "id": 31,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 30000,
+    "name": "Adromischus marianae f. herrei Cv. 'Red Coral'",
+    "description": " Adromischus marianae f. herrei es un pequeño arbusto suculento de crecimiento lento y constreñido en la base, de tamaño variable hasta 10 cm de altura y con muchas ramas finas y muy cortas. Actualmente se cree que no es más que una población de Adromischus marianiae de color marrón rojizo con hojas muy ásperas que parecen pasas secas. Esta especie es variable y cada clon es distinto y vale la pena cultivar más de una muestra.",
+    "price-collector": 60000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
       "p7"
     ],
-    "quantity": 1,
+    "quantity": 2,
     "cultivation": [
       "full sun",
       "light shade"
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "31"],
-    "publishDate": "09/05/2022",
+    "photos": [ "31" ],
+    "publishDate": "09/26/2022",
     "state": true
   },
   {
     "id": 32,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 30000,
+    "name": "Conophytum Cv. 'Fujinokoromo'",
+    "description": " Adromischus marianae f. herrei es un pequeño arbusto suculento de crecimiento lento y constreñido en la base, de tamaño variable hasta 10 cm de altura y con muchas ramas finas y muy cortas. Actualmente se cree que no es más que una población de Adromischus marianiae de color marrón rojizo con hojas muy ásperas que parecen pasas secas. Esta especie es variable y cada clon es distinto y vale la pena cultivar más de una muestra.",
+    "price-collector": 60000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
       "p7"
     ],
-    "quantity": 1,
+    "quantity": 2,
     "cultivation": [
       "full sun",
       "light shade"
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "32"],
-    "publishDate": "09/07/2022",
+    "photos": [ "32" ],
+    "publishDate": "09/26/2022",
     "state": true
   },
   {
     "id": 33,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 30000,
+    "price-collector": 35000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -693,7 +693,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "33"],
-    "publishDate": "09/08/2022",
+    "publishDate": "09/26/2022",
     "state": true
   },
   {
@@ -867,6 +867,50 @@
     "rating": 0,
     "photos": [ "41", "41.1" ],
     "publishDate": "08/26/2022",
+    "state": true
+  },
+  {
+    "id": 42,
+    "name": "Pseudolithos Migiurtinus Doble cabeza",
+    "description": "Suele tener un solo tallo. Bastante variable en forma, color y tamaño.",
+    "price-collector": 260000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 2,
+    "cultivation": [
+      "light shade",
+      "full sun"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "42", "42.1" ],
+    "publishDate": "08/26/2022",
+    "state": true
+  },
+  {
+    "id": 43,
+    "name": "Opuntia Sp.",
+    "description": ""
+    "price-collector": 8000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p12"
+    ],
+    "quantity": 2,
+    "cultivation": [
+      "light shade",
+      "full sun"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "43" ],
+    "publishDate": "09/26/2022",
     "state": true
   }
 ]
