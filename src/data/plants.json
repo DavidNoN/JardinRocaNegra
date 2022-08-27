@@ -159,12 +159,12 @@
     "id": 8,
     "name": "Albuca Augrabies",
     "description": "La Albuca 'Augrabies Hills' tiene hojas finas y glabras, de textura algo carnosa y estrechamente acanaladas. La inflorescencia mide unos 20 cm de altura con un pedúnculo glauco. Cada inflorescencia contiene de 3 a 5 flores. Los bulbos de esta especie se elevan por encima del suelo y las flores florecen cuando hay hojas.",
-    "price-collector": 8000,
+    "price-collector": 20000,
     "price-wholesale": 4000,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p7"
+      "p14"
     ],
     "quantity": 5,
     "cultivation": [
@@ -173,30 +173,30 @@
     "wholesale": true,
     "rating": 0,
     "photos": [ "8", "8.1" ],
-    "publishDate": "04/05/2022",
+    "publishDate": "10/05/2022",
     "state": true
   },
   {
     "id": 9,
     "name": "Agave Seemanniana subs. Pygmaea",
     "description": "Es un agave enano que a menudo desarrolla rosetas con algunos retoños. Forma parte del complejo variable de Agave seemanniana y podría ser simplemente una forma depauperada, consecuencia de su hábitat árido y calcáreo.",
-    "price-collector": 10000,
+    "price-collector": 8000,
     "price-wholesale": 5000,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p10"
+      "p7"
     ],
     "quantity": 5,
     "cultivation": [
       "full sun",
       "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
     "photos": [ "9", "9.1" ],
     "publishDate": "04/02/2022",
-    "state": false
+    "state": true
   },
   {
     "id": 10,
@@ -387,8 +387,8 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "18", "18.1" ],
-    "publishDate": "08/08/2022",
+    "photos": [ "18", "18.1", "18.2" ],
+    "publishDate": "09/08/2022",
     "state": true
   },
   {
@@ -500,14 +500,14 @@
   },
   {
     "id": 25,
-    "name": "Mammillaria Vetula Subsp. Gracilis",
-    "description":  "Mammillaria vetula subsp. gracilis (Mammillaria gracilis), es un pequeño cactus con cuerpo algo delgado, cilíndrico y de color verde brillante que se agrupa y ramifica libremente, pero cuyos vástagos se desprenden con facilidad. Los vástagos se desprenden fácilmente, por lo que la planta debe manejarse con cuidado; sin embargo, estos vástagos enraízan rápidamente si se colocan en el suelo. Los tubérculos son redondeados y cada uno de ellos está rematado por espinas blancas y rígidas, que irradian como una estrella, haciendo que la planta parezca cubierta de encaje. Hay una o varias espinas centrales más largas de color marrón oscuro. Las flores, de color blanco cremoso y con forma de campana, aparecen en primavera o a finales de verano-otoño. Con el tiempo, este cactus forma una gran mata redondeada. Normalmente la subespecie gracilis sólo tiene 11-16 radiales, a menudo carece de espinas centrales y las flores miden menos de 12 mm.",
-    "price-collector": 12000,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 25000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p10"
+      "p7"
     ],
     "quantity": 1,
     "cultivation": [
@@ -516,8 +516,8 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "25", "25.1"],
-    "publishDate": "04/28/2022",
+    "photos": [ "25"],
+    "publishDate": "09/30/2022",
     "state": true
   },
   {
@@ -560,7 +560,7 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "27"],
+    "photos": [ "27", "27.1", "27.2" ],
     "publishDate": "09/30/2022",
     "state": true
   },
@@ -588,14 +588,14 @@
   },
   {
     "id": 29,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 28000,
+    "name": "Astrophytum Myriostigma var. Tricostatum",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 40000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p7"
+      "p9"
     ],
     "quantity": 1,
     "cultivation": [
@@ -604,20 +604,20 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "29"],
-    "publishDate": "09/03/2022",
+    "photos": [ "29", "29.1", "29.2" ],
+    "publishDate": "10/30/2022",
     "state": true
   },
   {
     "id": 30,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 30000,
+    "name": "Astrophytum Capricorne var. Crassispinum",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 40000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p7"
+      "p9"
     ],
     "quantity": 1,
     "cultivation": [
@@ -626,8 +626,8 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "30"],
-    "publishDate": "09/04/2022",
+    "photos": [ "30", "30.1" ],
+    "publishDate": "10/30/2022",
     "state": true
   },
   {
@@ -676,11 +676,11 @@
   },
   {
     "id": 33,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
+    "name": "Astrophytum Capricorne var Minor",
+    "description":  "Astrophytum capricorne subesp. senil cv. Krausii es una variedad de Astrophytum senil con espinas de color blanco puro y una flor amarilla pero sin la típica garganta roja. Es una mutación estable y se hace realidad a partir de semillas.",
+    "price-collector": 40000,
     "price-wholesale": 0,
-    "discount": 0,
+    "discount": 0.10,
     "discount-wholesale": 0,
     "size": [
       "p7"
@@ -692,7 +692,7 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "33"],
+    "photos": [ "33", "33.1" ],
     "publishDate": "09/26/2022",
     "state": true
   },
@@ -714,7 +714,7 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "34", "34.1", "34.2", "34.3"],
+    "photos": [ "34", "34.1", "34.2" ],
     "publishDate": "09/15/2022",
     "state": true
   },
@@ -736,7 +736,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "35", "35.1" ],
-    "publishDate": "07/15/2022",
+    "publishDate": "09/15/2022",
     "state": true
   },
   {
@@ -802,7 +802,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "38", "38.1" ],
-    "publishDate": "08/15/2022",
+    "publishDate": "09/15/2022",
     "state": true
   },
   {
@@ -811,7 +811,7 @@
     "description": "La Euphorbia flanaganii es una suculenta baja, sin espinas, con muchas ramas, de hasta 5 cm de altura y 30 cm de ancho. Se la conoce comúnmente como planta Medusa, porque sus brazos postrados, parecidos a los de una serpiente, parecen mechones de pelo. El tallo central se funde con las raíces formando un cuerpo tuberoso (a menudo llamado caudex) con ramas que irradian de él. Si miras hacia abajo en un espécimen grande, verás lo que parece una flor del sol; es otro ejemplo de espiral de Fibonacci. Una planta bien cultivada es una alegría, especialmente cuando está en flor, pues entonces cada dedo serpenteante se cubre de fragantes flores amarillas y el conjunto es exquisito. Toda la planta produce una savia lechosa cáustica que puede provocar erupciones cutáneas, picores y malestar general.",
     "price-collector": 35000,
     "price-wholesale": 0,
-    "discount": 0,
+    "discount": 0.15,
     "discount-wholesale": 0,
     "size": [
       "p12"
@@ -911,6 +911,116 @@
     "rating": 0,
     "photos": [ "43" ],
     "publishDate": "09/26/2022",
+    "state": true
+  },
+  {
+    "id": 44,
+    "name": "Astrophytum Capricorne var Minor",
+    "description":  "Astrophytum capricorne subesp. senil cv. Krausii es una variedad de Astrophytum senil con espinas de color blanco puro y una flor amarilla pero sin la típica garganta roja. Es una mutación estable y se hace realidad a partir de semillas.",
+    "price-collector": 40000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "44", "44.1" ],
+    "publishDate": "10/26/2022",
+    "state": true
+  },
+  {
+    "id": 45,
+    "name": "Conophytum Calculus",
+    "description":  "Conophytum calculus es una forma local o morfológica del cálculo de Conophytum de cuerpo globular, que se encuentra muy al noreste, en Bushmanland, y difiere en sus colores y marcas epidérmicas.",
+    "price-collector": 60000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "45", "45.1", "45.2" ],
+    "publishDate": "10/26/2022",
+    "state": true
+  },
+  {
+    "id": 46,
+    "name": "Conophytum Maughanii",
+    "description":  "Es una especie subterránea incrustada en el suelo con hojas con ventanas que generalmente tiene un solo cuerpo o rara vez forma un grupo pequeño con pocas cabezas.",
+    "price-collector": 60000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "46", "46.1", "46.2" ],
+    "publishDate": "10/26/2022",
+    "state": true
+  },
+  {
+    "id": 47,
+    "name": "Conophytum Minimum Wittebergense",
+    "description":  "Conophytum wittebergense es uno de los innumerables ecotipos del muy variable Conophytum mínimo. Es una especie sobresaliente con cuerpos diminutos marcados con una red de puntos y líneas de color rojo oscuro en la parte superior. Muestra una increíble complejidad de patrones y los cultivadores se han entregado a una selección antinatural y las formas mejor marcadas son muy apreciadas. Algunos de ellos están bien decorados con fantásticas líneas rojas y otros son casi negros, debido a que las líneas se vuelven una masa sólida. Las pequeñas flores blancas son nocturnas y muy perfumadas. Es extremadamente decorativa incluso sin flores.",
+    "price-collector": 60000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "47", "47.1" ],
+    "publishDate": "10/26/2022",
+    "state": true
+  },
+  {
+    "id": 48,
+    "name": "Tephrocactus geometricus",
+    "description":  "Tephrocactus geometricus es una especie extraordinaria que muestra una fuerte adaptación al hábitat desértico extremo, con crecimiento enano y hábito geofítico. Es una de las especies de “opuntia” más llamativas y buscadas por los apasionados de los cactus, una extraña planta “geométrica” pero de fabulosas flores.",
+    "price-collector": 120000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p10"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "48", "48.1" ],
+    "publishDate": "10/26/2022",
     "state": true
   }
 ]
