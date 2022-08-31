@@ -672,7 +672,7 @@
     "rating": 0,
     "photos": [ "32", "32.1" ],
     "publishDate": "09/26/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 33,
@@ -955,7 +955,7 @@
     "rating": 0,
     "photos": [ "45", "45.1", "45.2" ],
     "publishDate": "10/26/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 46,
@@ -977,7 +977,7 @@
     "rating": 0,
     "photos": [ "46", "46.1", "46.2" ],
     "publishDate": "10/26/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 47,
@@ -999,7 +999,7 @@
     "rating": 0,
     "photos": [ "47", "47.1" ],
     "publishDate": "10/26/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 48,
@@ -1129,7 +1129,7 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "52" ],
+    "photos": [ "53" ],
     "publishDate": "09/30/2022",
     "state": true
   },
