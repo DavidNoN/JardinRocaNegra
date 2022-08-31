@@ -1005,7 +1005,7 @@
     "id": 48,
     "name": "Tephrocactus geometricus",
     "description":  "Tephrocactus geometricus es una especie extraordinaria que muestra una fuerte adaptación al hábitat desértico extremo, con crecimiento enano y hábito geofítico. Es una de las especies de “opuntia” más llamativas y buscadas por los apasionados de los cactus, una extraña planta “geométrica” pero de fabulosas flores.",
-    "price-collector": 120000,
+    "price-collector": 0,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -1021,6 +1021,182 @@
     "rating": 0,
     "photos": [ "48", "48.1" ],
     "publishDate": "10/26/2022",
+    "state": false
+  },
+  {
+    "id": 49,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 30000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "49" ],
+    "publishDate": "09/30/2022",
+    "state": true
+  },
+  {
+    "id": 50,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 35000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "50" ],
+    "publishDate": "09/30/2022",
+    "state": true
+  },
+  {
+    "id": 51,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 35000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "51" ],
+    "publishDate": "09/30/2022",
+    "state": true
+  },
+  {
+    "id": 52,
+    "name": "Gibbaeum Pubescens",
+    "description":  "Forma matas. En el hábitat forma grandes colonias compuestas por macizos elevados y prominentes que resultan llamativos en la vegetación arbustiva baja por el color blanquecino del follaje",
+    "price-collector": 25000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "52", "52.1", "52.2" ],
+    "publishDate": "09/30/2022",
+    "state": true
+  },
+  {
+    "id": 53,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 30000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "52" ],
+    "publishDate": "09/30/2022",
+    "state": true
+  },
+  {
+    "id": 54,
+    "name": "Gibbaeum Pubescens",
+    "description":  "Forma matas. En el hábitat forma grandes colonias compuestas por macizos elevados y prominentes que resultan llamativos en la vegetación arbustiva baja por el color blanquecino del follaje",
+    "price-collector": 60000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p10"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "54", "54.1", "54.2" ],
+    "publishDate": "09/30/2022",
+    "state": true
+  },
+  {
+    "id": 55,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 35000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "55" ],
+    "publishDate": "09/30/2022",
+    "state": true
+  },
+  {
+    "id": 56,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 25000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "56" ],
+    "publishDate": "09/30/2022",
     "state": true
   }
 ]
