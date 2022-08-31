@@ -1,11 +1,15 @@
-import React from 'react';
-import plantList from "../data/plants.json";
+import React, {useContext} from 'react';
+
 import PlantCard from "../Components/PlantCard";
 import Cover from "../Components/Cover";
 import { dateDiffInDays } from "../Utils/CalcDiffDays";
+import PlantSeedContext from "../Context/PlantSeedContext";
+import {IPlant} from "../Interfaces/IPlant";
 
 
 const NewPlants = () => {
+
+    const [plantList] = useContext(PlantSeedContext)
 
     const calcLastWeekPublished = ( date: string ): boolean => {
         const plantDate = new Date( date );
@@ -14,7 +18,7 @@ const NewPlants = () => {
         return diffDays <= 7;
     }
 
-    const listOfTests = plantList.map( data =>
+    const listOfTests = plantList.map( (data : IPlant) =>
         (
             calcLastWeekPublished( data.publishDate ) &&
             <PlantCard key={ data.id.toString() } plant={ data } wholesale={ false } showWholesalePrices={ false }/>

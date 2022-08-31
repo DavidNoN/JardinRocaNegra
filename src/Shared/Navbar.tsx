@@ -1,13 +1,28 @@
-import React, {LegacyRef} from 'react';
+import React, {useContext, useState} from 'react';
 import {Link, NavLink} from "react-router-dom";
 import '../index.css';
 import '../Styles/NavBar.scss';
 import {MenuItems} from "../Components/MenuApp";
 import {faSearch} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import PlantSeedContext from "../Context/PlantSeedContext";
+import {IPlant} from "../Interfaces/IPlant";
 
 
 const NavBar = () => {
+
+    const [plantList, setPlantList] = useContext(PlantSeedContext)
+
+    const [originalPlantList] = useState(plantList);
+
+    const searchPlantOrSeeds = (e: React.ChangeEvent<HTMLInputElement>) => {
+
+        setPlantList(originalPlantList);
+
+        setPlantList(originalPlantList.filter((plant : IPlant) => plant.name.toLowerCase().includes(e.target.value.toLowerCase())))
+
+    }
+
     return (
         <header className="header px-3 py-3 bg-orange" id="header">
             <nav className="navbar container">
@@ -21,6 +36,9 @@ const NavBar = () => {
                 <form className="col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto col-xxl-auto mb-3">
                     <div className="input-group">
                         <input type="text" className="form-control search-plant" placeholder="Busca una planta!"
+                               id="searcher"
+                               name="searcher"
+                               onChange={searchPlantOrSeeds}
                                aria-label="Recipient's username" aria-describedby="button-addon2"/>
                         <button className="btn btn-outline" type="button"
                                 id="button-addon2">

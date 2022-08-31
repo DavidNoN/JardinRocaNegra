@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import PlantCard from "../Components/PlantCard";
-import plantList from '../data/plants.json';
+import PlantSeedContext from "../Context/PlantSeedContext";
+import {IPlant} from "../Interfaces/IPlant";
+
 
 const Collectors = () => {
 
-    const listOfTests = plantList.map( data =>
+    const [plantList] = useContext(PlantSeedContext)
+
+    const listOfTests = plantList.map((data: IPlant) =>
         (
-            <PlantCard key={ data.id.toString() } plant={ data } wholesale={ false } showWholesalePrices={ false }/>
+            <PlantCard key={data.id.toString()} plant={data} wholesale={false} showWholesalePrices={false}/>
         )
     )
 

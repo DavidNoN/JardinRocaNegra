@@ -1,13 +1,16 @@
-import React, { ChangeEvent, useState } from 'react';
-import plantList from "../data/plants.json";
+import React, {ChangeEvent, useContext, useState} from 'react';
 import PlantCard from "../Components/PlantCard";
 import { GiKey } from "react-icons/gi";
+import PlantSeedContext from "../Context/PlantSeedContext";
+import {IPlant} from "../Interfaces/IPlant";
 
 const Wholesale = () => {
 
+    const [plantList] = useContext(PlantSeedContext)
+
     const [ showPrices, setShowPrices ] = useState( false );
 
-    const listOfTests = plantList.map( data =>
+    const listOfTests = plantList.map( (data : IPlant) =>
         (
             data.wholesale &&
             <PlantCard key={ data.id.toString() } plant={ data } wholesale={ true } showWholesalePrices={ showPrices }/>
