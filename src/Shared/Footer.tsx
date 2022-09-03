@@ -25,7 +25,7 @@ const MyComponent = () => {
                         <h5>Contáctanos</h5>
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2 c-pointer">
-                                <a href="https://api.whatsapp.com/send?phone=573106451029&text=¡Hola Jardín Roca Negra!, Estoy interesado/a en tus plantas" target="_blank">
+                                <a href="https://api.whatsapp.com/send?phone=573106451029&text=¡Hola Jardín Roca Negra!, Estoy interesado/a en tus plantas" target="_blank" rel="noreferrer">
                                     <FontAwesomeIcon icon={ faWhatsapp } className="whatsApp__contact"/>
                                 </a>
                             </li>
@@ -39,12 +39,12 @@ const MyComponent = () => {
                         <h5 className="text-center text-sm-center text-md-start text-lg-start text-xl-start text-xxl-start">Síguenos</h5>
                         <ul className="nav flex-row align-content-sm-center justify-content-center justify-content-sm-center justify-content-md-start justify-content-lg-start justify-content-xl-start justify-content-xxl-start">
                             <li className="nav-item mb-2 me-4">
-                                <a href="https://www.facebook.com/jardinrocanegra" target="_blank" className="nav-link p-0 text-muted">
+                                <a href="https://www.facebook.com/jardinrocanegra" target="_blank" className="nav-link p-0 text-muted" rel="noreferrer">
                                     <FontAwesomeIcon icon={ faFacebook } className="facebook__contact"/>
                                 </a>
                             </li>
                             <li className="nav-item mb-2">
-                                <a href="https://instagram.com/jardinrocanegra"  target="_blank" className="nav-link p-0 text-muted">
+                                <a href="https://instagram.com/jardinrocanegra"  target="_blank" className="nav-link p-0 text-muted" rel="noreferrer">
                                     <FontAwesomeIcon icon={ faInstagram } className="instagram__contact"/>
                                 </a>
                             </li>
