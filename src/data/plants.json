@@ -250,12 +250,11 @@
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "full sun",
       "p10"
     ],
     "quantity": 5,
     "cultivation": [
-      "light shade"
+      "full sun"
     ],
     "wholesale": true,
     "rating": 0,
