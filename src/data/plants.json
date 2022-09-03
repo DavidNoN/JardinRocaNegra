@@ -769,17 +769,16 @@
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p5"
+      "p10"
     ],
     "quantity": 1,
     "cultivation": [
-      "full sun",
-      "light shade"
+      "full sun"
     ],
     "wholesale": false,
     "rating": 0,
     "photos": [ "37", "37.1" ],
-    "publishDate": "09/15/2022",
+    "publishDate": "10/15/2022",
     "state": false
   },
   {
