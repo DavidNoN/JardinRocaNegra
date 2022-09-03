@@ -592,7 +592,7 @@
     "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 40000,
     "price-wholesale": 0,
-    "discount": 0,
+    "discount": 0.10,
     "discount-wholesale": 0,
     "size": [
       "p9"
@@ -763,9 +763,9 @@
   },
   {
     "id": 37,
-    "name": "Lithops Salicola Cv. 'Sato's Violet' Double-Head",
-    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 25000,
+    "name": "Opuntia Violacea var. Santa-Rita",
+    "description": "La Opuntia santa-rita es un arbusto suculento erguido de hasta 2 m de altura y 3 m de ancho con un tronco marcado, aunque corto. Es una especie muy atractiva con almohadillas rojizas o púrpuras. Las plantas pequeñas parecen ser las más coloridas. Las flores amarillas son impresionantes sobre las almohadillas púrpuras en primavera, sin duda una atracción.",
+    "price-collector": 15000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -779,8 +779,8 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "37" ],
-    "publishDate": "08/15/2022",
+    "photos": [ "37", "37.1" ],
+    "publishDate": "09/15/2022",
     "state": false
   },
   {
@@ -1113,9 +1113,9 @@
   },
   {
     "id": 53,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 30000,
+    "name": "Titanopsis Hugo-Schlechteri",
+    "description":  "Se trata de una planta suculenta con rosetas de varias cabezas, que formará pequeñas matas a medida que vaya envejeciendo. Las rosetas individuales tienen aproximadamente 4-5 cm de diámetro.",
+    "price-collector": 12000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -1129,8 +1129,8 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "53" ],
-    "publishDate": "09/30/2022",
+    "photos": [ "53", "53.1", "53.2" ],
+    "publishDate": "10/30/2022",
     "state": false
   },
   {
