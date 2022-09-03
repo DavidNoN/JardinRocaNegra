@@ -779,7 +779,7 @@
     "rating": 0,
     "photos": [ "37", "37.1" ],
     "publishDate": "10/15/2022",
-    "state": false
+    "state": true
   },
   {
     "id": 38,
@@ -1067,25 +1067,24 @@
   },
   {
     "id": 51,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
+    "name": "Acanthocereus Tetragonus cv. Fairytale Castle Variegado",
+    "description":  "\"Castillo de cuento de hadas\", \"Castillo de hadas\" o \"Dedo verde\" es el evocador nombre con el que se comercializa esta común planta suculenta y hace referencia a los numerosos tallos verticales de diferentes alturas que se asemejan a agujas y torretas. Este diminuto cultivar 'Fairy Castle' se descubrió en cultivo y es una planta muy popular que suele encontrarse en la parte de suculentas de las tiendas de venta al por menor. Algunos expertos clasifican el cactus como una forma monstruosa de Acanthocereus tetragonus (Acanthocereus floridianus), pero el verdadero ser de esta planta es controvertido y algunos sugieren que puede ser una forma de Cereus hildmannianus o incluso una forma enana de Cereus hildmannianus subs. uruguayanus. Sea cual sea el nombre científico correcto, la planta es un cactus delicioso.",
+    "price-collector": 80000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p7"
+      "p10"
     ],
     "quantity": 1,
     "cultivation": [
-      "full sun",
       "light shade"
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "51" ],
-    "publishDate": "09/30/2022",
-    "state": false
+    "photos": [ "51", "51.1" ],
+    "publishDate": "10/30/2022",
+    "state": true
   },
   {
     "id": 52,
@@ -1129,7 +1128,7 @@
     "rating": 0,
     "photos": [ "53", "53.1", "53.2" ],
     "publishDate": "10/30/2022",
-    "state": false
+    "state": true
   },
   {
     "id": 54,
