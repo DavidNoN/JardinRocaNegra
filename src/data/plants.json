@@ -474,7 +474,7 @@
     "rating": 0,
     "photos": [ "23", "23.1"],
     "publishDate": "04/15/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 24,
