@@ -456,14 +456,14 @@
   },
   {
     "id": 23,
-    "name": "Euphorbia Pulvinata",
-    "description":  "Es una suculenta dioica (con ejemplares masculinos y femeninos distintos) de bajo crecimiento, que en la naturaleza forma impresionantes pulvini (cojines) gigantes, compuestos por varios miles de pequeñas cabezas espinosas. En el suelo forma un llamativo cojín de hasta 1,5 (o más) metros de altura y de ancho. ¡¡¡Algunas plantas muy antiguas deben tener 40.000 cabezas o más!!! A veces varias plantas se agregan en masas de hasta tres metros de diámetro.",
-    "price-collector": 12000,
+    "name": "Titanopsis aff. Calcarea",
+    "description":  "Esta forma tiene hojas planas de color bronce y flores de color amarillo intenso",
+    "price-collector": 10000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p10"
+      "p7"
     ],
     "quantity": 1,
     "cultivation": [
@@ -474,7 +474,7 @@
     "rating": 0,
     "photos": [ "23", "23.1"],
     "publishDate": "04/15/2022",
-    "state": false
+    "state": true
   },
   {
     "id": 24,
@@ -935,9 +935,9 @@
   },
   {
     "id": 45,
-    "name": "Conophytum Calculus",
-    "description":  "Conophytum calculus es una forma local o morfológica del cálculo de Conophytum de cuerpo globular, que se encuentra muy al noreste, en Bushmanland, y difiere en sus colores y marcas epidérmicas.",
-    "price-collector": 60000,
+    "name": "Mammillaria Bocasana Cv. 'Fred'",
+    "description":  "Fred es uno de los más famosos y extraños cultivares de cactus monstruosos que forman globos verdes y rosas muy gomosos y blandos. Es una mutación que se formó en una Mammillaria bocasana normal... se cortó y empezó por sí sola. Este cultivar muestra muchas variaciones de crecimiento, con diferentes formas crestadas y monstruosas. La planta se parece más a una suculenta no cactácea que a un cactus. Rara vez tiene una espina o un pelo, flores monstruosas o crestadas. Puede agrandarse hasta formar racimos bajos y macizos.",
+    "price-collector": 12000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -951,9 +951,9 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "45", "45.1", "45.2" ],
-    "publishDate": "10/26/2022",
-    "state": false
+    "photos": [ "45", "45.1" ],
+    "publishDate": "11/26/2022",
+    "state": true
   },
   {
     "id": 46,
