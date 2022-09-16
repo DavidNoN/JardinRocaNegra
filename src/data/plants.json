@@ -371,9 +371,9 @@
   },
   {
     "id": 18,
-    "name": "Conophytum Hians",
+    "name": "Conophytum Hians 8 cabezas",
     "description": "Es una especie enana y apretada que forma esteras. En el cultivo es una planta rápida que produce demasiados cuerpos de forma apresurada. Este hábito persiste incluso con el riego más escaso.",
-    "price-collector": 40000,
+    "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -386,8 +386,8 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "18", "18.1", "18.2" ],
-    "publishDate": "09/08/2022",
+    "photos": [ "18", "18.1" ],
+    "publishDate": "11/08/2022",
     "state": true
   },
   {
@@ -501,7 +501,7 @@
     "id": 25,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
+    "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -516,7 +516,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "25"],
-    "publishDate": "09/30/2022",
+    "publishDate": "10/30/2022",
     "state": true
   },
   {
@@ -538,14 +538,14 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "26"],
-    "publishDate": "09/30/2022",
+    "publishDate": "10/30/2022",
     "state": true
   },
   {
     "id": 27,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 30000,
+    "price-collector": 25000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -559,8 +559,8 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "27", "27.1", "27.2" ],
-    "publishDate": "09/30/2022",
+    "photos": [ "27" ],
+    "publishDate": "10/30/2022",
     "state": true
   },
   {
@@ -979,9 +979,9 @@
   },
   {
     "id": 47,
-    "name": "Conophytum Minimum Wittebergense",
+    "name": "Conophytum Minimum Wittebergense 3 cabezas",
     "description":  "Conophytum wittebergense es uno de los innumerables ecotipos del muy variable Conophytum mínimo. Es una especie sobresaliente con cuerpos diminutos marcados con una red de puntos y líneas de color rojo oscuro en la parte superior. Muestra una increíble complejidad de patrones y los cultivadores se han entregado a una selección antinatural y las formas mejor marcadas son muy apreciadas. Algunos de ellos están bien decorados con fantásticas líneas rojas y otros son casi negros, debido a que las líneas se vuelven una masa sólida. Las pequeñas flores blancas son nocturnas y muy perfumadas. Es extremadamente decorativa incluso sin flores.",
-    "price-collector": 60000,
+    "price-collector": 80000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -996,7 +996,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "47", "47.1" ],
-    "publishDate": "10/26/2022",
+    "publishDate": "11/26/2022",
     "state": false
   },
   {
@@ -1023,9 +1023,9 @@
   },
   {
     "id": 49,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 30000,
+    "name": "lithops salicola 'sato's violet'",
+    "description":  "Lithops salicola cv. 'Bacchus', también se le conoce como 'Sato's violet' ,  sin duda uno de los cultivares mas espectaculares de lithops por su color violeta,  existen otros cultivares de colores similares pero cada uno con una tonalidad única, como por ejemplo ;  Optica 'Rubra' , Otzeniana 'Cesky granat',  Bromfieldii 'Embers' y Meyeri 'hummeruby'.",
+    "price-collector": 80000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -1040,14 +1040,14 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "49" ],
-    "publishDate": "09/30/2022",
+    "publishDate": "10/30/2022",
     "state": true
   },
   {
     "id": 50,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
+    "name": "lithops salicola 'sato's violet'",
+    "description":  "Lithops salicola cv. 'Bacchus', también se le conoce como 'Sato's violet' ,  sin duda uno de los cultivares mas espectaculares de lithops por su color violeta,  existen otros cultivares de colores similares pero cada uno con una tonalidad única, como por ejemplo ;  Optica 'Rubra' , Otzeniana 'Cesky granat',  Bromfieldii 'Embers' y Meyeri 'hummeruby'.",
+    "price-collector": 60000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -1062,7 +1062,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "50" ],
-    "publishDate": "09/30/2022",
+    "publishDate": "10/30/2022",
     "state": false
   },
   {
@@ -1171,14 +1171,14 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "55" ],
-    "publishDate": "09/30/2022",
+    "publishDate": "10/30/2022",
     "state": true
   },
   {
     "id": 56,
     "name": "Lithops Pack",
     "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 25000,
+    "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -1192,8 +1192,226 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "56" ],
-    "publishDate": "09/30/2022",
+    "photos": [ "56", "56.1" ],
+    "publishDate": "10/30/2022",
+    "state": true
+  },
+  {
+    "id": 57,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 30000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "57" ],
+    "publishDate": "10/30/2022",
+    "state": true
+  },
+  {
+    "id": 58,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 35000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "58" ],
+    "publishDate": "10/30/2022",
+    "state": true
+  },
+  {
+    "id": 59,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 35000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "59" ],
+    "publishDate": "10/30/2022",
+    "state": true
+  },
+  {
+    "id": 60,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 35000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "60" ],
+    "publishDate": "10/30/2022",
+    "state": true
+  },
+  {
+    "id": 61,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 35000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "61", "61.1" ],
+    "publishDate": "10/30/2022",
+    "state": true
+  },
+  {
+    "id": 62,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 30000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "62"],
+    "publishDate": "10/30/2022",
+    "state": true
+  },
+  {
+    "id": 63,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 30000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "63", "63.1" ],
+    "publishDate": "10/30/2022",
+    "state": true
+  },
+  {
+    "id": 64,
+    "name": "Lithops Pack",
+    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "price-collector": 30000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 1,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "64" ],
+    "publishDate": "10/30/2022",
+    "state": true
+  },
+  {
+    "id": 65,
+    "name": "Conophytum Pageae",
+    "description": "Las plantas están formadas por pequeños cuerpos carnosos que forman grupos compactos de hojas casi esféricas, soldadas hasta el punto de que sólo una muy pequeña diferencia separan a las dos hojas. En la naturaleza, los grupos de hojas se esconden entre las rocas y en las grietas, que retienen depósitos apreciable de arcilla y arena.",
+    "price-collector": 60000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "65", "65.1" ],
+    "publishDate": "11/08/2022",
+    "state": true
+  },
+  {
+    "id": 66,
+    "name": "Echeveria Cv 'Rain Drops'",
+    "description": "La Echeveria 'Raindrops' es una planta solitaria, de hasta 15 cm de diámetro, con hojas redondeadas de color verde pálido con márgenes rojizos pálidos y una única protuberancia globular de color verde azulado en el centro de cada hoja hacia la punta que se desarrolla con la edad. Estas protuberancias, similares a una gota de agua, son las que dan el nombre a esta planta única.",
+    "price-collector": 60000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p14"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "66", "66.1", "66.2", "66.3" ],
+    "publishDate": "11/08/2022",
     "state": true
   }
 ]
