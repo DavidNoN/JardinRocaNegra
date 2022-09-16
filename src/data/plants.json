@@ -260,7 +260,7 @@
     "rating": 0,
     "photos": [ "12", "12.1" ],
     "publishDate": "04/05/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 13,
@@ -997,7 +997,7 @@
     "rating": 0,
     "photos": [ "47", "47.1" ],
     "publishDate": "11/26/2022",
-    "state": false
+    "state": true
   },
   {
     "id": 48,
@@ -1063,7 +1063,7 @@
     "rating": 0,
     "photos": [ "50" ],
     "publishDate": "10/30/2022",
-    "state": false
+    "state": true
   },
   {
     "id": 51,
