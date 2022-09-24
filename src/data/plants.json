@@ -243,24 +243,24 @@
   },
   {
     "id": 12,
-    "name": "Opuntia Cochenillifera Variegada",
-    "description": "Es un conocido cactus arbustivo o arbóreo con varias ramas principales desde la base y una gran copa casi semiesférica de 3 a 4 metros de altura o más. En el pasado se utilizaba para la producción del insecto cochinilla (Dactylopious coccus Costa). De las hembras de los insectos cochinilla se extrae un tinte de color carmesí intenso. La cochinilla produce una gama de tonos escarlata, rosa y otros rojos a partir del colorante que se encuentra en los insectos cochinilla, el ácido carmínico. Se utilizaba para teñir tejidos, fibras y lana. Es posible que esta especie haya sido seleccionada por su falta de espinas en México, al igual que la Opuntia ficus-indica, para facilitar su cultivo.",
-    "price-collector": 10000,
-    "price-wholesale": 6000,
+    "name": "Albuca Concordiana",
+    "description": "Albuca concordiana (syn. Ornithogalum concordianum) es una pequeña planta perenne geófita que alcanza 20 cm de altura cuando está en flor, y que se desplaza lentamente para formar matas. Se distingue por sus hojas en forma de sacacorchos. Cuando comienza el letargo, aparece la inflorescencia, que pronto estalla con flores fragantes de pétalos amarillos brillantes con una ancha nervadura verde que sale del lado del tallo floral.",
+    "price-collector": 50000,
+    "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p10"
+      "p7"
     ],
     "quantity": 5,
     "cultivation": [
-      "full sun"
+      "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
     "photos": [ "12", "12.1" ],
-    "publishDate": "04/05/2022",
-    "state": false
+    "publishDate": "11/05/2022",
+    "state": true
   },
   {
     "id": 13,
@@ -388,7 +388,7 @@
     "rating": 0,
     "photos": [ "18", "18.1" ],
     "publishDate": "11/08/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 19,
@@ -653,14 +653,14 @@
   },
   {
     "id": 32,
-    "name": "Conophytum Cv. 'Fujinokoromo'",
-    "description": " Adromischus marianae f. herrei es un pequeño arbusto suculento de crecimiento lento y constreñido en la base, de tamaño variable hasta 10 cm de altura y con muchas ramas finas y muy cortas. Actualmente se cree que no es más que una población de Adromischus marianiae de color marrón rojizo con hojas muy ásperas que parecen pasas secas. Esta especie es variable y cada clon es distinto y vale la pena cultivar más de una muestra.",
-    "price-collector": 60000,
+    "name": "Echeveria Crestada Sp.",
+    "description": "Echeveria crestada con hojas verdes y puntas rojas si se ponen al sol",
+    "price-collector": 20000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p7"
+      "p10"
     ],
     "quantity": 2,
     "cultivation": [
@@ -865,7 +865,7 @@
     "rating": 0,
     "photos": [ "41", "41.1" ],
     "publishDate": "08/26/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 42,
@@ -973,15 +973,15 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "46", "46.1", "46.2" ],
+    "photos": [ "46", "46.1" ],
     "publishDate": "10/26/2022",
-    "state": false
+    "state": true
   },
   {
     "id": 47,
-    "name": "Conophytum Minimum Wittebergense 3 cabezas",
-    "description":  "Conophytum wittebergense es uno de los innumerables ecotipos del muy variable Conophytum mínimo. Es una especie sobresaliente con cuerpos diminutos marcados con una red de puntos y líneas de color rojo oscuro en la parte superior. Muestra una increíble complejidad de patrones y los cultivadores se han entregado a una selección antinatural y las formas mejor marcadas son muy apreciadas. Algunos de ellos están bien decorados con fantásticas líneas rojas y otros son casi negros, debido a que las líneas se vuelven una masa sólida. Las pequeñas flores blancas son nocturnas y muy perfumadas. Es extremadamente decorativa incluso sin flores.",
-    "price-collector": 80000,
+    "name": "Orbea Cooperii",
+    "description":  "Orbea cooperi, anteriormente descrita en el género Stultitia, es una planta perenne suculenta y sin hojas que forma pequeños grupos o esteras. Los tallos de O. cooperi son muy similares a los de Orbea variegata u Orbea verrucosa, pero las flores son bastante diferentes. En O. cooperi surgen de una a tres flores de la inflorescencia sésil cerca de la base de los tallos y la flor no suele tener más de 3,5 cm de diámetro y es aplanada, con un color rojizo intenso y un anillo más claro, ligeramente elevado y en forma de cojín, que forma los lados de un pequeño tubo de la corola. Este tubo es corto y sólo contiene la base del ginostegio. Los lóbulos exteriores de la corona se elevan y se extienden para apoyarse en su boca. O. cooperi está estrechamente relacionada con Orbea tapscottii.",
+    "price-collector": 15000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -997,13 +997,13 @@
     "rating": 0,
     "photos": [ "47", "47.1" ],
     "publishDate": "11/26/2022",
-    "state": false
+    "state": true
   },
   {
     "id": 48,
-    "name": "Tephrocactus geometricus",
+    "name": "Tephrocactus geometricus 3 Cabezas",
     "description":  "Tephrocactus geometricus es una especie extraordinaria que muestra una fuerte adaptación al hábitat desértico extremo, con crecimiento enano y hábito geofítico. Es una de las especies de “opuntia” más llamativas y buscadas por los apasionados de los cactus, una extraña planta “geométrica” pero de fabulosas flores.",
-    "price-collector": 0,
+    "price-collector": 270000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -1018,8 +1018,8 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "48", "48.1" ],
-    "publishDate": "10/26/2022",
-    "state": false
+    "publishDate": "11/26/2022",
+    "state": true
   },
   {
     "id": 49,
@@ -1041,7 +1041,7 @@
     "rating": 0,
     "photos": [ "49" ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 50,
@@ -1391,7 +1391,7 @@
     "rating": 0,
     "photos": [ "65", "65.1" ],
     "publishDate": "11/08/2022",
-    "state": false
+    "state": true
   },
   {
     "id": 66,
