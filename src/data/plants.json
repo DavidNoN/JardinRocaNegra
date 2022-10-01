@@ -1498,5 +1498,26 @@
     "photos": [ "70", "70.1" ],
     "publishDate": "11/08/2022",
     "state": true
+  },
+  {
+    "id": 71,
+    "name": "Lithops Optica cv. 'Rubra' ~1cm",
+    "description": " Lithops optica cv. rubra no es el Lithops más fácil de cultivar y hay que tener mucho cuidado con el suelo, la temperatura, el tiempo y la cantidad de riego. Es una especie de crecimiento invernal y se dirige al letargo en verano.",
+    "price-collector": 15000,
+    "price-wholesale": 10000,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p5"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "71" ],
+    "publishDate": "11/08/2022",
+    "state": true
   }
 ]
