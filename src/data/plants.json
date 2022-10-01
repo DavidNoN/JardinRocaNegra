@@ -371,9 +371,9 @@
   },
   {
     "id": 18,
-    "name": "Conophytum Hians 8 cabezas",
-    "description": "Es una especie enana y apretada que forma esteras. En el cultivo es una planta rápida que produce demasiados cuerpos de forma apresurada. Este hábito persiste incluso con el riego más escaso.",
-    "price-collector": 30000,
+    "name": "Conophytum Pellucidum 3 cabezas",
+    "description": "El Conophytum pellucidum es una pequeña planta perenne-suculenta densamente ramificada que recibe su nombre por su ápice pelúcido. Es una especie hermosa y variable que está muy extendida en el hábitat y es posible reconocer a la vista muchos cientos de poblaciones, cada una de las cuales muestra diferencias sutiles o incluso grandes. Forma macizos bajos o esteras",
+    "price-collector": 25000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -671,7 +671,7 @@
     "rating": 0,
     "photos": [ "32", "32.1" ],
     "publishDate": "09/26/2022",
-    "state": false
+    "state": true
   },
   {
     "id": 33,
@@ -719,9 +719,9 @@
   },
   {
     "id": 35,
-    "name": "Monadenium Ellenbeckii ",
-    "description": "Monadenium ellenbeckii es una hierba perenne suculenta de bajo crecimiento con tallos carnosos en forma de serpiente que surgen de una base central",
-    "price-collector": 15000,
+    "name": "Agave Isthmensis cv. 'Ouhi-Raijin' variegado",
+    "description": " Se trata de la forma enana, de pequeño crecimiento y variegada de Agave istmensis (potatorum). Este cultivar también se encuentra bajo algunos nombres diferentes como: Agave istmensis f. compacta mediopicta, o con los nombres japoneses Agave isthmensis cv. Orhi Razin Shirifukurin, Ouhi-Raiji o symply Hoi. Otros nombres son: Agave potatorum cv. Ouhi-Raijin variegata. Brota con facilidad las crías/los retoños a medida que la planta madre madura.",
+    "price-collector": 80000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -734,9 +734,9 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "35", "35.1" ],
+    "photos": [ "35" ],
     "publishDate": "09/15/2022",
-    "state": false
+    "state": true
   },
   {
     "id": 36,
@@ -973,8 +973,8 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "46", "46.1" ],
-    "publishDate": "10/26/2022",
+    "photos": [ "46" ],
+    "publishDate": "11/26/2022",
     "state": true
   },
   {
@@ -1023,9 +1023,9 @@
   },
   {
     "id": 49,
-    "name": "lithops salicola 'sato's violet'",
-    "description":  "Lithops salicola cv. 'Bacchus', también se le conoce como 'Sato's violet' ,  sin duda uno de los cultivares mas espectaculares de lithops por su color violeta,  existen otros cultivares de colores similares pero cada uno con una tonalidad única, como por ejemplo ;  Optica 'Rubra' , Otzeniana 'Cesky granat',  Bromfieldii 'Embers' y Meyeri 'hummeruby'.",
-    "price-collector": 60000,
+    "name": "Lithops salicola C351 2.2cm",
+    "description":  "Lithops salicola C351 TL: 10 km al oeste de Luckhoff, Sudáfrica cv. Malachite es una bonita forma de Lithops salicola. Presenta una coloración verde muy peculiar.",
+    "price-collector": 20000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -1040,14 +1040,14 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "49" ],
-    "publishDate": "10/30/2022",
-    "state": false
+    "publishDate": "11/30/2022",
+    "state": true
   },
   {
     "id": 50,
-    "name": "lithops salicola 'sato's violet'",
-    "description":  "Lithops salicola cv. 'Bacchus', también se le conoce como 'Sato's violet' ,  sin duda uno de los cultivares mas espectaculares de lithops por su color violeta,  existen otros cultivares de colores similares pero cada uno con una tonalidad única, como por ejemplo ;  Optica 'Rubra' , Otzeniana 'Cesky granat',  Bromfieldii 'Embers' y Meyeri 'hummeruby'.",
-    "price-collector": 60000,
+    "name": "Orbea Speciosa",
+    "description":  "La Orbea speciosa es una suculenta enana de tallo blando bastante extendida en el cultivo por sus atractivas flores moteadas de color amarillo brillante. Cuando envejece forma grandes macizos o alfombras de vegetación.",
+    "price-collector": 15000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -1061,8 +1061,8 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "50" ],
-    "publishDate": "10/30/2022",
+    "photos": [ "50", "50.1" ],
+    "publishDate": "11/30/2022",
     "state": true
   },
   {
@@ -1411,6 +1411,91 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "66", "66.1", "66.2", "66.3" ],
+    "publishDate": "11/08/2022",
+    "state": true
+  },
+  {
+    "id": 67,
+    "name": "Alluaudia Procera",
+    "description": "Alluaudia procera es un pequeño árbol suculento, espinoso y escasamente ramificado u ocasionalmente columnar, con un hábito muy erguido que se parece mucho a una 'corona de espinas'. La planta puede crecer bastante, entre 1,5 y 3 m de altura en interiores y hasta 18 m en sus lugares de origen (pero la planta cultivada rara vez supera los 8 m de altura). En sus primeros años esta planta crece como un arbusto. Más tarde aparece su forma de árbol maduro, que es la única Didiereacea verdaderamente leñosa. Se puede identificar a distancia por las inflorescencias terminales esféricas que se balancean en la parte superior de cada rama.",
+    "price-collector": 35000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p10"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "67" ],
+    "publishDate": "11/08/2022",
+    "state": true
+  },
+  {
+    "id": 68,
+    "name": "Aloionopsis Luckhoffii 2 cabezas",
+    "description": "La Aloinopsis luckhoffii es una de las innumerables y controvertidas formas y variedades del muy variable complejo Aloinopsis luckhoffii que comprende varias especies que han recibido numerosos nombres. En un lado del complejo, Aloinopsis setifera se distingue por las verrugas alargadas y extremadamente peludas, mientras que en el otro extremo de la escala, Aloinopsis villetii sólo tiene verrugas muy poco elevadas. Aloinopsis luckhoffii y Aloinopsis lodewykii presentan verrugas bien desarrolladas de longitud intermedia entre las dos anteriores.Hábitat: Es una pequeña suculenta que forma densas matas de rosetas bajas y agrupadas",
+    "price-collector": 25000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p8"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "68" ],
+    "publishDate": "11/08/2022",
+    "state": true
+  },
+  {
+    "id": 69,
+    "name": "Haworthia Retusa cv. 'Milky Way'",
+    "description": "Hibrido",
+    "price-collector": 8000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p8"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "69" ],
+    "publishDate": "11/08/2022",
+    "state": true
+  },
+  {
+    "id": 70,
+    "name": "Mammillaria Elongata f. Cristata",
+    "description": "La Mammillaria elongata es una suculenta cubierta del suelo, que forma con el tiempo un apretado grupo de tallos erectos, ascendentes, postrados o recostados. Puede ser la Mammillaria más común que se puede encontrar y se presenta en más variaciones que cualquier otra especie de Mammillaria.",
+    "price-collector": 15000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p8"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": false,
+    "rating": 0,
+    "photos": [ "70", "70.1" ],
     "publishDate": "11/08/2022",
     "state": true
   }
