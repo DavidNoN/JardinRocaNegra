@@ -196,7 +196,7 @@
     "rating": 0,
     "photos": [ "9", "9.1" ],
     "publishDate": "04/02/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 10,
@@ -736,7 +736,7 @@
     "rating": 0,
     "photos": [ "35", "35.1" ],
     "publishDate": "09/15/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 36,
