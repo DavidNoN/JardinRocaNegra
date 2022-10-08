@@ -153,7 +153,7 @@
     "rating": 0,
     "photos": [ "7", "7.1" ],
     "publishDate": "04/0/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 8,
@@ -195,8 +195,8 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "9", "9.1" ],
-    "publishDate": "04/02/2022",
-    "state": false
+    "publishDate": "11/02/2022",
+    "state": true
   },
   {
     "id": 10,
@@ -756,8 +756,8 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "36", "36.1", "36.2", "36.3" ],
-    "publishDate": "08/15/2022",
+    "photos": [ "36", "36.1", "36.2" ],
+    "publishDate": "11/15/2022",
     "state": true
   },
   {
@@ -779,7 +779,7 @@
     "rating": 0,
     "photos": [ "37", "37.1" ],
     "publishDate": "10/15/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 38,
@@ -979,14 +979,14 @@
   },
   {
     "id": 47,
-    "name": "Orbea Cooperii",
-    "description":  "Orbea cooperi, anteriormente descrita en el género Stultitia, es una planta perenne suculenta y sin hojas que forma pequeños grupos o esteras. Los tallos de O. cooperi son muy similares a los de Orbea variegata u Orbea verrucosa, pero las flores son bastante diferentes. En O. cooperi surgen de una a tres flores de la inflorescencia sésil cerca de la base de los tallos y la flor no suele tener más de 3,5 cm de diámetro y es aplanada, con un color rojizo intenso y un anillo más claro, ligeramente elevado y en forma de cojín, que forma los lados de un pequeño tubo de la corola. Este tubo es corto y sólo contiene la base del ginostegio. Los lóbulos exteriores de la corona se elevan y se extienden para apoyarse en su boca. O. cooperi está estrechamente relacionada con Orbea tapscottii.",
-    "price-collector": 15000,
+    "name": "Euphorbia Suzannae Cluster",
+    "description":  "Crecen en pequeñas poblaciones, a veces con sólo unos pocos individuos en terrenos muy arenosos y pedregosos, a menudo con cuarzo blanco en la superficie. Se encuentran en lugares abiertos o parcialmente a la sombra de pequeños arbustos. La mayoría de las plantas son crípticas (crecen completamente bajo tierra con sólo las puntas de los tallos por encima del nivel del suelo) mientras que algunas crecen totalmente por encima del suelo y tienen forma de media esfera o de cojín (como en el cultivo).",
+    "price-collector": 55000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p7"
+      "p10"
     ],
     "quantity": 1,
     "cultivation": [
@@ -996,7 +996,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "47", "47.1" ],
-    "publishDate": "11/26/2022",
+    "publishDate": "12/26/2022",
     "state": true
   },
   {
@@ -1045,9 +1045,9 @@
   },
   {
     "id": 50,
-    "name": "Orbea Speciosa",
-    "description":  "La Orbea speciosa es una suculenta enana de tallo blando bastante extendida en el cultivo por sus atractivas flores moteadas de color amarillo brillante. Cuando envejece forma grandes macizos o alfombras de vegetación.",
-    "price-collector": 15000,
+    "name": "Conophytum Uviforme 4 cabezas",
+    "description":  "El Conophytum uviforme es una suculenta perenne enana, de hasta 4 cm de altura, que a menudo forma matas o cúpulas bastante grandes de cuerpos pequeños pero bien marcados de color verde grisáceo a terroso. Es una de las especies más populares cultivadas por los coleccionistas. Algunos ejemplares tienen colores y marcas muy atractivos.",
+    "price-collector": 80000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -1062,7 +1062,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "50", "50.1" ],
-    "publishDate": "11/30/2022",
+    "publishDate": "12/30/2022",
     "state": true
   },
   {
@@ -1459,9 +1459,9 @@
   },
   {
     "id": 69,
-    "name": "Haworthia Retusa cv. 'Milky Way'",
-    "description": "Hibrido",
-    "price-collector": 8000,
+    "name": "Aloinopsis Malherbei",
+    "description": "Aloinopsis malherbei es una perenne-suculenta críptica con hojas planas, gris azuladas, en forma de abanico y espatuladas, similares en forma y textura a Aloinopsis spathulata y Titanopsis calcarea. Todas estas especies tienen puntas romas en sus hojas, que están densamente cubiertas de prominentes tubérculos blancos. Los grupos de estas plantas se asemejan a los afloramientos de piedra caliza entre los que crecen. En la naturaleza, estas plantas suelen estar cubiertas de tierra fina y sólo se ven los márgenes de las hojas.",
+    "price-collector": 15000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -1474,8 +1474,8 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "69" ],
-    "publishDate": "11/08/2022",
+    "photos": [ "69", "69.1" ],
+    "publishDate": "12/08/2022",
     "state": true
   },
   {
@@ -1518,6 +1518,137 @@
     "rating": 0,
     "photos": [ "71" ],
     "publishDate": "11/08/2022",
+    "state": true
+  },
+  {
+    "id": 72,
+    "name": "Lophophora Williamsi 'Peyote'",
+    "description": "Crece en una zona que se extiende desde el desierto de Chihuahua hasta las llanuras del sur de Texas, a ambos lados del río Grande medio y bajo, hacia el sur hasta los estados mexicanos de Chihuahua, Coahuila, Durango, Nuevo León, San Luis Potosí, Tamaulipas y Zacatecas. Existen extensos rodales de peyote en las colinas bajas y rocosas de los condados de Starr, Zapata, Webb y Jim Hogg del sur de Texas.",
+    "price-collector": 80000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p8"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "72" ],
+    "publishDate": "12/08/2022",
+    "state": true
+  },
+  {
+    "id": 73,
+    "name": "Lophophora Diffusa",
+    "description": "Cactus globular sin espinas con una gran raíz pivotante. Solitario o formando matas de tallos variables con pocos tallos o, a veces, un gran grupo amontonado con varias cabezas. Es la especie más primitiva de Lophophora.",
+    "price-collector": 80000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "73", "73.1" ],
+    "publishDate": "12/08/2022",
+    "state": true
+  },
+  {
+    "id": 74,
+    "name": "Adromischus Marianiae var. Antidorcadum",
+    "description": "A. marianae var. antidorcatum es una suculenta arbustiva muy buscada que pertenece a la familia botánica de las Crassulaceae. La planta es erecta, forma un racimo de hojas distintivas y puede alcanzar hasta 10 cm de altura.",
+    "price-collector": 30000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "74", "74.1" ],
+    "publishDate": "12/08/2022",
+    "state": true
+  },
+  {
+    "id": 75,
+    "name": "Epithelanta Micromeris",
+    "description": "Epithelantha micromeris es un cactus globoso en miniatura, erguido, sin ramas o en pequeños grupos, no muy arraigado en el sustrato, de aspecto gris ceniza y relativamente áspero en general.",
+    "price-collector": 30000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "75", "75.1" ],
+    "publishDate": "12/08/2022",
+    "state": true
+  },
+  {
+    "id": 76,
+    "name": "Echinopsis Crestado Sp.",
+    "description": "Hibrido",
+    "price-collector": 50000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "76", "76.1" ],
+    "publishDate": "12/08/2022",
+    "state": true
+  },
+  {
+    "id": 77,
+    "name": "Sulcorebutia Patricii",
+    "description": "Sulcorebutia patriciae es una de las formas locales de la variable Rebutia canigueralii subs. crispata. Sulcorebutia patriciae, Sulcorebutia gerosenilis y Sulcorebutia hertusii son sinónimos y no son fácilmente separables por ningún carácter, si no es por la procedencia geográfica (puede ser que las espinas sean más amarillas y retorcidas en patriciae).",
+    "price-collector": 30000,
+    "price-wholesale": 0,
+    "discount": 0,
+    "discount-wholesale": 0,
+    "size": [
+      "p7"
+    ],
+    "quantity": 5,
+    "cultivation": [
+      "full sun",
+      "light shade"
+    ],
+    "wholesale": true,
+    "rating": 0,
+    "photos": [ "77", "77.1" ],
+    "publishDate": "12/08/2022",
     "state": true
   }
 ]
