@@ -1536,7 +1536,7 @@
       "full sun",
       "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
     "photos": [ "72" ],
     "publishDate": "12/08/2022",
@@ -1558,7 +1558,7 @@
       "full sun",
       "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
     "photos": [ "73", "73.1" ],
     "publishDate": "12/08/2022",
@@ -1579,7 +1579,7 @@
     "cultivation": [
       "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
     "photos": [ "74", "74.1" ],
     "publishDate": "12/08/2022",
@@ -1601,7 +1601,7 @@
       "full sun",
       "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
     "photos": [ "75", "75.1" ],
     "publishDate": "12/08/2022",
@@ -1623,7 +1623,7 @@
       "full sun",
       "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
     "photos": [ "76", "76.1" ],
     "publishDate": "12/08/2022",
@@ -1645,7 +1645,7 @@
       "full sun",
       "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
     "photos": [ "77", "77.1" ],
     "publishDate": "12/08/2022",
