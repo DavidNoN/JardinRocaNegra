@@ -371,9 +371,9 @@
   },
   {
     "id": 18,
-    "name": "Conophytum Pellucidum 3 cabezas",
-    "description": "El Conophytum pellucidum es una pequeña planta perenne-suculenta densamente ramificada que recibe su nombre por su ápice pelúcido. Es una especie hermosa y variable que está muy extendida en el hábitat y es posible reconocer a la vista muchos cientos de poblaciones, cada una de las cuales muestra diferencias sutiles o incluso grandes. Forma macizos bajos o esteras",
-    "price-collector": 25000,
+    "name": "Conophytum Piluliforme 3 cabezas",
+    "description": "Conophytum piluliforme var. advenum, conocida anteriormente como una especie distinta, es uno de los innumerables ecotipos de Conophytum piluliforme. Se trata de una especie destacada con cuerpos diminutos manchados sin lóbulos y flores de sólo 4-8 mm de diámetro.",
+    "price-collector": 35000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -386,14 +386,14 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "18", "18.1" ],
-    "publishDate": "11/08/2022",
+    "photos": [ "18" ],
+    "publishDate": "12/08/2022",
     "state": true
   },
   {
     "id": 19,
-    "name": "Euphorbia Decaryi",
-    "description": "La Euphorbia decaryi es una suculenta pequeña y perenne, con un desarrollo similar al de un arbusto y hermosas hojas onduladas y con bordes en zigzag. Es una especie formadora de esteras y se extiende casi horizontalmente en el suelo por medio de rizomas. La forma de crecimiento de la Euphorbia decaryi ilustra el típico hábito horizontal de la mayoría de las euforbias malgaches. Es una de las euforbias más populares y cultivadas de Madagascar.",
+    "name": "Huernia Zebrina",
+    "description": "La Huernia zebrina (también conocida como ojos de búho) es una especie suculenta perenne de bajo crecimiento, más o menos rastrera, que ocasionalmente forma esteras. Es una de las huernias de más bella floración y muy popular en el cultivo por sus extrañas floraciones. Presenta un anillo o \"anillo\" rojo vino elevado y brillante alrededor de la boca del tubo de la corola. La corola varía en tamaño y suele tener un patrón de rayas de cebra de color rojo vino que varían notablemente en intensidad de color. Se trata de una de las llamadas huernias \"salvavidas\", por el anillo brillante en relieve.",
     "price-collector": 10000,
     "price-wholesale": 0,
     "discount": 0,
@@ -408,7 +408,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "19", "19.1"],
-    "publishDate": "08/10/2022",
+    "publishDate": "12/10/2022",
     "state": true
   },
   {
@@ -521,9 +521,9 @@
   },
   {
     "id": 26,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 25000,
+    "name": "Dinteranthus Vanzylii",
+    "description":  "Dinteranthus vanzylii es una intrigante planta solitaria o en macizo con atractivos cuerpos y flores que es muy similar al Lithops en cuanto a forma y colores, pero sin periodo de inactividad aparente. Su forma de crecimiento hundida se entiende como un desarrollo paralelo al de Lithops. La otra especie de Dinteranthus crece por encima del suelo.",
+    "price-collector": 20000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -537,20 +537,20 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "26"],
-    "publishDate": "10/30/2022",
+    "photos": [ "26", "26.1", "26.2" ],
+    "publishDate": "12/30/2022",
     "state": true
   },
   {
     "id": 27,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 25000,
+    "name": "Echeveria Cv. \"Baron Bold\"",
+    "description":  "Hybrid",
+    "price-collector": 50000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p7"
+      "p10"
     ],
     "quantity": 1,
     "cultivation": [
@@ -560,7 +560,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "27" ],
-    "publishDate": "10/30/2022",
+    "publishDate": "12/30/2022",
     "state": true
   },
   {
@@ -1023,9 +1023,9 @@
   },
   {
     "id": 49,
-    "name": "Lithops salicola C351 3cm",
-    "description":  "Lithops salicola C351 TL: 10 km al oeste de Luckhoff, Sudáfrica cv. Malachite es una bonita forma de Lithops salicola. Presenta una coloración verde muy peculiar.",
-    "price-collector": 25000,
+    "name": "Conphytum Hians 7 Cabezas Adulto",
+    "description":  "",
+    "price-collector": 60000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
@@ -1040,7 +1040,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "49" ],
-    "publishDate": "11/30/2022",
+    "publishDate": "12/30/2022",
     "state": true
   },
   {
@@ -1063,7 +1063,7 @@
     "rating": 0,
     "photos": [ "50", "50.1" ],
     "publishDate": "12/30/2022",
-    "state": true
+    "state": false
   },
   {
     "id": 51,
@@ -1154,14 +1154,14 @@
   },
   {
     "id": 55,
-    "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
-    "price-collector": 35000,
+    "name": "Eulychnia Castanea cv. Varispiralis Monstruos Form",
+    "description":  "Esta extraña planta se conoce en el cultivo con bastantes nombres diferentes (entre ellos, \"spiralis\", \"varispiralis\", \"spiraliforme\", \"mostruosa\", \"monstrose\", \"monstrous\" ) Es un cultivar variable del que podemos distinguir al menos cuatro formas básicas de crecimiento",
+    "price-collector": 120000,
     "price-wholesale": 0,
     "discount": 0,
     "discount-wholesale": 0,
     "size": [
-      "p7"
+      "p10"
     ],
     "quantity": 1,
     "cultivation": [
@@ -1171,7 +1171,7 @@
     "wholesale": false,
     "rating": 0,
     "photos": [ "55" ],
-    "publishDate": "10/30/2022",
+    "publishDate": "12/30/2022",
     "state": true
   },
   {
