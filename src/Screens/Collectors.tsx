@@ -10,6 +10,7 @@ const Collectors = () => {
 
     const listOfTests = plantList.map((data: IPlant) =>
         (
+            data["price-collector"] > 0 &&
             <PlantCard key={data.id.toString()} plant={data} wholesale={false} showWholesalePrices={false}/>
         )
     )
