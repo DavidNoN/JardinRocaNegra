@@ -1843,7 +1843,7 @@
       "full sun",
       "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
     "photos": [ "86", "86.1" ],
     "publishDate": "01/08/2023",
@@ -1865,7 +1865,7 @@
       "full sun",
       "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
     "photos": [ "87", "87.1" ],
     "publishDate": "01/08/2023",
@@ -1887,7 +1887,7 @@
       "full sun",
       "light shade"
     ],
-    "wholesale": true,
+    "wholesale": false,
     "rating": 0,
     "photos": [ "88", "88.1" ],
     "publishDate": "01/08/2023",
