@@ -44,7 +44,7 @@ const PlantCard = ({
                 )
             }
         } else if (!wholesale) {
-            if (discount > 0) {
+            if (discount > 0 && price > 0) {
                 return (
                     <div className="d-flex justify-content-between flex-wrap-reverse">
                         <div className="text-decoration-line-through text-muted">
@@ -58,7 +58,9 @@ const PlantCard = ({
                         </div>
                     </div>)
             } else {
-                return currencyFormat(price);
+                if (price > 0) {
+                    return currencyFormat(price);
+                }
             }
         }
     }
