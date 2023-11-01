@@ -1,0 +1,30 @@
+
+.ant-layout {
+  background: #EEEEEE;
+}
+
+.ant-layout-sider {
+  background: #D6249F;
+  background: url("../assets/sidebar.png"), linear-gradient(180deg, rgba(214,36,159,1) 56%, rgba(114,169,98,1) 85%, rgba(113,202,177,1) 100%) !important;
+  background-size: 50%, cover !important;
+  background-repeat: no-repeat !important;
+  background-position: 20% 80%, center !important;
+  box-shadow: 8px 16px 15px -3px rgba(0,0,0,0.1) !important;
+  border-radius: 0 0 10px 10px;
+  margin-right: 10px;
+}
+
+.ant-layout-sider-trigger {
+  position: unset !important;
+  background-color: transparent !important;
+}
+
+.ant-float-btn-body {
+  display: unset !important;
+}
+
+.ant-float-btn-icon {
+  width: unset !important;
+  line-height: 6 !important;
+  font-size: unset !important;
+}

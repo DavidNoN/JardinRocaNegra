@@ -18,9 +18,19 @@
     ],
     "wholesale": true,
     "rating": 5,
-    "photos": [ "1", "1.1", "1.2", "1.4" ],
+    "photos": [
+      "1",
+      "1.1",
+      "1.2",
+      "1.4"
+    ],
     "publishDate": "04/05/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 2,
@@ -41,9 +51,18 @@
     ],
     "wholesale": true,
     "rating": 2,
-    "photos": [ "2", "2.1", "2.2" ],
+    "photos": [
+      "2",
+      "2.1",
+      "2.2"
+    ],
     "publishDate": "04/05/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 3,
@@ -63,9 +82,18 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "3", "3.1", "3.2" ],
+    "photos": [
+      "3",
+      "3.1",
+      "3.2"
+    ],
     "publishDate": "04/05/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 4,
@@ -85,9 +113,18 @@
     ],
     "wholesale": true,
     "rating": 5,
-    "photos": [ "4", "4.1", "4.2" ],
+    "photos": [
+      "4",
+      "4.1",
+      "4.2"
+    ],
     "publishDate": "04/05/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 5,
@@ -107,9 +144,18 @@
     ],
     "wholesale": true,
     "rating": 5,
-    "photos": [ "5", "5.2", "5.1" ],
+    "photos": [
+      "5",
+      "5.2",
+      "5.1"
+    ],
     "publishDate": "04/05/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 6,
@@ -129,9 +175,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "6", "6.1" ],
+    "photos": [
+      "6",
+      "6.1"
+    ],
     "publishDate": "04/05/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 7,
@@ -151,9 +205,17 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "7", "7.1" ],
+    "photos": [
+      "7",
+      "7.1"
+    ],
     "publishDate": "04/0/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 8,
@@ -172,9 +234,18 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "8", "8.1" ],
+    "photos": [
+      "8",
+      "8.1"
+    ],
     "publishDate": "10/05/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent",
+      "bulb"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 9,
@@ -194,9 +265,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "9", "9.1" ],
+    "photos": [
+      "9",
+      "9.1"
+    ],
     "publishDate": "11/02/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 10,
@@ -215,9 +294,16 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "10" ],
+    "photos": [
+      "10"
+    ],
     "publishDate": "04/05/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 11,
@@ -237,9 +323,16 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "11" ],
+    "photos": [
+      "11"
+    ],
     "publishDate": "04/02/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 12,
@@ -258,9 +351,18 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "12", "12.1" ],
+    "photos": [
+      "12",
+      "12.1"
+    ],
     "publishDate": "11/05/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent",
+      "bulb"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 13,
@@ -280,9 +382,16 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "13" ],
+    "photos": [
+      "13"
+    ],
     "publishDate": "04/05/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 14,
@@ -302,9 +411,17 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "14.1", "14" ],
+    "photos": [
+      "14.1",
+      "14"
+    ],
     "publishDate": "04/05/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 15,
@@ -323,9 +440,18 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "15", "15.1", "15.2" ],
+    "photos": [
+      "15",
+      "15.1",
+      "15.2"
+    ],
     "publishDate": "04/02/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 16,
@@ -344,9 +470,17 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "16", "16.1" ],
+    "photos": [
+      "16",
+      "16.1"
+    ],
     "publishDate": "04/02/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 17,
@@ -365,9 +499,17 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "17", "17.1" ],
+    "photos": [
+      "17",
+      "17.1"
+    ],
     "publishDate": "04/08/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 18,
@@ -386,9 +528,16 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "18" ],
+    "photos": [
+      "18"
+    ],
     "publishDate": "12/08/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 19,
@@ -407,14 +556,21 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "19" ],
+    "photos": [
+      "19"
+    ],
     "publishDate": "12/10/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 20,
     "name": "Opuntia Monacantha fma. Monstruosa variegada",
-    "description":  "La Opuntia monacantha f. monstruosa variegata, conocida comúnmente como \"Joseph's Coat\", es uno de los pocos cactus naturales de color blanco variegado. Se trata de una variante teratológica enana del cactus más grande Opuntia monacantha. Como su nombre indica, este cactus está abigarrado o jaspeado de blanco, blanco-crema, amarillo, verde y, a veces, también de rosa, en distintos patrones.",
+    "description": "La Opuntia monacantha f. monstruosa variegata, conocida comúnmente como \"Joseph's Coat\", es uno de los pocos cactus naturales de color blanco variegado. Se trata de una variante teratológica enana del cactus más grande Opuntia monacantha. Como su nombre indica, este cactus está abigarrado o jaspeado de blanco, blanco-crema, amarillo, verde y, a veces, también de rosa, en distintos patrones.",
     "price-collector": 10000,
     "price-wholesale": 6000,
     "discount": 0,
@@ -429,14 +585,22 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "20", "20.1" ],
+    "photos": [
+      "20",
+      "20.1"
+    ],
     "publishDate": "04/10/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 21,
     "name": "Stephania Erecta",
-    "description":  "La Stephania Erecta es una de las plantas de interior de mayor tendencia en los últimos años. Su tubérculo, similar al de la patata, permanece inactivo durante el invierno, pero en la primavera crece con fuerza, enviando vides trepadoras que llenan vigorosamente el espacio. Sus hojas circulares de color verde mate están disecadas con venas de color verde claro en forma de espiga.",
+    "description": "La Stephania Erecta es una de las plantas de interior de mayor tendencia en los últimos años. Su tubérculo, similar al de la patata, permanece inactivo durante el invierno, pero en la primavera crece con fuerza, enviando vides trepadoras que llenan vigorosamente el espacio. Sus hojas circulares de color verde mate están disecadas con venas de color verde claro en forma de espiga.",
     "price-collector": 100000,
     "price-wholesale": 0,
     "discount": 0,
@@ -450,14 +614,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "21", "21.1" ],
+    "photos": [
+      "21",
+      "21.1"
+    ],
     "publishDate": "04/10/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "bulb"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 23,
     "name": "Titanopsis aff. Calcarea",
-    "description":  "Esta forma tiene hojas planas de color bronce y flores de color amarillo intenso",
+    "description": "Esta forma tiene hojas planas de color bronce y flores de color amarillo intenso",
     "price-collector": 10000,
     "price-wholesale": 0,
     "discount": 0,
@@ -472,14 +644,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "23", "23.1"],
+    "photos": [
+      "23",
+      "23.1"
+    ],
     "publishDate": "04/15/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 24,
     "name": "Hoya Kerrii",
-    "description":  "La Hoya kerrii es una robusta planta trepadora con unas curiosas y gruesas hojas suculentas y coriáceas en forma de corazón invertido y unas peculiares flores en forma de globo, de color blanco-crema con lóbulos coronales de color rosa-violeta, en verano. Es de crecimiento rápido y puede formarse como topiario. La Hoya kerrii recibe el nombre de Sweetheart Plant o Sweetheart Hoya por sus hojas en forma de corazón o de San Valentín. La Hoya kerrii también se presenta en formas con hojas abigarradas. Está estrechamente relacionada con la Hoya obovata.",
+    "description": "La Hoya kerrii es una robusta planta trepadora con unas curiosas y gruesas hojas suculentas y coriáceas en forma de corazón invertido y unas peculiares flores en forma de globo, de color blanco-crema con lóbulos coronales de color rosa-violeta, en verano. Es de crecimiento rápido y puede formarse como topiario. La Hoya kerrii recibe el nombre de Sweetheart Plant o Sweetheart Hoya por sus hojas en forma de corazón o de San Valentín. La Hoya kerrii también se presenta en formas con hojas abigarradas. Está estrechamente relacionada con la Hoya obovata.",
     "price-collector": 25000,
     "price-wholesale": 0,
     "discount": 0,
@@ -493,14 +673,21 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "24" ],
+    "photos": [
+      "24"
+    ],
     "publishDate": "04/15/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 25,
     "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
@@ -515,14 +702,21 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "25"],
+    "photos": [
+      "25"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 26,
     "name": "Dinteranthus Vanzylii",
-    "description":  "Dinteranthus vanzylii es una intrigante planta solitaria o en macizo con atractivos cuerpos y flores que es muy similar al Lithops en cuanto a forma y colores, pero sin periodo de inactividad aparente. Su forma de crecimiento hundida se entiende como un desarrollo paralelo al de Lithops. La otra especie de Dinteranthus crece por encima del suelo.",
+    "description": "Dinteranthus vanzylii es una intrigante planta solitaria o en macizo con atractivos cuerpos y flores que es muy similar al Lithops en cuanto a forma y colores, pero sin periodo de inactividad aparente. Su forma de crecimiento hundida se entiende como un desarrollo paralelo al de Lithops. La otra especie de Dinteranthus crece por encima del suelo.",
     "price-collector": 20000,
     "price-wholesale": 0,
     "discount": 0,
@@ -537,14 +731,23 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "26", "26.1", "26.2" ],
+    "photos": [
+      "26",
+      "26.1",
+      "26.2"
+    ],
     "publishDate": "12/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 27,
     "name": "Echeveria Cv. \"Baron Bold\"",
-    "description":  "Hybrid",
+    "description": "Hybrid",
     "price-collector": 50000,
     "price-wholesale": 0,
     "discount": 0,
@@ -559,9 +762,16 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "27" ],
+    "photos": [
+      "27"
+    ],
     "publishDate": "12/30/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 28,
@@ -581,9 +791,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "28", "28.1" ],
+    "photos": [
+      "28",
+      "28.1"
+    ],
     "publishDate": "09/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 29,
@@ -603,9 +821,18 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "29", "29.1", "29.2" ],
+    "photos": [
+      "29",
+      "29.1",
+      "29.2"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 30,
@@ -625,9 +852,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "30", "30.1" ],
+    "photos": [
+      "30",
+      "30.1"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 31,
@@ -647,9 +882,16 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "31" ],
+    "photos": [
+      "31"
+    ],
     "publishDate": "09/26/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 32,
@@ -669,14 +911,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "32", "32.1" ],
+    "photos": [
+      "32",
+      "32.1"
+    ],
     "publishDate": "09/26/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 33,
     "name": "Astrophytum Capricorne var Minor",
-    "description":  "Astrophytum capricorne subesp. senil cv. Krausii es una variedad de Astrophytum senil con espinas de color blanco puro y una flor amarilla pero sin la típica garganta roja. Es una mutación estable y se hace realidad a partir de semillas.",
+    "description": "Astrophytum capricorne subesp. senil cv. Krausii es una variedad de Astrophytum senil con espinas de color blanco puro y una flor amarilla pero sin la típica garganta roja. Es una mutación estable y se hace realidad a partir de semillas.",
     "price-collector": 40000,
     "price-wholesale": 0,
     "discount": 0.10,
@@ -691,14 +941,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "33", "33.1" ],
+    "photos": [
+      "33",
+      "33.1"
+    ],
     "publishDate": "09/26/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 34,
     "name": "Echeveria Cv. 'Culibra'",
-    "description":  "Echeveria Culibra, también conocida como Echeveria ‘Culebra’, es una suculenta híbrido de parentales desconocidos. Posee hojas glaucas de color azul pálido con márgenes ondulados de color rosa que forman rosetas de hasta 18 cm de diámetro. Cada hoja tiene una forma de camafeo larga y elevada conocida como «carúncula» en la superficie superior. Con el tiempo, la carúncula hace que la hoja se doble hacia abajo en los márgenes, con la creación resultante de una hoja tubular. Florece en primavera.",
+    "description": "Echeveria Culibra, también conocida como Echeveria ‘Culebra’, es una suculenta híbrido de parentales desconocidos. Posee hojas glaucas de color azul pálido con márgenes ondulados de color rosa que forman rosetas de hasta 18 cm de diámetro. Cada hoja tiene una forma de camafeo larga y elevada conocida como «carúncula» en la superficie superior. Con el tiempo, la carúncula hace que la hoja se doble hacia abajo en los márgenes, con la creación resultante de una hoja tubular. Florece en primavera.",
     "price-collector": 70000,
     "price-wholesale": 0,
     "discount": 0,
@@ -713,9 +971,18 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "34", "34.1", "34.2" ],
+    "photos": [
+      "34",
+      "34.1",
+      "34.2"
+    ],
     "publishDate": "09/15/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 35,
@@ -734,9 +1001,16 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "35" ],
+    "photos": [
+      "35"
+    ],
     "publishDate": "11/15/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 36,
@@ -756,9 +1030,18 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "36", "36.1", "36.2" ],
+    "photos": [
+      "36",
+      "36.1",
+      "36.2"
+    ],
     "publishDate": "11/15/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 37,
@@ -777,9 +1060,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "37", "37.1" ],
+    "photos": [
+      "37",
+      "37.1"
+    ],
     "publishDate": "10/15/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 38,
@@ -799,9 +1090,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "38", "38.1" ],
+    "photos": [
+      "38",
+      "38.1"
+    ],
     "publishDate": "09/15/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 39,
@@ -820,9 +1119,18 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "39", "39.1" ],
+    "photos": [
+      "39",
+      "39.1"
+    ],
     "publishDate": "08/15/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent",
+      "bulb"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 40,
@@ -842,9 +1150,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "40", "40.1" ],
+    "photos": [
+      "40",
+      "40.1"
+    ],
     "publishDate": "08/26/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 41,
@@ -863,9 +1179,18 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "41", "41.1" ],
+    "photos": [
+      "41",
+      "41.1"
+    ],
     "publishDate": "08/26/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent",
+      "bulb"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 42,
@@ -885,9 +1210,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "42", "42.1" ],
+    "photos": [
+      "42",
+      "42.1"
+    ],
     "publishDate": "08/26/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 43,
@@ -907,14 +1240,21 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "43" ],
+    "photos": [
+      "43"
+    ],
     "publishDate": "09/26/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 44,
     "name": "Astrophytum Capricorne var Minor",
-    "description":  "Astrophytum capricorne subesp. senil cv. Krausii es una variedad de Astrophytum senil con espinas de color blanco puro y una flor amarilla pero sin la típica garganta roja. Es una mutación estable y se hace realidad a partir de semillas.",
+    "description": "Astrophytum capricorne subesp. senil cv. Krausii es una variedad de Astrophytum senil con espinas de color blanco puro y una flor amarilla pero sin la típica garganta roja. Es una mutación estable y se hace realidad a partir de semillas.",
     "price-collector": 40000,
     "price-wholesale": 0,
     "discount": 0,
@@ -929,14 +1269,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "44", "44.1" ],
+    "photos": [
+      "44",
+      "44.1"
+    ],
     "publishDate": "10/26/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 45,
     "name": "Mammillaria Bocasana Cv. 'Fred'",
-    "description":  "Fred es uno de los más famosos y extraños cultivares de cactus monstruosos que forman globos verdes y rosas muy gomosos y blandos. Es una mutación que se formó en una Mammillaria bocasana normal... se cortó y empezó por sí sola. Este cultivar muestra muchas variaciones de crecimiento, con diferentes formas crestadas y monstruosas. La planta se parece más a una suculenta no cactácea que a un cactus. Rara vez tiene una espina o un pelo, flores monstruosas o crestadas. Puede agrandarse hasta formar racimos bajos y macizos.",
+    "description": "Fred es uno de los más famosos y extraños cultivares de cactus monstruosos que forman globos verdes y rosas muy gomosos y blandos. Es una mutación que se formó en una Mammillaria bocasana normal... se cortó y empezó por sí sola. Este cultivar muestra muchas variaciones de crecimiento, con diferentes formas crestadas y monstruosas. La planta se parece más a una suculenta no cactácea que a un cactus. Rara vez tiene una espina o un pelo, flores monstruosas o crestadas. Puede agrandarse hasta formar racimos bajos y macizos.",
     "price-collector": 12000,
     "price-wholesale": 0,
     "discount": 0,
@@ -951,14 +1299,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "45", "45.1" ],
+    "photos": [
+      "45",
+      "45.1"
+    ],
     "publishDate": "11/26/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 46,
     "name": "Conophytum Maughanii",
-    "description":  "Es una especie subterránea incrustada en el suelo con hojas con ventanas que generalmente tiene un solo cuerpo o rara vez forma un grupo pequeño con pocas cabezas.",
+    "description": "Es una especie subterránea incrustada en el suelo con hojas con ventanas que generalmente tiene un solo cuerpo o rara vez forma un grupo pequeño con pocas cabezas.",
     "price-collector": 60000,
     "price-wholesale": 0,
     "discount": 0,
@@ -973,14 +1329,21 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "46" ],
+    "photos": [
+      "46"
+    ],
     "publishDate": "11/26/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 47,
     "name": "Euphorbia Suzannae Cluster",
-    "description":  "Crecen en pequeñas poblaciones, a veces con sólo unos pocos individuos en terrenos muy arenosos y pedregosos, a menudo con cuarzo blanco en la superficie. Se encuentran en lugares abiertos o parcialmente a la sombra de pequeños arbustos. La mayoría de las plantas son crípticas (crecen completamente bajo tierra con sólo las puntas de los tallos por encima del nivel del suelo) mientras que algunas crecen totalmente por encima del suelo y tienen forma de media esfera o de cojín (como en el cultivo).",
+    "description": "Crecen en pequeñas poblaciones, a veces con sólo unos pocos individuos en terrenos muy arenosos y pedregosos, a menudo con cuarzo blanco en la superficie. Se encuentran en lugares abiertos o parcialmente a la sombra de pequeños arbustos. La mayoría de las plantas son crípticas (crecen completamente bajo tierra con sólo las puntas de los tallos por encima del nivel del suelo) mientras que algunas crecen totalmente por encima del suelo y tienen forma de media esfera o de cojín (como en el cultivo).",
     "price-collector": 55000,
     "price-wholesale": 0,
     "discount": 0,
@@ -995,14 +1358,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "47", "47.1" ],
+    "photos": [
+      "47",
+      "47.1"
+    ],
     "publishDate": "12/26/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 48,
     "name": "Tephrocactus geometricus 3 Cabezas",
-    "description":  "Tephrocactus geometricus es una especie extraordinaria que muestra una fuerte adaptación al hábitat desértico extremo, con crecimiento enano y hábito geofítico. Es una de las especies de “opuntia” más llamativas y buscadas por los apasionados de los cactus, una extraña planta “geométrica” pero de fabulosas flores.",
+    "description": "Tephrocactus geometricus es una especie extraordinaria que muestra una fuerte adaptación al hábitat desértico extremo, con crecimiento enano y hábito geofítico. Es una de las especies de “opuntia” más llamativas y buscadas por los apasionados de los cactus, una extraña planta “geométrica” pero de fabulosas flores.",
     "price-collector": 270000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1017,14 +1388,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "48", "48.1" ],
+    "photos": [
+      "48",
+      "48.1"
+    ],
     "publishDate": "11/26/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 49,
     "name": "Conphytum Hians 7 Cabezas Adulto",
-    "description":  "",
+    "description": "",
     "price-collector": 60000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1039,14 +1418,21 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "49" ],
+    "photos": [
+      "49"
+    ],
     "publishDate": "12/30/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 50,
     "name": "Conophytum Uviforme 4 cabezas",
-    "description":  "El Conophytum uviforme es una suculenta perenne enana, de hasta 4 cm de altura, que a menudo forma matas o cúpulas bastante grandes de cuerpos pequeños pero bien marcados de color verde grisáceo a terroso. Es una de las especies más populares cultivadas por los coleccionistas. Algunos ejemplares tienen colores y marcas muy atractivos.",
+    "description": "El Conophytum uviforme es una suculenta perenne enana, de hasta 4 cm de altura, que a menudo forma matas o cúpulas bastante grandes de cuerpos pequeños pero bien marcados de color verde grisáceo a terroso. Es una de las especies más populares cultivadas por los coleccionistas. Algunos ejemplares tienen colores y marcas muy atractivos.",
     "price-collector": 80000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1061,14 +1447,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "50", "50.1" ],
+    "photos": [
+      "50",
+      "50.1"
+    ],
     "publishDate": "12/30/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 51,
     "name": "Acanthocereus Tetragonus cv. Fairytale Castle Variegado",
-    "description":  "\"Castillo de cuento de hadas\", \"Castillo de hadas\" o \"Dedo verde\" es el evocador nombre con el que se comercializa esta común planta suculenta y hace referencia a los numerosos tallos verticales de diferentes alturas que se asemejan a agujas y torretas. Este diminuto cultivar 'Fairy Castle' se descubrió en cultivo y es una planta muy popular que suele encontrarse en la parte de suculentas de las tiendas de venta al por menor. Algunos expertos clasifican el cactus como una forma monstruosa de Acanthocereus tetragonus (Acanthocereus floridianus), pero el verdadero ser de esta planta es controvertido y algunos sugieren que puede ser una forma de Cereus hildmannianus o incluso una forma enana de Cereus hildmannianus subs. uruguayanus. Sea cual sea el nombre científico correcto, la planta es un cactus delicioso.",
+    "description": "\"Castillo de cuento de hadas\", \"Castillo de hadas\" o \"Dedo verde\" es el evocador nombre con el que se comercializa esta común planta suculenta y hace referencia a los numerosos tallos verticales de diferentes alturas que se asemejan a agujas y torretas. Este diminuto cultivar 'Fairy Castle' se descubrió en cultivo y es una planta muy popular que suele encontrarse en la parte de suculentas de las tiendas de venta al por menor. Algunos expertos clasifican el cactus como una forma monstruosa de Acanthocereus tetragonus (Acanthocereus floridianus), pero el verdadero ser de esta planta es controvertido y algunos sugieren que puede ser una forma de Cereus hildmannianus o incluso una forma enana de Cereus hildmannianus subs. uruguayanus. Sea cual sea el nombre científico correcto, la planta es un cactus delicioso.",
     "price-collector": 80000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1082,14 +1476,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "51", "51.1" ],
+    "photos": [
+      "51",
+      "51.1"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 52,
     "name": "Gibbaeum Pubescens",
-    "description":  "Forma matas. En el hábitat forma grandes colonias compuestas por macizos elevados y prominentes que resultan llamativos en la vegetación arbustiva baja por el color blanquecino del follaje",
+    "description": "Forma matas. En el hábitat forma grandes colonias compuestas por macizos elevados y prominentes que resultan llamativos en la vegetación arbustiva baja por el color blanquecino del follaje",
     "price-collector": 25000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1104,14 +1506,23 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "52", "52.1", "52.2" ],
+    "photos": [
+      "52",
+      "52.1",
+      "52.2"
+    ],
     "publishDate": "09/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 53,
     "name": "Titanopsis Hugo-Schlechteri",
-    "description":  "Se trata de una planta suculenta con rosetas de varias cabezas, que formará pequeñas matas a medida que vaya envejeciendo. Las rosetas individuales tienen aproximadamente 4-5 cm de diámetro.",
+    "description": "Se trata de una planta suculenta con rosetas de varias cabezas, que formará pequeñas matas a medida que vaya envejeciendo. Las rosetas individuales tienen aproximadamente 4-5 cm de diámetro.",
     "price-collector": 12000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1126,14 +1537,23 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "53", "53.1", "53.2" ],
+    "photos": [
+      "53",
+      "53.1",
+      "53.2"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 54,
     "name": "Gibbaeum Pubescens",
-    "description":  "Forma matas. En el hábitat forma grandes colonias compuestas por macizos elevados y prominentes que resultan llamativos en la vegetación arbustiva baja por el color blanquecino del follaje",
+    "description": "Forma matas. En el hábitat forma grandes colonias compuestas por macizos elevados y prominentes que resultan llamativos en la vegetación arbustiva baja por el color blanquecino del follaje",
     "price-collector": 60000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1148,14 +1568,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "54", "54.1" ],
+    "photos": [
+      "54",
+      "54.1"
+    ],
     "publishDate": "09/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 55,
     "name": "Eulychnia Castanea cv. Varispiralis Monstruos Form",
-    "description":  "Esta extraña planta se conoce en el cultivo con bastantes nombres diferentes (entre ellos, \"spiralis\", \"varispiralis\", \"spiraliforme\", \"mostruosa\", \"monstrose\", \"monstrous\" ) Es un cultivar variable del que podemos distinguir al menos cuatro formas básicas de crecimiento",
+    "description": "Esta extraña planta se conoce en el cultivo con bastantes nombres diferentes (entre ellos, \"spiralis\", \"varispiralis\", \"spiraliforme\", \"mostruosa\", \"monstrose\", \"monstrous\" ) Es un cultivar variable del que podemos distinguir al menos cuatro formas básicas de crecimiento",
     "price-collector": 120000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1170,14 +1598,21 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "55" ],
+    "photos": [
+      "55"
+    ],
     "publishDate": "12/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 56,
     "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1192,14 +1627,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "56", "56.1" ],
+    "photos": [
+      "56",
+      "56.1"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 57,
     "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1214,14 +1657,21 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "57" ],
+    "photos": [
+      "57"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 58,
     "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 35000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1236,14 +1686,21 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "58" ],
+    "photos": [
+      "58"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 59,
     "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 35000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1258,14 +1715,21 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "59" ],
+    "photos": [
+      "59"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 60,
     "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 35000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1280,14 +1744,21 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "60" ],
+    "photos": [
+      "60"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 61,
     "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 35000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1302,14 +1773,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "61", "61.1" ],
+    "photos": [
+      "61",
+      "61.1"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 62,
     "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1324,14 +1803,21 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "62"],
+    "photos": [
+      "62"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 63,
     "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1346,14 +1832,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "63", "63.1" ],
+    "photos": [
+      "63",
+      "63.1"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 64,
     "name": "Lithops Pack",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 30000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1368,9 +1862,16 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "64" ],
+    "photos": [
+      "64"
+    ],
     "publishDate": "10/30/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 65,
@@ -1389,9 +1890,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "65", "65.1" ],
+    "photos": [
+      "65",
+      "65.1"
+    ],
     "publishDate": "11/08/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 66,
@@ -1410,9 +1919,19 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "66", "66.1", "66.2", "66.3" ],
+    "photos": [
+      "66",
+      "66.1",
+      "66.2",
+      "66.3"
+    ],
     "publishDate": "11/08/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 67,
@@ -1432,9 +1951,16 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "67" ],
+    "photos": [
+      "67"
+    ],
     "publishDate": "11/08/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 68,
@@ -1453,9 +1979,16 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "68" ],
+    "photos": [
+      "68"
+    ],
     "publishDate": "11/08/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 69,
@@ -1474,9 +2007,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "69", "69.1" ],
+    "photos": [
+      "69",
+      "69.1"
+    ],
     "publishDate": "12/08/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 70,
@@ -1495,9 +2036,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "70", "70.1" ],
+    "photos": [
+      "70",
+      "70.1"
+    ],
     "publishDate": "11/08/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 71,
@@ -1516,9 +2065,16 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "71" ],
+    "photos": [
+      "71"
+    ],
     "publishDate": "11/08/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 72,
@@ -1538,9 +2094,16 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "72" ],
+    "photos": [
+      "72"
+    ],
     "publishDate": "12/08/2022",
-    "state": false
+    "state": false,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 73,
@@ -1560,9 +2123,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "73", "73.1" ],
+    "photos": [
+      "73",
+      "73.1"
+    ],
     "publishDate": "12/08/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 74,
@@ -1581,9 +2152,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "74", "74.1" ],
+    "photos": [
+      "74",
+      "74.1"
+    ],
     "publishDate": "12/08/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 75,
@@ -1603,9 +2182,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "75", "75.1" ],
+    "photos": [
+      "75",
+      "75.1"
+    ],
     "publishDate": "12/08/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 76,
@@ -1625,9 +2212,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "76", "76.1" ],
+    "photos": [
+      "76",
+      "76.1"
+    ],
     "publishDate": "12/08/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 77,
@@ -1647,9 +2242,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "77", "77.1" ],
+    "photos": [
+      "77",
+      "77.1"
+    ],
     "publishDate": "12/08/2022",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 78,
@@ -1669,9 +2272,19 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "78", "78.1", "78.2", "78.3" ],
+    "photos": [
+      "78",
+      "78.1",
+      "78.2",
+      "78.3"
+    ],
     "publishDate": "01/08/2023",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 79,
@@ -1691,9 +2304,17 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "79", "79.1" ],
+    "photos": [
+      "79",
+      "79.1"
+    ],
     "publishDate": "01/08/2023",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 80,
@@ -1713,14 +2334,22 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "80", "80.1" ],
+    "photos": [
+      "80",
+      "80.1"
+    ],
     "publishDate": "01/08/2023",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 81,
     "name": "Conophytum Maughanii",
-    "description":  "Es una especie subterránea incrustada en el suelo con hojas con ventanas que generalmente tiene un solo cuerpo o rara vez forma un grupo pequeño con pocas cabezas.",
+    "description": "Es una especie subterránea incrustada en el suelo con hojas con ventanas que generalmente tiene un solo cuerpo o rara vez forma un grupo pequeño con pocas cabezas.",
     "price-collector": 0,
     "price-wholesale": 20000,
     "discount": 0,
@@ -1735,14 +2364,22 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "81", "81.1" ],
+    "photos": [
+      "81",
+      "81.1"
+    ],
     "publishDate": "01/08/2023",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 82,
     "name": "Echeveria Cv. 'Baron Bold'",
-    "description":  "La Echeveria 'Baron Bold' forma una gran roseta de hojas abigarradas, generalmente rojas y verdes, según la estación. La roseta solitaria puede alcanzar unos 20 cm de diámetro, producirá ocasionalmente retoños.",
+    "description": "La Echeveria 'Baron Bold' forma una gran roseta de hojas abigarradas, generalmente rojas y verdes, según la estación. La roseta solitaria puede alcanzar unos 20 cm de diámetro, producirá ocasionalmente retoños.",
     "price-collector": 50000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1757,14 +2394,22 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "82", "82.1" ],
+    "photos": [
+      "82",
+      "82.1"
+    ],
     "publishDate": "01/08/2023",
-    "state": false
+    "state": false,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 83,
     "name": "Conophytum Burgeri",
-    "description":  "El Conophytum burgeri tiene una distribución muy localizada en torno a las minas cercanas a Aggenys, entre Sprinbok y Pofadder, Namaqualand, Cabo Nororiental, Sudáfrica. El valle sembrado en el que crece era propiedad de la familia Burger (de ahí el nombre), pero ahora es propiedad de la empresa minera Black Mountain, que lo ha protegido durante años.",
+    "description": "El Conophytum burgeri tiene una distribución muy localizada en torno a las minas cercanas a Aggenys, entre Sprinbok y Pofadder, Namaqualand, Cabo Nororiental, Sudáfrica. El valle sembrado en el que crece era propiedad de la familia Burger (de ahí el nombre), pero ahora es propiedad de la empresa minera Black Mountain, que lo ha protegido durante años.",
     "price-collector": 0,
     "price-wholesale": 25000,
     "discount": 0,
@@ -1779,14 +2424,24 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "83", "83.1", "83.2", "83.3" ],
+    "photos": [
+      "83",
+      "83.1",
+      "83.2",
+      "83.3"
+    ],
     "publishDate": "01/08/2023",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 84,
     "name": "Conophytum Wittebergense",
-    "description":  "El Conophytum wittebergense es uno de los innumerables ecotipos del muy variable Conophytum minimum. Es una especie excepcional con cuerpos diminutos marcados con una red de puntos y líneas de color rojo oscuro en la parte superior. Muestra una increíble complejidad de patrones y los cultivadores se han entregado a una selección no natural y las formas mejor marcadas son muy apreciadas. Algunas están bien decoradas con fantásticas líneas rojas y otras son casi negras, debido a que las líneas se convierten en una masa sólida. Las pequeñas flores blancas son nocturnas y muy perfumadas. Es extremadamente decorativa incluso sin flores.",
+    "description": "El Conophytum wittebergense es uno de los innumerables ecotipos del muy variable Conophytum minimum. Es una especie excepcional con cuerpos diminutos marcados con una red de puntos y líneas de color rojo oscuro en la parte superior. Muestra una increíble complejidad de patrones y los cultivadores se han entregado a una selección no natural y las formas mejor marcadas son muy apreciadas. Algunas están bien decoradas con fantásticas líneas rojas y otras son casi negras, debido a que las líneas se convierten en una masa sólida. Las pequeñas flores blancas son nocturnas y muy perfumadas. Es extremadamente decorativa incluso sin flores.",
     "price-collector": 0,
     "price-wholesale": 16000,
     "discount": 0,
@@ -1801,14 +2456,23 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "84", "84.1", "84.2" ],
+    "photos": [
+      "84",
+      "84.1",
+      "84.2"
+    ],
     "publishDate": "01/08/2023",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 85,
     "name": "Lithops Mix Dos en Uno",
-    "description":  "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
+    "description": "Se caracterizan por poseer dos hojas acopladas, divididas por una fisura a través de la cual aparecen las flores. Cada par de hojas forman el cuerpo de la planta que tiene forma cilíndrica o cónica con una superficie plana.",
     "price-collector": 0,
     "price-wholesale": 10000,
     "discount": 0,
@@ -1823,14 +2487,22 @@
     ],
     "wholesale": true,
     "rating": 0,
-    "photos": [ "85", "85.1" ],
+    "photos": [
+      "85",
+      "85.1"
+    ],
     "publishDate": "01/08/2023",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 86,
     "name": "Dinteranthus Vanzylii",
-    "description":  "Dinteranthus vanzylii es una intrigante planta solitaria o en macizo con atractivos cuerpos y flores que es muy similar al Lithops en cuanto a forma y colores, pero sin periodo de inactividad aparente. Su forma de crecimiento hundida se entiende como un desarrollo paralelo al de Lithops. La otra especie de Dinteranthus crece por encima del suelo.",
+    "description": "Dinteranthus vanzylii es una intrigante planta solitaria o en macizo con atractivos cuerpos y flores que es muy similar al Lithops en cuanto a forma y colores, pero sin periodo de inactividad aparente. Su forma de crecimiento hundida se entiende como un desarrollo paralelo al de Lithops. La otra especie de Dinteranthus crece por encima del suelo.",
     "price-collector": 20000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1845,14 +2517,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "86", "86.1" ],
+    "photos": [
+      "86",
+      "86.1"
+    ],
     "publishDate": "01/08/2023",
-    "state": true
+    "state": true,
+    "type": [
+      "succulent"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 87,
     "name": "Mammillaria Bocasana Cv. 'Fred' Crestada Monstruosa",
-    "description":  "Hibrido",
+    "description": "Hibrido",
     "price-collector": 60000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1867,14 +2547,22 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "87", "87.1" ],
+    "photos": [
+      "87",
+      "87.1"
+    ],
     "publishDate": "01/08/2023",
-    "state": true
+    "state": true,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   },
   {
     "id": 88,
     "name": "Austrocylindropuntia subulata f. cristata",
-    "description":  "La Austrocylindropuntia subulata es nativa de las altas elevaciones de Ecuador y Perú y forma un ejemplar arbóreo y ramificado con el tiempo.",
+    "description": "La Austrocylindropuntia subulata es nativa de las altas elevaciones de Ecuador y Perú y forma un ejemplar arbóreo y ramificado con el tiempo.",
     "price-collector": 15000,
     "price-wholesale": 0,
     "discount": 0,
@@ -1889,8 +2577,16 @@
     ],
     "wholesale": false,
     "rating": 0,
-    "photos": [ "88", "88.1" ],
+    "photos": [
+      "88",
+      "88.1"
+    ],
     "publishDate": "01/08/2023",
-    "state": false
+    "state": false,
+    "type": [
+      "cactus"
+    ],
+    "family": "Aizoaceae",
+    "genera": "Pleiospilos"
   }
 ]

@@ -1,0 +1,222 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px 10px;
+  grid-template-areas:
+    "Icon Title"
+    "Icon Description";
+}
+
+.container-write-us {
+  display: grid;
+  grid-template-columns: 65px 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px 10px;
+  grid-template-areas:
+    "Icon Title"
+    "Icon Description";
+}
+
+.Icon-find-us {
+  grid-area: Icon;
+  justify-self: self-end;
+  align-self: center;
+}
+
+.Icon-call-us {
+  grid-area: Icon;
+  justify-self: self-end;
+  align-self: center;
+}
+
+.Icon-write-us {
+  grid-area: Icon;
+  justify-self: self-start;
+  margin-left: 40%;
+  align-self: center;
+}
+
+.Title-find-us {
+  grid-area: Title;
+  justify-self: self-start;
+  color: #4d4d4d;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.Title-call-us {
+  grid-area: Title;
+  justify-self: self-start;
+  color: #4d4d4d;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.Title-write-us {
+  grid-area: Title;
+  justify-self: self-start !important;
+  color: #4d4d4d;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.Description-find-us {
+  grid-area: Description;
+  color: #757575;
+  font-size: 15px;
+}
+
+.Description-call-us {
+  grid-area: Description;
+  color: #757575;
+  font-size: 15px;
+}
+
+.Description-write-us {
+  grid-area: Description;
+  justify-self: self-start;
+  color: #757575;
+  font-size: 15px;
+}
+
+.img-logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.about-us {
+  text-align: left;
+}
+
+.container-follow-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Follow-us Follow-us"
+    "facebook instagram";
+}
+
+.Title-general {
+  grid-area: Title;
+  color: #4d4d4d;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.Follow-us {
+  grid-area: Follow-us;
+}
+
+.follow-us-row {
+  margin-left: 75px;
+}
+
+.facebook {
+  grid-area: facebook;
+}
+
+.instagram {
+  grid-area: instagram;
+}
+
+.icon-container {
+  margin-top: 2px;
+  width: 26.25px;
+  height: 26.25px;
+  border-radius: 4px;
+  text-align: center;
+  background-image: linear-gradient(155deg, #4C57A2 8%, #87439A 50%, #e02870 85%);
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: -60%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(rgba(246, 221, 132, 1) 15%,
+            rgba(255, 45, 45, 0.65) 50%,
+            rgba(0, 0, 0, 0) 70%);
+  }
+
+  .icon {
+    color: #fff;
+    font-size: 50px;
+    line-height: 60px;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    margin-top: 4px;
+  }
+}
+
+.copyright {
+  background-color: #e8e8e8;
+}
+
+.container.wpp {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .ant-layout-footer {
+    padding: 20px 15px 0 15px !important;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 4px 10px;
+    grid-template-areas:
+    "Icon Title"
+    "Icon Description";
+    justify-items: start !important;
+  }
+
+  .Icon-find-us {
+    grid-area: Icon;
+    justify-self: self-start;
+    align-self: center;
+  }
+
+  .container-write-us {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 4px 10px;
+    grid-template-areas:
+    "Icon Title"
+    "Icon Description";
+  }
+
+  .Icon-write-us {
+    grid-area: Icon;
+    justify-self: self-start;
+    align-self: center;
+    margin-left: 0 !important;
+  }
+
+  .Description-write-us {
+    grid-area: Description;
+    justify-self: self-start;
+    color: #757575;
+    font-size: 12px;
+  }
+
+  .follow-us-row {
+    margin-left: 50px;
+  }
+}

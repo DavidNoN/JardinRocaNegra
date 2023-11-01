@@ -1,0 +1,70 @@
+.conservation-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2px;
+}
+
+.plant-size {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 700;
+}
+
+.img-plant-card {
+  width: 300px;
+  height: 300px;
+}
+
+.ribbon-card-new-item-sold-out {
+  width: auto;
+  font-size: 11pt;
+  font-weight: 500;
+  line-height: 27px;
+  position: absolute !important;
+  top: -310px;
+  right: -32px !important;
+}
+
+.ribbon-card-price {
+  width: auto;
+  font-size: 10pt;
+  font-weight: 500;
+  line-height: 27px;
+  position: absolute !important;
+  top: -60px;
+  left: -32px !important;
+}
+
+.ribbon-card-discount {
+  width: auto;
+  font-size: 10pt;
+  font-weight: 700;
+  line-height: 27px;
+  position: absolute !important;
+  top: -95px;
+  left: -32px !important;
+}
+
+.disable-cart-button {
+  background-color: #E8E8E8 !important;
+}
+
+.plant-size:hover {
+  color: rgba(0, 0, 0, 0.45) !important;
+}
+
+.wholesale-quantity {
+  color: rgba(0, 0, 0, 0.45) !important;
+}
+
+.wholesale-quantity:hover {
+  color: rgba(0, 0, 0, 0.45) !important;
+}
+
+@media (max-width: 768px) {
+  .img-plant-card {
+    width: 200px;
+    height: 200px;
+  }
+}

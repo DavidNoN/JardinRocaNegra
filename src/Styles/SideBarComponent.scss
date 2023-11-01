@@ -1,0 +1,23 @@
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.side-menu .ant-menu-item-selected {
+  background-color: #006940;
+}
+
+.side-menu .ant-menu-item {
+  margin-inline: -5px !important;
+}
+
+hr {
+  border: 1px solid #DC67AB;
+  background-color: transparent;
+  color: transparent;
+  margin: 0 40px 20px 40px;
+}
+
+

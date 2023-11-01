@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
   margin: 0;
   background-color: #eee !important;
@@ -43,7 +45,7 @@ code {
 }
 
 .bg-pink {
-  background-color: #F04393;
+  background-color: #BB297C;
 }
 
 .bg-purple {
