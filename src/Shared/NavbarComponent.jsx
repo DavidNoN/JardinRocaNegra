@@ -1,26 +1,70 @@
 import React from 'react';
-import { Col, Menu, Row } from "antd";
+import { Avatar, Col, Dropdown, Menu, message, Row } from "antd";
 import { GiBurningTree, GiCactusPot, GiCarnivorousPlant } from "react-icons/gi";
 import { TbHomeEco, TbPlant2 } from "react-icons/tb";
 import { FaShoppingCart } from "react-icons/fa";
-import '../Styles/NavBarComponent.scss'
+import '../styles/NavBarComponent.scss'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { NavLink, useLocation } from "react-router-dom";
+import { AiOutlineUser } from "react-icons/ai";
+import Link from "antd/es/typography/Link";
+import { useDispatch, useSelector } from "react-redux";
+import { AuthStatus, signOut } from "../store/auth/authSlice";
+import { doubleMessageNotification } from "../Components/MessageApi";
 
 const iconStyle = {
     verticalAlign: '-0.525em'
 };
 
 const NavBarComponent = () => {
+
+    const dispatch = useDispatch();
+
+    const { status } = useSelector( state => state.user );
+
+    const [ messageApi, contextHolder ] = message.useMessage();
+
+    const signOutUser =  async () => {
+        await doubleMessageNotification(messageApi, 'loading', 'loading', 'Saliendo de la aplicación...', 1, 'success', 'success', 'Salida Exitosa!', 1);
+        localStorage.clear();
+        return dispatch( signOut() );
+    }
+
+    const items = [
+        {
+            key: '1',
+            label: (
+                <Link target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+                    Editar Perfil
+                </Link>
+            ),
+        },
+        {
+            key: '2',
+            label: (
+                <Link target="_blank" rel="noopener noreferrer" onClick={signOutUser}>
+                    Logout
+                </Link>
+            ),
+        },
+    ];
+
     const selectedRouteLocation = useLocation().pathname;
 
+
     return (
-        <Row>
-            <Col span={20}>
+        <Row justify='space-between'>
+            {contextHolder}
+            <Col xs={21}
+                 sm={21}
+                 md={21}
+                 lg={21}
+                 xl={21}
+                 xxl={21}>
                 <Menu
                     theme="dark"
                     mode="horizontal"
-                    overflowedIndicator={<RxHamburgerMenu />}
+                    overflowedIndicator={<RxHamburgerMenu/>}
                     defaultSelectedKeys={selectedRouteLocation}
                     style={{ background: 'none', color: '#787878' }}
                     className="nav-menu"
@@ -54,8 +98,19 @@ const NavBarComponent = () => {
                     ]}
                 />
             </Col>
-            <Col className="shopping-cart" span={4}>
-                <FaShoppingCart size={30} style={{color: '#787878', verticalAlign: '-0.525em'}}/>
+            <Col className="shopping-cart"
+                 xs={3}
+                 sm={3}
+                 md={3}
+                 lg={3}
+                 xl={3}
+                 xxl={3}>
+                <FaShoppingCart size={30} style={{ color: '#787878', verticalAlign: '-0.525em' }}/>
+                {status === AuthStatus.AUTHENTICATED &&
+                    <Dropdown menu={{ items }} placement="bottomRight" arrow>
+                        <Avatar style={{ cursor: 'pointer' }} size={40} icon={<AiOutlineUser/>}/>
+                    </Dropdown>
+                }
             </Col>
         </Row>
 

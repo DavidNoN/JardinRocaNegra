@@ -1,56 +1,88 @@
-import React, { useState } from 'react';
-import '../Styles/DetailProductScreen.scss'
+import React, { useEffect, useState } from 'react';
+import '../styles/DetailProductScreen.scss'
 import { Badge, Col, Flex, Image, Row } from "antd";
-import { useParams } from "react-router-dom";
-import { plants, userP } from "./BaseScreen";
+import { useLocation, useParams } from "react-router-dom";
 import {
     checkCategory,
     checkConservation,
     checkDiscountWhenWholesalePlant,
     checkPriceWhenWholesalePlant,
     checkTitleForSoldOutAndNewItem
-} from "../Utils/PlantCardUtils";
-import { SOLD_OUT } from "../Constants/Constants";
+} from "../utils/PlantCardUtils";
+import { fallbackImage, SOLD_OUT } from "../constants/Constants";
+import PropTypes from "prop-types";
+import { useDispatch, useSelector } from "react-redux";
+import { startGetPlants } from "../services/PlantService";
+import { getNameByPathname, getUriNameByPathname } from "../utils/routerUtils";
+import { getPlantsScheme } from "../store/plant/plantSlice";
+import { dispatchBrowserHistory, dispatchScreenName } from "../store/screen/screenBrowserHistoryThunks";
 
 
-const DetailProductScreen = () => {
+const DetailProductScreen = ( { isWholesaleUser } ) => {
 
-    const routeParams = useParams();
+    const dispatch = useDispatch();
+    const pathname = useLocation().pathname;
+    const [ plant, setPlant ] = useState( null )
+
+    const { uid } = useParams();
 
     const classesName = [ 'secondary-photo', 'tertiary-photo', 'extra-photo' ];
 
-    const plant = plants.filter( plant => plant.uid === routeParams.uid )[ 0 ];
+    const [ selectedPhoto, setSelectedPhoto ] = useState( '' );
+    const [ checkForSoldOutAndNewItem, setCheckForSoldOutAndNewItem ] = useState()
 
-    const user = userP;
 
-    // const typeUser = routeParams.screen.match(/^(\w+)/)[1]
+    const { plants } = useSelector( state => state.plants );
+    const { browserHistory } = useSelector( state => state.screen );
 
-    const [ selectedPhoto, setSelectedPhoto ] = useState( plant.photos[ 0 ] );
-
-    const changeSelectedPlant = ( index ) => {
-        setSelectedPhoto( plant.photos[ index ] );
+    const reloadPlants = async () => {
+        const result = await startGetPlants( getUriNameByPathname( pathname ) );
+        await dispatch( getPlantsScheme( result ) );
+        const filteredPlant = result.plants.filter( plant => plant[ '_id' ] === uid )[ 0 ];
+        setPlant( filteredPlant );
+        setSelectedPhoto( filteredPlant.photos[ 0 ] );
+        setCheckForSoldOutAndNewItem( checkTitleForSoldOutAndNewItem( filteredPlant.quantity, filteredPlant.publishedDate ) );
+        const { genre, species } = filteredPlant;
+        dispatch( dispatchScreenName( pathname ) );
+        dispatch( dispatchBrowserHistory( [ {
+            breadcrumb: getNameByPathname(`/${pathname.split( '/' )[ 1 ]}`),
+            pathname: `/${pathname.split( '/' )[ 1 ]}`
+        } ], uid, genre, species, pathname ) );
     }
 
-    const checkForSoldOutAndNewItem = checkTitleForSoldOutAndNewItem( plant.quantity, plant.publishedDate );
+
+    useEffect( () => {
+        if ( plants.length > 0 ) {
+            const filteredPlant = plants.filter( plant => plant[ '_id' ] === uid )[ 0 ];
+            setSelectedPhoto( filteredPlant.photos[ 0 ] );
+            setCheckForSoldOutAndNewItem( checkTitleForSoldOutAndNewItem( filteredPlant.quantity, filteredPlant.publishedDate ) );
+            const { genre, species } = filteredPlant;
+            dispatch( dispatchBrowserHistory( [ browserHistory[ 0 ] ], uid, genre, species, pathname ) );
+            return setPlant( filteredPlant );
+        }
+        reloadPlants().then();
+    }, [] );
 
     return (
-
-        <Flex wrap='wrap' style={{ backgroundColor: '#FFFFFF' }}>
+        plant &&
+        <Flex style={{ backgroundColor: '#FFFFFF' }}>
             <Col className='image-chooser'>
                 <div className="container-detail-product">
                     {
                         plant.photos.map( ( photo, index ) => (
                             <div key={photo} className={classesName[ index ]}>
-                                <Image
-                                    className='secondary-images'
-                                    preview={false}
-                                    style={{
-                                        cursor: "pointer",
-                                        filter: checkForSoldOutAndNewItem === SOLD_OUT && 'grayscale(80%)'
-                                    }}
-                                    onClick={() => changeSelectedPlant( index )}
-                                    src={photo}
-                                />
+                                <Image.PreviewGroup items={plant.photos}>
+                                    <Image
+                                        wrapperClassName
+                                        className='secondary-images'
+                                        style={{
+                                            cursor: "pointer",
+                                            filter: checkForSoldOutAndNewItem === SOLD_OUT && 'grayscale(80%)'
+                                        }}
+                                        fallback={fallbackImage}
+                                        src={photo}
+                                    />
+                                </Image.PreviewGroup>
                             </div>
                         ) )
                     }
@@ -63,13 +95,17 @@ const DetailProductScreen = () => {
                                     plant.priceCollector,
                                     plant.discountWholesale,
                                     plant.priceWholesale,
-                                    user )}
+                                    isWholesaleUser )}
                             placement={checkForSoldOutAndNewItem === SOLD_OUT ? 'end' : 'start'}>
-                            <Image
-                                className='primary-image'
-                                style={{ filter: checkForSoldOutAndNewItem === SOLD_OUT && 'grayscale(80%)' }}
-                                src={selectedPhoto}
-                            />
+                            <Image.PreviewGroup items={plant.photos}>
+                                <Image
+                                    wrapperClassName
+                                    className='primary-image'
+                                    style={{ filter: checkForSoldOutAndNewItem === SOLD_OUT && 'grayscale(80%)' }}
+                                    fallback={fallbackImage}
+                                    src={selectedPhoto}
+                                />
+                            </Image.PreviewGroup>
                         </Badge.Ribbon>
                     </div>
                 </div>
@@ -97,7 +133,7 @@ const DetailProductScreen = () => {
                 <Row span={12} className='size-conservation-product conservation-detail'>
                     <span> {checkConservation( plant.conservation, 30 )}</span>
                 </Row>
-                {user.isWholesaleUser && !plant.priceCollector &&
+                {isWholesaleUser && !plant.priceCollector &&
                     <Row className='min-max-order-product'>
                         <Col span={12}>
                             Orden Mínima (MOQ): <span> {plant.minOrder}</span>
@@ -110,10 +146,10 @@ const DetailProductScreen = () => {
                 {
                     checkForSoldOutAndNewItem !== SOLD_OUT &&
                     <Row className='price-product'>
-                        <span> {checkPriceWhenWholesalePlant( plant.discountCollector, plant.priceCollector, plant.discountWholesale, plant.priceWholesale, user )}</span>
+                        <span> {checkPriceWhenWholesalePlant( plant.discountCollector, plant.priceCollector, plant.discountWholesale, plant.priceWholesale, isWholesaleUser )}</span>
                     </Row>
                 }
-                {user.isWholesaleUser && checkForSoldOutAndNewItem !== SOLD_OUT &&
+                {isWholesaleUser && checkForSoldOutAndNewItem !== SOLD_OUT &&
                     <Row className='cart-product'>
                         Add to CART
                     </Row>
@@ -121,6 +157,10 @@ const DetailProductScreen = () => {
             </Col>
         </Flex>
     );
+};
+
+DetailProductScreen.propTypes = {
+    isWholesaleUser: PropTypes.bool.isRequired
 };
 
 export default DetailProductScreen;

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import '../Styles/PlantCardComponent.scss'
+import React from 'react';
+import '../styles/PlantCardComponent.scss'
 import { Badge, Card, Tooltip } from "antd";
 import Meta from "antd/es/card/Meta";
 import { PiPottedPlantFill } from "react-icons/pi";
@@ -11,33 +11,31 @@ import {
     checkPriceRibbonWhenWholesalePlant,
     checkScreenForShoppingCart,
     checkTitleForSoldOutAndNewItem
-} from "../Utils/PlantCardUtils";
-import { AGOTADO, NEW, NUEVO, SOLD_OUT } from "../Constants/Constants";
-import { useNavigate } from "react-router-dom";
-import { getTypeUserAndScreenToRoute } from "../Utils/routerUtils";
+} from "../utils/PlantCardUtils";
+import { AGOTADO, NEW, NUEVO, SOLD_OUT } from "../constants/Constants";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const PlantCardComponent = ( { plantObj, isLoading, user, screen } ) => {
+const PlantCardComponent = ( { plantObj, isLoading, isWholesaleUser, screen } ) => {
 
     const navigate = useNavigate();
-    const navigateToDetailProduct = ( plantUid, priceCollector ) => {
+    const pathname = useLocation().pathname;
 
-        const newPlantsPathname = getTypeUserAndScreenToRoute( screen, priceCollector );
+    const navigateToDetailProduct = ( plantUid ) => {
 
-        navigate( `/detail-product/${newPlantsPathname.typeUser}/${newPlantsPathname.screen}/${plantUid}`, {
-            replace: false,
+        return navigate( `/${pathname.split('/')[1]}/detail-product/${plantUid}`, {
+            replace: true,
             preventScrollReset: true
         } );
     }
 
     const checkForSoldOutAndNewItem = checkTitleForSoldOutAndNewItem( plantObj.quantity, plantObj.publishedDate );
 
-    const [ loading ] = useState( isLoading );
     return (
         <Card
             hoverable
             style={{ maxWidth: 350 }}
-            loading={loading}
-            onClick={() => navigateToDetailProduct( plantObj.uid, plantObj.priceCollector )}
+            loading={isLoading}
+            onClick={() => navigateToDetailProduct( plantObj[ '_id' ])}
             cover={
                 checkForSoldOutAndNewItem === SOLD_OUT ?
                     <img
@@ -54,8 +52,8 @@ const PlantCardComponent = ( { plantObj, isLoading, user, screen } ) => {
             }
             actions={
                 [
-                    checkConservationWhenWholesalePlant( plantObj.discountCollector, plantObj.priceCollector, plantObj.discountWholesale, plantObj.priceWholesale, user, plantObj ),
-                    checkScreenForShoppingCart( screen, plantObj.priceCollector, plantObj.priceWholesale, user, plantObj )
+                    checkConservationWhenWholesalePlant( plantObj.discountCollector, plantObj.priceCollector, plantObj.discountWholesale, plantObj.priceWholesale, isWholesaleUser, plantObj ),
+                    checkScreenForShoppingCart( screen, plantObj.priceCollector, plantObj.priceWholesale, isWholesaleUser, plantObj )
                     ,
                     <div key={"size"} className='plant-size'>
                         <Tooltip placement="top"
@@ -67,7 +65,7 @@ const PlantCardComponent = ( { plantObj, isLoading, user, screen } ) => {
                                 size={20}
                                 style={{ marginTop: 4 }}/>
                         </Tooltip>
-                        <span style={{lineHeight: 2}}>
+                        <span style={{ lineHeight: 2 }}>
                         {plantObj.size}
                         </span>
                     </div>,
@@ -82,10 +80,10 @@ const PlantCardComponent = ( { plantObj, isLoading, user, screen } ) => {
                     </Badge.Ribbon>
             }
             {checkForSoldOutAndNewItem !== SOLD_OUT &&
-                checkDiscountRibbonWhenWholesalePlant( plantObj.discountCollector, plantObj.priceCollector, plantObj.discountWholesale, plantObj.priceWholesale, user )
+                checkDiscountRibbonWhenWholesalePlant( plantObj.discountCollector, plantObj.priceCollector, plantObj.discountWholesale, plantObj.priceWholesale, isWholesaleUser )
             }
             {checkForSoldOutAndNewItem !== SOLD_OUT &&
-                checkPriceRibbonWhenWholesalePlant( plantObj.discountCollector, plantObj.priceCollector, plantObj.discountWholesale, plantObj.priceWholesale, user )
+                checkPriceRibbonWhenWholesalePlant( plantObj.discountCollector, plantObj.priceCollector, plantObj.discountWholesale, plantObj.priceWholesale, isWholesaleUser )
             }
             <Meta
                 avatar={checkCategory( plantObj.category, 40 )}
@@ -99,7 +97,7 @@ const PlantCardComponent = ( { plantObj, isLoading, user, screen } ) => {
 PlantCardComponent.propTypes = {
     plantObj: PropTypes.object.isRequired,
     isLoading: PropTypes.bool.isRequired,
-    user: PropTypes.object,
+    isWholesaleUser: PropTypes.bool.isRequired,
     screen: PropTypes.string.isRequired
 };
 

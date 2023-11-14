@@ -6,10 +6,15 @@ import { MdConnectWithoutContact } from "react-icons/md";
 import { PiSignIn } from "react-icons/pi";
 import { RiAdminFill } from "react-icons/ri";
 import logoWhite from "../assets/logo192white.png";
-import '../Styles/SideBarComponent.scss'
+import '../styles/SideBarComponent.scss'
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
+import { useSelector } from 'react-redux'
+import { AuthStatus } from "../store/auth/authSlice";
 
 const SideBarComponent = ({collapsed}) => {
+
+    const { status, typeUser } = useSelector( state => state.user );
 
     return (
         <div>
@@ -40,11 +45,13 @@ const SideBarComponent = ({collapsed}) => {
                         icon: <MdConnectWithoutContact size={30}/>,
                         label: 'Contacto',
                     },
+                    status !== AuthStatus.AUTHENTICATED &&
                     {
                         key: '4',
                         icon: <PiSignIn size={30}/>,
-                        label: 'Ingresar',
+                        label: <NavLink to='/sign-in'>Ingresar</NavLink>,
                     },
+                    typeUser === 'admin' && status === AuthStatus.AUTHENTICATED &&
                     {
                         key: '5',
                         icon: <RiAdminFill size={30}/>,

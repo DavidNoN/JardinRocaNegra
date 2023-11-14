@@ -1,13 +1,13 @@
 import React from 'react';
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import '../Styles/TriggerSideBarComponent.scss'
+import '../styles/TriggerSideBarComponent.scss'
 import PropTypes from "prop-types";
 import { Tree } from "antd";
 import { TbPlant2 } from "react-icons/tb";
 import { GiBulb, GiCarnivorousPlant } from "react-icons/gi";
 import { PiCactusFill } from "react-icons/pi";
 import { BiSolidDownArrow, BiSolidRightArrow } from "react-icons/bi";
-import { NEW_PLANTS, WHOLESALE } from "../Constants/Constants";
+import { NEW_PLANTS, WHOLESALE } from "../constants/Constants";
 
 
 

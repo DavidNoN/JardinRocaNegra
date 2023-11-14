@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/FooterComponent.scss';
+import '../styles/FooterComponent.scss';
 import { Col, Divider, Row } from "antd";
 import { FaLocationDot, FaPhoneFlip } from "react-icons/fa6";
 import { GrMail } from "react-icons/gr";
