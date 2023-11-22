@@ -5,7 +5,7 @@ import { TbHomeEco, TbPlant2 } from "react-icons/tb";
 import { FaShoppingCart } from "react-icons/fa";
 import '../styles/NavBarComponent.scss'
 import { RxHamburgerMenu } from "react-icons/rx";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AiOutlineUser } from "react-icons/ai";
 import Link from "antd/es/typography/Link";
 import { useDispatch, useSelector } from "react-redux";
@@ -49,15 +49,14 @@ const NavBarComponent = () => {
         },
     ];
 
-    const selectedRouteLocation = useLocation().pathname;
-
+    const { screenName } = useSelector( state => state.screen );
 
     return (
         <Row justify='space-between'>
             {contextHolder}
-            <Col xs={21}
-                 sm={21}
-                 md={21}
+            <Col xs={16}
+                 sm={18}
+                 md={20}
                  lg={21}
                  xl={21}
                  xxl={21}>
@@ -65,7 +64,7 @@ const NavBarComponent = () => {
                     theme="dark"
                     mode="horizontal"
                     overflowedIndicator={<RxHamburgerMenu/>}
-                    defaultSelectedKeys={selectedRouteLocation}
+                    selectedKeys={[`/${screenName}`]}
                     style={{ background: 'none', color: '#787878' }}
                     className="nav-menu"
                     items={[
@@ -99,9 +98,9 @@ const NavBarComponent = () => {
                 />
             </Col>
             <Col className="shopping-cart"
-                 xs={3}
-                 sm={3}
-                 md={3}
+                 xs={8}
+                 sm={6}
+                 md={4}
                  lg={3}
                  xl={3}
                  xxl={3}>

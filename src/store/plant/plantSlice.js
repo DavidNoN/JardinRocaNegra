@@ -4,23 +4,37 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     ok: false,
     msg: '',
-    plants: []
+    wholesalePlants: [],
+    collectionPlants: [],
+    newPlants: [],
+    carnivorousPlants: []
 };
 
 export const plantSlice = createSlice( {
     name: 'plant',
     initialState,
     reducers: {
-        getPlantsScheme: ( state, { payload } ) => {
+        getNewPlants: (state, {payload}) => {
             state.ok = payload.ok;
             state.msg = payload.msg;
-            state.plants = payload.plants;
+            state.newPlants = payload.plants;
         },
-        postPlant: () => {
+        getWholesalePlants: (state, {payload}) => {
+            state.ok = payload.ok;
+            state.msg = payload.msg;
+            state.wholesalePlants = payload.plants;
         },
-        updatePlant: () => {
-        }
+        getCollectionPlants: (state, {payload}) => {
+            state.ok = payload.ok;
+            state.msg = payload.msg;
+            state.collectionPlants = payload.plants;
+        },
+        getCarnivorousPlants: (state, {payload}) => {
+            state.ok = payload.ok;
+            state.msg = payload.msg;
+            state.carnivorousPlants = payload.plants;
+        },
     }
 } );
 
-export const { getPlantsScheme, postPlant, updatePlant } = plantSlice.actions
+export const { getNewPlants, getWholesalePlants, getCarnivorousPlants, getCollectionPlants } = plantSlice.actions

@@ -1,14 +1,13 @@
 import React from 'react';
 import '../styles/PlantCardComponent.scss'
-import { Badge, Card, Tooltip } from "antd";
+import { Badge, Card, Image, Watermark } from "antd";
 import Meta from "antd/es/card/Meta";
-import { PiPottedPlantFill } from "react-icons/pi";
 import PropTypes from "prop-types";
 import {
     checkCategory,
-    checkConservationWhenWholesalePlant,
+    checkConservationPlant,
     checkDiscountRibbonWhenWholesalePlant,
-    checkPriceRibbonWhenWholesalePlant,
+    checkPriceRibbonPlant,
     checkScreenForShoppingCart,
     checkTitleForSoldOutAndNewItem
 } from "../utils/PlantCardUtils";
@@ -22,8 +21,7 @@ const PlantCardComponent = ( { plantObj, isLoading, isWholesaleUser, screen } ) 
 
     const navigateToDetailProduct = ( plantUid ) => {
 
-        return navigate( `/${pathname.split('/')[1]}/detail-product/${plantUid}`, {
-            replace: true,
+        return navigate( `/${pathname.split( '/' )[ 1 ]}/detail-product/${plantUid}`, {
             preventScrollReset: true
         } );
     }
@@ -35,39 +33,34 @@ const PlantCardComponent = ( { plantObj, isLoading, isWholesaleUser, screen } ) 
             hoverable
             style={{ maxWidth: 350 }}
             loading={isLoading}
-            onClick={() => navigateToDetailProduct( plantObj[ '_id' ])}
             cover={
                 checkForSoldOutAndNewItem === SOLD_OUT ?
-                    <img
-                        alt="example"
-                        className='img-plant-card'
-                        style={{ filter: 'grayscale(80%)' }}
-                        src={plantObj.photos[ 0 ]}
-                    /> :
-                    <img
-                        alt="example"
-                        className='img-plant-card'
-                        src={plantObj.photos[ 0 ]}
-                    />
+                    <Watermark content="Jardín Roca Negra" font={{ color: 'rgba(0,0,0,0.3)' }}>
+                        <Image
+                            alt="example"
+                            preview={false}
+                            className='img-plant-card'
+                            style={{ filter: 'grayscale(80%)' }}
+                            src={plantObj.photos[ 0 ]}
+                            onClick={() => navigateToDetailProduct( plantObj[ '_id' ] )}
+                        /> </Watermark> :
+                    <Watermark content="Jardín Roca Negra" font={{ color: 'rgba(0,0,0,0.15)' }}>
+                        <Image
+                            alt="example"
+                            className='img-plant-card'
+                            preview={false}
+                            onClick={() => navigateToDetailProduct( plantObj[ '_id' ] )}
+                            src={plantObj.photos[ 0 ]}
+                        />
+                    </Watermark>
             }
             actions={
                 [
-                    checkConservationWhenWholesalePlant( plantObj.discountCollector, plantObj.priceCollector, plantObj.discountWholesale, plantObj.priceWholesale, isWholesaleUser, plantObj ),
-                    checkScreenForShoppingCart( screen, plantObj.priceCollector, plantObj.priceWholesale, isWholesaleUser, plantObj )
+                    checkConservationPlant( plantObj.discountCollector[0], plantObj.priceCollector[0], plantObj.discountWholesale[0], plantObj.priceWholesale[0], isWholesaleUser, plantObj ),
+                    checkScreenForShoppingCart( screen, plantObj.priceCollector[0], plantObj.priceWholesale[0], isWholesaleUser, plantObj, '' )
                     ,
                     <div key={"size"} className='plant-size'>
-                        <Tooltip placement="top"
-                                 autoAdjustOverflow={true}
-                                 trigger={[ 'click', 'hover' ]}
-                                 title={'Tamaño Matero'}>
-                            <PiPottedPlantFill
-                                color={'#A0522D'}
-                                size={20}
-                                style={{ marginTop: 4 }}/>
-                        </Tooltip>
-                        <span style={{ lineHeight: 2 }}>
-                        {plantObj.size}
-                        </span>
+                        Cant. {plantObj.quantity}
                     </div>,
                 ]}>
             {
@@ -80,15 +73,16 @@ const PlantCardComponent = ( { plantObj, isLoading, isWholesaleUser, screen } ) 
                     </Badge.Ribbon>
             }
             {checkForSoldOutAndNewItem !== SOLD_OUT &&
-                checkDiscountRibbonWhenWholesalePlant( plantObj.discountCollector, plantObj.priceCollector, plantObj.discountWholesale, plantObj.priceWholesale, isWholesaleUser )
+                checkDiscountRibbonWhenWholesalePlant( plantObj.discountCollector[0], plantObj.priceCollector[0], plantObj.discountWholesale[0], plantObj.priceWholesale[0], isWholesaleUser, screen )
             }
             {checkForSoldOutAndNewItem !== SOLD_OUT &&
-                checkPriceRibbonWhenWholesalePlant( plantObj.discountCollector, plantObj.priceCollector, plantObj.discountWholesale, plantObj.priceWholesale, isWholesaleUser )
+                checkPriceRibbonPlant( plantObj.discountCollector[0], plantObj.priceCollector[0], plantObj.discountWholesale[0], plantObj.priceWholesale[0], isWholesaleUser , screen)
             }
             <Meta
                 avatar={checkCategory( plantObj.category, 40 )}
                 title={`${plantObj.genre} ${plantObj.species}`}
                 description={plantObj.specialFeature || ''}
+                onClick={() => navigateToDetailProduct( plantObj[ '_id' ] )}
             />
         </Card>
     );

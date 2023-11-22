@@ -50,6 +50,71 @@ a {
   transition: transform 80ms ease-in;
 }
 
+
+.sign-up-form {
+
+
+  .ant-btn:active {
+    transform: scale(0.95);
+  }
+
+  .ant-btn:focus {
+    outline: none;
+  }
+
+  .ant-btn.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+  }
+
+  .ant-form-item {
+    width: 80%;
+    min-height: 32px;
+  }
+
+  .ant-input-group-addon {
+    background-color: #EEEEEE !important;
+    height: 20px !important;
+    width: 80px !important;
+    &:focus-within {
+      border-color: #D6249F;
+      color: #000000;
+    }
+  }
+
+  .ant-select-item-option-selected:focus:active:focus-within:hover:visited:focus-visible:target {
+    color: #000000 !important;
+  }
+
+  .ant-select-dropdown {
+    width: 80px !important;
+  }
+
+
+  .ant-input-affix-wrapper {
+    background-color: #EEEEEE;
+    max-height: 46px;
+
+    &:focus-within {
+      border-color: #D6249F;
+    }
+  }
+
+
+  .ant-form-item-row {
+    min-height: 46px;
+    max-height: 46px;
+
+  }
+
+  .ant-input, #password {
+    background-color: #eee;
+    padding: 12px 15px;
+    margin: 8px 0 !important;
+  }
+}
+
+
 .already-have-account {
   display: none;
 }
@@ -58,18 +123,12 @@ a {
   display: none;
 }
 
-.ant-btn:active {
-  transform: scale(0.95);
-}
-
-.ant-btn:focus {
-  outline: none;
-}
-
-.ant-btn.ghost {
+.ghost {
   background-color: transparent;
   border-color: #FFFFFF;
 }
+
+
 
 form {
   background-color: #FFFFFF;
@@ -82,55 +141,13 @@ form {
   text-align: center;
 }
 
-.ant-form-item {
-  width: 80%;
-  min-height: 32px;
-}
+
 
 .form-item {
   height: 40px;
   margin-bottom: 30px;
 }
 
-.ant-form-item-row {
-  min-height: 46px;
-  max-height: 46px;
-
-}
-
-.ant-input-group-addon {
-  background-color: #EEEEEE !important;
-  height: 20px !important;
-  width: 80px !important;
-  &:focus-within {
-    border-color: #D6249F;
-    color: #000000;
-  }
-}
-
-.ant-select-item-option-selected:focus:active:focus-within:hover:visited:focus-visible:target {
-  color: #000000 !important;
-}
-
-.ant-select-dropdown {
-  width: 80px !important;
-}
-
-
-.ant-input-affix-wrapper {
-  background-color: #EEEEEE;
-  max-height: 46px;
-
-  &:focus-within {
-    border-color: #D6249F;
-  }
-}
-
-.ant-input, #password {
-  background-color: #eee;
-  padding: 12px 15px;
-  margin: 8px 0 !important;
-}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

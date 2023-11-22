@@ -23,8 +23,6 @@ F
 src/react-app-env.d.ts,4\a\4a7b99bdbee5792679d347b6474463bf5e14b66d
 A
 public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
-F
-src/Utils/TitleCase.js,5\6\568eaf70d84650c56110d73d63f12b047c5e2fe1
 D
 src/BlackRockApp.jsx,c\b\cb7e24d32a803106516f09d3c16818a0f2c416bd
 J
@@ -100,8 +98,6 @@ M
 src/store/plant/plantSlice.js,2\4\24beb872c4172260f47be130dd0ce1b892d695b0
 L
 src/store/auth/authThunks.js,c\6\c6f6661795c2f700205ac8c883174120c267de0e
-N
-src/store/plant/plantThunks.js,7\e\7ee0eff20ede057a47f054f6619b8bec5bf65297
 L
 src/services/PlantService.js,1\2\1288169428c4086b9055b5ac1391f62c0dd78ff4
 S
@@ -122,3 +118,57 @@ S
 #src/styles/DetailProductScreen.scss,a\4\a4ebbcfd5811fea0365d846f0ef817adae0107a5
 J
 src/constants/Constants.js,2\1\212715ddc1397ec42db2afc638bfe58a7c41c794
+R
+"src/styles/PlantCardComponent.scss,4\f\4fe020207b7eb27aef9394a8aa324938d3424585
+P
+ src/styles/QuestionsAnswers.scss,7\2\729f1bc1a85a7f9f9cba37682bf8be77d9984b61
+V
+&src/Screens/QuestionsAnswersScreen.jsx,d\b\dbddc744cdd23544b052448290af4d53a3df9d8e
+H
+src/utils/PipesNumber.js,e\5\e54ce49fd0e6f679249c5b7ece15f0690a2f81c0
+O
+src/styles/FooterComponent.scss,8\8\88b4ecf45c77554a05058bb94ae4f46810cbde5d
+P
+ src/styles/SideBarComponent.scss,5\5\558b4b4bc55e58beaea4f99d0de7b224fd1a49ba
+N
+src/styles/SignInUpScreen.scss,5\b\5b5f2921765a0a3f6a38685e1a55e23e03536d18
+O
+src/Screens/AdminBaseScreen.jsx,8\a\8ab9dfdaa9644ef6f6fe124624c72ed3a5cb442a
+H
+src/router/AdminRoute.js,4\5\45bbdd1128a66d00d78c082f2103659ecc5aa23d
+R
+"src/Screens/UnauthorizedScreen.jsx,f\f\ff758971320c57358bcf94c43bb9b09edc20d678
+O
+src/styles/AdminBaseScreen.scss,7\3\7343f63e20d4c14d16c721af2e7789dcc4537f08
+T
+$src/Screens/CreateNewPlantScreen.jsx,3\e\3eff893cfd6f729e67d6697e710b2d720f510d22
+N
+src/styles/CreateNewPlant.scss,2\9\29ee21d05072e519ae87829e4278c7ce76faea75
+S
+#src/store/category/categorySlice.js,9\5\9519e32ff131b8100dcd68c61af179a6d75d16c5
+T
+$src/store/category/categoryThunks.js,2\1\21f5661c9053d54267ae1664c9d7b683da771679
+O
+src/services/CategoryService.js,d\4\d455a60eb84a3b25530ea986c974aae55a49b368
+I
+src/utils/CalcDiffDays.js,c\d\cd450e33c94f8a327084386cb1c173a938e2a87d
+L
+src/utils/categoriesUtils.js,d\5\d5910da019215d22240a37db373fc2d09be11539
+J
+src/utils/plantObjUtils.js,6\d\6d354a7d642abfc2248ed1abca935b379b9812e6
+W
+'src/styles/TriggerSideBarComponent.scss,c\9\c9aadd3876690a1537b6fe8aa5dc741ab4bb68d1
+M
+src/Shared/EmptyComponent.jsx,6\0\6072a9b7f6a120028c89342e4f607a2e68718745
+K
+src/Shared/FilterDrawer.jsx,3\0\30973b267c6cb70984154997f622cc3a4df4ec08
+F
+src/utils/textUtils.js,2\f\2f2c89493dea985cda82bc5178231759a5f2c0a7
+N
+src/store/plant/plantThunks.js,7\e\7ee0eff20ede057a47f054f6619b8bec5bf65297
+H
+src/utils/filterUtils.js,a\3\a3563e3c58f13de65aa0680d640bc0e87c61e181
+L
+src/styles/FilterDrawer.scss,f\f\ffb85a262bedbce004d671e23c73fe6b10e21754
+Q
+!src/Screens/UpdatePlantScreen.jsx,9\e\9ef81378ad067a69ff85448306e6ec24db986088

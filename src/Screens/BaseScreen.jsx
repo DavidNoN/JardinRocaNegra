@@ -24,8 +24,12 @@ const headerStyle = {
 };
 
 const contentStyle = {
+    backgroundColor: '#FFFFFF',
     overflow: 'initial',
-    marginBottom: '40px'
+    marginBottom: '40px',
+    borderRadius: '15px',
+    padding: '32px',
+    minHeight: '600px'
 };
 
 
@@ -55,7 +59,7 @@ const BaseScreen = () => {
     const [ collapsed, setCollapsed ] = useState( true );
 
 
-    const { browserHistory } = useSelector( state => state.screen );
+    const { browserHistory, screenName } = useSelector( state => state.screen );
 
 
     return (
@@ -65,7 +69,9 @@ const BaseScreen = () => {
             <Sider style={collapsed ? sideStyleCollapsed : sideStyle} width={collapsed ? 80 : 250} collapsible
                    collapsed={collapsed}
                    trigger={useMobileCheck() ? null :
-                       <TriggerSidebarComponent collapsed={collapsed} setCollapsed={setCollapsed}/>}
+                       <TriggerSidebarComponent collapsed={collapsed}
+                                                setCollapsed={setCollapsed}
+                                                screenName={screenName}/>}
                    breakpoint="lg"
                    onBreakpoint={( broken ) => {
                        setCollapsed( broken )

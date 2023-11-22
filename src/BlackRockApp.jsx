@@ -11,7 +11,7 @@ const BlackRockApp = () => {
     return (
         <Provider store={store}>
             <BrowserRouter future={{ v7_startTransition: true }}>
-                <ConfigProvider theme={{ token: { colorPrimary: '#FFFFFF' } }}>
+                <ConfigProvider theme={{ token: { colorPrimary: '#D6249F' } }}>
                     <BaseScreen/>
                 </ConfigProvider>
             </BrowserRouter>

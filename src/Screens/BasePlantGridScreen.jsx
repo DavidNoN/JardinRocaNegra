@@ -1,46 +1,50 @@
 import React, { useEffect, useState } from 'react';
 import PlantCardComponent from "../Shared/PlantCardComponent";
 import { Col, Row } from "antd";
-import { NEW_PLANTS } from "../constants/Constants";
 import PropTypes from "prop-types";
-import { startGetPlants } from "../services/PlantService";
-import { useDispatch } from "react-redux";
-import { getPlantsScheme } from "../store/plant/plantSlice";
+import { useDispatch, useSelector } from "react-redux";
 import { Outlet, useLocation } from 'react-router-dom';
 import { getUriNameByPathname } from "../utils/routerUtils";
+import EmptyComponent from "../Shared/EmptyComponent";
+import { getPlantsThunk } from "../store/plant/plantThunks";
+import { checkSelectorScreenPlant, validateIfNeedToReloadPlants } from "../utils/PlantCardUtils";
 
-const NewPlantsScreen = ( { isWholesaleUser } ) => {
+const BasePlantGridScreen = ( { isWholesaleUser, screenName } ) => {
 
-    const [ plants, setPlants ] = useState( [] )
+
     const pathname = useLocation().pathname;
     const [ isLoading, setIsLoading ] = useState( false );
     const dispatch = useDispatch();
 
+    const { newPlants, wholesalePlants, collectionPlants, carnivorousPlants } = useSelector( state => state.plants );
+    const plants = checkSelectorScreenPlant( newPlants, wholesalePlants, collectionPlants, carnivorousPlants, screenName );
+
     const getPlants = async () => {
+        if (!validateIfNeedToReloadPlants(newPlants, wholesalePlants, collectionPlants, carnivorousPlants, screenName)) {
+            console.log('no reloading');
+            return;
+        }
         setIsLoading( true );
-        const result = await startGetPlants( getUriNameByPathname( pathname ) );
-        setPlants( result.plants );
-        setIsLoading( false );
-        return dispatch( getPlantsScheme( result ) );
+        await getPlantsThunk( dispatch, getUriNameByPathname( pathname ) );
+        return setIsLoading( false );
     }
 
     useEffect( () => {
         getPlants().then();
-    }, [ pathname ] );
+    }, [ pathname, screenName ] );
 
-    console.log();
 
     return (
         <>
             {pathname.includes( 'detail-product' ) ? <Outlet/> :
                 <Row gutter={[ 16, 16 ]}>
-                    {plants.map( ( plant ) => (
+                    {plants.length === 0 ? <EmptyComponent/> : plants.map( ( plant ) => (
                         <Col key={plant[ '_id' ]} xs={{ span: 21, offset: 1 }} sm={{ span: 21, offset: 1 }}
                              md={{ span: 11, offset: 1 }}
                              lg={{ span: 11, offset: 1 }} xl={{ span: 7, offset: 1 }} xxl={{ span: 5, offset: 1 }}
                         >
                             <PlantCardComponent isLoading={isLoading} plantObj={plant} isWholesaleUser={isWholesaleUser}
-                                                screen={NEW_PLANTS}/>
+                                                screen={screenName}/>
                         </Col>
                     ) )}
                 </Row>
@@ -49,7 +53,8 @@ const NewPlantsScreen = ( { isWholesaleUser } ) => {
     );
 };
 
-NewPlantsScreen.propTypes = {
+BasePlantGridScreen.propTypes = {
+    screenName: PropTypes.string.isRequired,
     isWholesaleUser: PropTypes.bool.isRequired
 };
-export default NewPlantsScreen;
+export default BasePlantGridScreen;

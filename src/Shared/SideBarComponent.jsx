@@ -12,14 +12,16 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from 'react-redux'
 import { AuthStatus } from "../store/auth/authSlice";
 
-const SideBarComponent = ({collapsed}) => {
+const SideBarComponent = ( { collapsed } ) => {
 
     const { status, typeUser } = useSelector( state => state.user );
+
+    const { screenName } = useSelector( state => state.screen );
 
     return (
         <div>
             <div className="sidebar-logo">
-                {!collapsed && <img src={logoWhite} width={150} height={150} alt="Logo"/> }
+                {!collapsed && <img src={logoWhite} width={150} height={150} alt="Logo"/>}
             </div>
 
             <hr/>
@@ -28,6 +30,7 @@ const SideBarComponent = ({collapsed}) => {
                 theme="dark"
                 mode="inline"
                 style={{ background: 'none' }}
+                selectedKeys={[ `/${screenName}` ]}
                 className="side-menu"
                 items={[
                     {
@@ -36,9 +39,9 @@ const SideBarComponent = ({collapsed}) => {
                         label: 'Envíos',
                     },
                     {
-                        key: '2',
+                        key: '/frequently-questions',
                         icon: <BsFillPatchQuestionFill size={30}/>,
-                        label: 'Preguntas Frecuentes',
+                        label: <NavLink to='/frequently-questions'>Preguntas Frecuentes</NavLink>,
                     },
                     {
                         key: '3',
@@ -47,15 +50,15 @@ const SideBarComponent = ({collapsed}) => {
                     },
                     status !== AuthStatus.AUTHENTICATED &&
                     {
-                        key: '4',
+                        key: '/sign-in',
                         icon: <PiSignIn size={30}/>,
                         label: <NavLink to='/sign-in'>Ingresar</NavLink>,
                     },
-                    typeUser === 'admin' && status === AuthStatus.AUTHENTICATED &&
+                    typeUser === 'Admin' && status === AuthStatus.AUTHENTICATED &&
                     {
-                        key: '5',
+                        key: '/admin',
                         icon: <RiAdminFill size={30}/>,
-                        label: 'Admin',
+                        label: <NavLink to='/admin'>Admin</NavLink>,
                     }
                 ]}
             />

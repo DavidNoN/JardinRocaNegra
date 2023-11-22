@@ -22,7 +22,7 @@ const SignBaseScreen = () => {
     };
 
     return (
-        <Row className="sign-row" justify='center'>
+        <Row className="sign-row sign-up-form" justify='center'>
             <div className={`container-sign ${isRightPanelActive ? 'right-panel-active' : ''}`} id="container">
                 <SignUpScreen handleSignInClick={handleSignInClick}/>
                 <SignInScreen handleSignUpClick={handleSignUpClick}/>

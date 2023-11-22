@@ -31,6 +31,7 @@ const SignInScreen = ( { handleSignUpClick } ) => {
             {contextHolder}
             <Form form={formSignIn}
                   onFinish={onFinish}
+                  className='sign-up-form'
                   scrollToFirstError
             >
                 <Title level={2} className='h1'>Ingresar</Title>

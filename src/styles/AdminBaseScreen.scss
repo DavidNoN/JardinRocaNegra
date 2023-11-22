@@ -1,0 +1,19 @@
+.admin-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #D6249F !important;
+
+  span:nth-child(2) {
+    vertical-align: text-bottom;
+    font-size: 12pt;
+  }
+}
+
+.admin-tabs .ant-tabs-tab-btn {
+  span:nth-child(2) {
+    vertical-align: text-bottom;
+    font-size: 10pt;
+  }
+}
+
+.admin-tabs .ant-tabs-tab .ant-tabs-tab-btn:hover {
+  color: #D6249F !important;
+}

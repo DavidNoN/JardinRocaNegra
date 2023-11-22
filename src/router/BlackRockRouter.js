@@ -8,7 +8,11 @@ import { useAuthStore } from "../hooks/useAuthStore";
 import BasePlantGridScreen from "../Screens/BasePlantGridScreen";
 import { dispatchBrowserHistory, dispatchScreenName } from "../store/screen/screenBrowserHistoryThunks";
 import { checkIfPathnameHasUid } from "../utils/routerUtils";
-
+import QuestionsAnswersScreen from "../Screens/QuestionsAnswersScreen";
+import UnauthorizedScreen from "../Screens/UnauthorizedScreen";
+import { AdminRoute } from "./AdminRoute";
+import AdminBaseScreen from "../Screens/AdminBaseScreen";
+import { getCategories } from "../store/category/categoryThunks";
 
 export const BlackRockRouter = () => {
 
@@ -16,12 +20,13 @@ export const BlackRockRouter = () => {
     const pathname = useLocation().pathname;
     const dispatch = useDispatch();
     let plantUid = checkIfPathnameHasUid( pathname );
-    const { isWholesaleUser, status } = useSelector( state => state.user );
-
+    const { isWholesaleUser, status, typeUser } = useSelector( state => state.user );
+    const { screenName } = useSelector( state => state.screen );
 
 
     useEffect( () => {
         checkAuthToken().then();
+        getCategories( dispatch ).then();
     }, [] );
 
     useEffect( () => {
@@ -46,12 +51,17 @@ export const BlackRockRouter = () => {
                 }
             />
             {[ 'collection-plants', 'carnivorous-plants', 'wholesale-plants', 'new-plants' ].map( ( path ) => (
-                <Route path={path} element={<BasePlantGridScreen isWholesaleUser={isWholesaleUser}/>} key={path}>
+                <Route path={path}
+                       element={<BasePlantGridScreen isWholesaleUser={isWholesaleUser} screenName={screenName}/>}
+                       key={path}>
                     <Route path={`detail-product/:uid`}
-                           element={<DetailProductScreen isWholesaleUser={isWholesaleUser}/>}/>
+                           element={<DetailProductScreen isWholesaleUser={isWholesaleUser} screenName={screenName}/>}/>
                 </Route>
             ) )}
             <Route path='other-products' element={<OtherProductsScreen/>}></Route>
+            <Route path='frequently-questions' element={<QuestionsAnswersScreen/>}></Route>
+            <Route path='unauthorized' element={<UnauthorizedScreen/>}></Route>
+            <Route path='admin' element={<AdminRoute typeUser={typeUser}><AdminBaseScreen/></AdminRoute>}></Route>
             <Route path="sign-in" element={<SignBaseScreen/>}></Route>
         </Routes>
     )

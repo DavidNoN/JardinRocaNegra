@@ -11,9 +11,13 @@
   font-weight: 700;
 }
 
+.ant-image {
+  width: 100%;
+}
+
 .img-plant-card {
-  width: 300px;
-  height: 300px;
+  width: 100% !important;
+  height: 300px !important;
 }
 
 .ribbon-card-new-item-sold-out {
@@ -66,5 +70,22 @@
   .img-plant-card {
     width: 200px;
     height: 200px;
+    max-height: 200px;
+  }
+
+  .ant-card-meta {
+    flex-direction: column;
+
+    .ant-card-meta-title {
+      white-space: normal;
+    }
+
+    .ant-card-meta-description {
+      white-space: normal;
+    }
+  }
+
+  .ribbon-card-new-item-sold-out {
+    top: -210px
   }
 }

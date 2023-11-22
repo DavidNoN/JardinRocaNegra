@@ -1,51 +1,113 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/DetailProductScreen.scss'
-import { Badge, Col, Flex, Image, Row } from "antd";
 import { useLocation, useParams } from "react-router-dom";
 import {
     checkCategory,
     checkConservation,
-    checkDiscountWhenWholesalePlant,
-    checkPriceWhenWholesalePlant,
+    checkDiscountRibbonPlantForDetail,
+    checkPricePlantForDetail, checkSelectorScreenPlant,
     checkTitleForSoldOutAndNewItem
 } from "../utils/PlantCardUtils";
-import { fallbackImage, SOLD_OUT } from "../constants/Constants";
+import { fallbackImage, NEW_PLANTS, SOLD_OUT, WHOLESALE } from "../constants/Constants";
 import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
-import { startGetPlants } from "../services/PlantService";
 import { getNameByPathname, getUriNameByPathname } from "../utils/routerUtils";
-import { getPlantsScheme } from "../store/plant/plantSlice";
 import { dispatchBrowserHistory, dispatchScreenName } from "../store/screen/screenBrowserHistoryThunks";
+import { Button, Col, Flex, Image, Row } from "antd";
+import { IoMdShare } from "react-icons/io";
+import { FaRegHeart } from "react-icons/fa";
+import { getPlantsThunk } from "../store/plant/plantThunks";
 
 
-const DetailProductScreen = ( { isWholesaleUser } ) => {
+const DetailProductScreen = ( { isWholesaleUser, screenName } ) => {
 
     const dispatch = useDispatch();
     const pathname = useLocation().pathname;
-    const [ plant, setPlant ] = useState( null )
+    const { newPlants, wholesalePlants, collectionPlants, carnivorousPlants } = useSelector( state => state.plants );
+    const plants = checkSelectorScreenPlant( newPlants, wholesalePlants, collectionPlants, carnivorousPlants, screenName );
+    const [ plant, setPlant ] = useState( null );
 
     const { uid } = useParams();
 
-    const classesName = [ 'secondary-photo', 'tertiary-photo', 'extra-photo' ];
-
     const [ selectedPhoto, setSelectedPhoto ] = useState( '' );
-    const [ checkForSoldOutAndNewItem, setCheckForSoldOutAndNewItem ] = useState()
+    const [ checkForSoldOutAndNewItem, setCheckForSoldOutAndNewItem ] = useState();
+    const [ selectedSize, setSelectedSize ] = useState( 0 );
+    const [ priceCollector, setPriceCollector ] = useState( 0 );
+    const [ discountCollector, setDiscountCollector ] = useState( 0.0 );
+    const [ priceWholesale, setPriceWholesale ] = useState( 0 );
+    const [ discountWholesale, setDiscountWholesale ] = useState( 0 );
+    const [ minOrderQuantity, setMinOrderQuantity ] = useState( 0 );
+    const [ maxOrderQuantity, setMaxOrderQuantity ] = useState( 0 );
+    const [ selectedIndex, setSelectedIndex ] = useState( 0 );
 
-
-    const { plants } = useSelector( state => state.plants );
     const { browserHistory } = useSelector( state => state.screen );
 
+
+    const createFilteredPlantObject = ( filteredPlant ) => {
+        setPriceCollector( filteredPlant.priceCollector[ 0 ] );
+        setDiscountCollector( filteredPlant.discountCollector[ 0 ] );
+        setPriceWholesale( filteredPlant.priceWholesale[ 0 ] );
+        setDiscountWholesale( filteredPlant.discountWholesale[ 0 ] );
+        setMinOrderQuantity( filteredPlant.minOrder[ 0 ] );
+        setMaxOrderQuantity( filteredPlant.maxOrder[ 0 ] );
+        return {
+            ...filteredPlant,
+            photos: filteredPlant.photos.map( ( photo, index ) => {
+                if ( index === 0 ) {
+                    return {
+                        photo,
+                        border: '2px solid #D6249FFF'
+                    }
+                }
+                return {
+                    photo,
+                    border: '1px solid #A6A6A6FF'
+                }
+            } ),
+            sizeCollector: filteredPlant.sizeCollector.map( ( size, index ) => {
+                if ( index === 0 ) {
+                    return {
+                        size,
+                        border: '2px solid #D6249FFF'
+                    }
+                }
+                return {
+                    size,
+                    border: '1px solid #A6A6A6FF'
+                }
+            } ),
+            sizeWholesale: filteredPlant.sizeWholesale.map( ( size, index ) => {
+                if ( index === 0 ) {
+                    return {
+                        size,
+                        border: '2px solid #D6249FFF'
+                    }
+                }
+                return {
+                    size,
+                    border: '1px solid #A6A6A6FF'
+                }
+            } )
+        };
+    }
+
+    const createLinkShare = () => {
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=${process.env.REACT_APP_PHONE}&text=${encodeURIComponent( process.env.REACT_APP_UI_URL + pathname )}`;
+        const newWindow = window.open( whatsappUrl, '_blank' );
+        newWindow.focus();
+    }
+
     const reloadPlants = async () => {
-        const result = await startGetPlants( getUriNameByPathname( pathname ) );
-        await dispatch( getPlantsScheme( result ) );
-        const filteredPlant = result.plants.filter( plant => plant[ '_id' ] === uid )[ 0 ];
+        const result = await getPlantsThunk( dispatch, getUriNameByPathname( pathname ) );
+        let filteredPlant = result.plants.filter( plant => plant[ '_id' ] === uid )[ 0 ];
+        filteredPlant = createFilteredPlantObject( filteredPlant );
         setPlant( filteredPlant );
-        setSelectedPhoto( filteredPlant.photos[ 0 ] );
+        setSelectedPhoto( filteredPlant.photos[ 0 ].photo );
         setCheckForSoldOutAndNewItem( checkTitleForSoldOutAndNewItem( filteredPlant.quantity, filteredPlant.publishedDate ) );
         const { genre, species } = filteredPlant;
         dispatch( dispatchScreenName( pathname ) );
         dispatch( dispatchBrowserHistory( [ {
-            breadcrumb: getNameByPathname(`/${pathname.split( '/' )[ 1 ]}`),
+            breadcrumb: getNameByPathname( `/${pathname.split( '/' )[ 1 ]}` ),
             pathname: `/${pathname.split( '/' )[ 1 ]}`
         } ], uid, genre, species, pathname ) );
     }
@@ -53,51 +115,86 @@ const DetailProductScreen = ( { isWholesaleUser } ) => {
 
     useEffect( () => {
         if ( plants.length > 0 ) {
-            const filteredPlant = plants.filter( plant => plant[ '_id' ] === uid )[ 0 ];
-            setSelectedPhoto( filteredPlant.photos[ 0 ] );
+            let filteredPlant = plants.filter( plant => plant[ '_id' ] === uid )[ 0 ];
             setCheckForSoldOutAndNewItem( checkTitleForSoldOutAndNewItem( filteredPlant.quantity, filteredPlant.publishedDate ) );
             const { genre, species } = filteredPlant;
             dispatch( dispatchBrowserHistory( [ browserHistory[ 0 ] ], uid, genre, species, pathname ) );
+            filteredPlant = createFilteredPlantObject( filteredPlant );
+            setSelectedPhoto( filteredPlant.photos[ 0 ].photo );
             return setPlant( filteredPlant );
         }
         reloadPlants().then();
     }, [] );
 
+    const switchSelectedPhoto = ( indexSelectedPhoto, indexSelectedSize ) => {
+        setSelectedIndex( indexSelectedPhoto );
+        if ( indexSelectedPhoto + 1 > plant.photos.length ) {
+            indexSelectedPhoto = plant.photos.length - 1;
+        }
+        setSelectedSize( indexSelectedSize );
+        setSelectedPhoto( plant.photos[ indexSelectedPhoto ].photo );
+        setPriceCollector( plant.priceCollector[ indexSelectedSize ] );
+        setDiscountCollector( plant.discountCollector[ indexSelectedSize ] );
+        setPriceWholesale( plant.priceWholesale[ indexSelectedSize ] );
+        setDiscountWholesale( plant.discountWholesale[ indexSelectedSize ] );
+        setMinOrderQuantity( plant.minOrder[ indexSelectedSize ] );
+        setMaxOrderQuantity( plant.maxOrder[ indexSelectedSize ] );
+        setPlant( prevState => ( {
+            ...prevState,
+            photos: plant.photos.map( ( photo, index ) => {
+                if ( index === indexSelectedPhoto ) {
+                    return {
+                        photo: photo.photo,
+                        border: '2px solid #D6249FFF'
+                    }
+                }
+                return {
+                    photo: photo.photo,
+                    border: '1px solid #A6A6A6FF'
+                }
+            } ),
+            sizeCollector: plant.sizeCollector.map( ( size, index ) => {
+                if ( index === indexSelectedSize ) {
+                    return {
+                        size: size.size,
+                        border: '2px solid #D6249FFF'
+                    }
+                }
+                return {
+                    size: size.size,
+                    border: '1px solid #A6A6A6FF'
+                }
+            } ),
+            sizeWholesale: plant.sizeWholesale.map( ( size, index ) => {
+                if ( index === indexSelectedSize ) {
+                    return {
+                        size: size.size,
+                        border: '2px solid #D6249FFF'
+                    }
+                }
+                return {
+                    size: size.size,
+                    border: '1px solid #A6A6A6FF'
+                }
+            } )
+        } ) );
+    }
+
+
     return (
         plant &&
-        <Flex style={{ backgroundColor: '#FFFFFF' }}>
-            <Col className='image-chooser'>
-                <div className="container-detail-product">
-                    {
-                        plant.photos.map( ( photo, index ) => (
-                            <div key={photo} className={classesName[ index ]}>
-                                <Image.PreviewGroup items={plant.photos}>
-                                    <Image
-                                        wrapperClassName
-                                        className='secondary-images'
-                                        style={{
-                                            cursor: "pointer",
-                                            filter: checkForSoldOutAndNewItem === SOLD_OUT && 'grayscale(80%)'
-                                        }}
-                                        fallback={fallbackImage}
-                                        src={photo}
-                                    />
-                                </Image.PreviewGroup>
-                            </div>
-                        ) )
-                    }
-                    <div className="main-photo">
-                        <Badge.Ribbon
-                            color={checkForSoldOutAndNewItem === SOLD_OUT ? 'red' : 'volcano'}
-                            text={checkForSoldOutAndNewItem === SOLD_OUT ? 'AGOTADO' :
-                                checkDiscountWhenWholesalePlant(
-                                    plant.discountCollector,
-                                    plant.priceCollector,
-                                    plant.discountWholesale,
-                                    plant.priceWholesale,
-                                    isWholesaleUser )}
-                            placement={checkForSoldOutAndNewItem === SOLD_OUT ? 'end' : 'start'}>
-                            <Image.PreviewGroup items={plant.photos}>
+        <Flex className="product">
+            <div className="product__photo">
+                <div className="photo-container">
+                    {checkDiscountRibbonPlantForDetail( discountCollector, priceCollector, discountWholesale, priceWholesale, isWholesaleUser, screenName )}
+                    <div className="photo-main">
+                        <div className="controls">
+                            <IoMdShare size={24} style={{ cursor: 'pointer' }} onClick={() => createLinkShare()}/>
+                            <FaRegHeart size={24} style={{ cursor: 'pointer' }}/>
+                        </div>
+                        <div>
+                            <Image.PreviewGroup items={plant.photos.map( ( photo ) => photo.photo )}
+                                                preview={{ current: selectedIndex }}>
                                 <Image
                                     wrapperClassName
                                     className='primary-image'
@@ -106,60 +203,93 @@ const DetailProductScreen = ( { isWholesaleUser } ) => {
                                     src={selectedPhoto}
                                 />
                             </Image.PreviewGroup>
-                        </Badge.Ribbon>
+                        </div>
                     </div>
+                    <Row className="photo-album">
+                        {
+                            plant.photos.map( ( photo, index ) => (
+                                <Col key={photo.photo}>
+                                    <Image
+                                        wrapperClassName
+                                        className='secondary-images'
+                                        onClick={() => switchSelectedPhoto( index, selectedSize )}
+                                        preview={false}
+                                        style={{
+                                            border: photo.border,
+                                            cursor: "pointer",
+                                            filter: checkForSoldOutAndNewItem === SOLD_OUT && 'grayscale(80%)'
+                                        }}
+                                        fallback={fallbackImage}
+                                        src={photo.photo}
+                                    />
+                                </Col>
+                            ) )
+                        }
+                    </Row>
                 </div>
+            </div>
+            <div className="product__info">
+                <div className="title">
+                    <h1>{`${plant.genre} ${plant.species}`}</h1>
+                    <span>COD: {plant[ '_id' ]}</span>
+                </div>
+                <div className="price">
+                    <div><span className="currency">COP$</span>
+                        <span> {checkPricePlantForDetail( discountCollector, priceCollector, discountWholesale, priceWholesale, isWholesaleUser, screenName )}</span>
+                    </div>
 
-            </Col>
-            <Col className='product-summary'>
-                <Row className='title-product'>
-                    {`${plant.genre} ${plant.species}`}
-                </Row>
-                <Row className='category-product'>
-                    Categoría: <span>{plant.category}</span> <span>{checkCategory( plant.category, 30 )}</span>
-                </Row>
-                <Row className='family-product'>
-                    Familia: <span> {plant.family}</span>
-                </Row>
-                <Row className='special-product'>
-                    Característica: <span>{plant.specialFeature} </span>
-                </Row>
-                <Row className='description-product'>
-                    Descripción: {plant.description}
-                </Row>
-                <Row className='size-conservation-product size-detail'>
-                    Tamaño: <span> {plant.size}</span>
-                </Row>
-                <Row span={12} className='size-conservation-product conservation-detail'>
-                    <span> {checkConservation( plant.conservation, 30 )}</span>
-                </Row>
-                {isWholesaleUser && !plant.priceCollector &&
-                    <Row className='min-max-order-product'>
-                        <Col span={12}>
-                            Orden Mínima (MOQ): <span> {plant.minOrder}</span>
-                        </Col>
-                        <Col span={12}>
-                            Orden Máxima (MXOQ): <span> {plant.maxOrder}</span>
-                        </Col>
-                    </Row>
-                }
-                {
-                    checkForSoldOutAndNewItem !== SOLD_OUT &&
-                    <Row className='price-product'>
-                        <span> {checkPriceWhenWholesalePlant( plant.discountCollector, plant.priceCollector, plant.discountWholesale, plant.priceWholesale, isWholesaleUser )}</span>
-                    </Row>
-                }
-                {isWholesaleUser && checkForSoldOutAndNewItem !== SOLD_OUT &&
-                    <Row className='cart-product'>
-                        Add to CART
-                    </Row>
-                }
-            </Col>
+                </div>
+                <div className="variant">
+                    <h3>CONSERVACIÓN</h3>
+                    <span className="conservation-detail"> {checkConservation( plant.conservation, 30 )}</span>
+                </div>
+                <div className="description">
+                    <h3>DESCRIPCIÓN</h3>
+                    <ul>
+                        <li>Categoría: <span>{checkCategory( plant.category, 18 )}</span></li>
+                        <li>Familia: <span className='description-detail'> {plant.family}</span></li>
+                        <li>Característica: <span className='description-detail'>{plant.specialFeature} </span></li>
+                        <li className='plant-size-detail'>Tamaño: {
+                            screenName === WHOLESALE || ( screenName === NEW_PLANTS && plant.sizeCollector.length === 0 ) ?
+                                plant.sizeWholesale.map( ( size, index ) => (
+                                    <span className='size-detail'
+                                          style={{ border: size.border }}
+                                          key={size.size}
+                                          onClick={() => switchSelectedPhoto( index + 1, index )}
+                                          onKeyDown={() => switchSelectedPhoto( index + 1, index )}>
+                                {size.size}
+                            </span>
+                                ) ) :
+                                plant.sizeCollector.map( ( size, index ) => (
+                                    <span className='size-detail'
+                                          style={{ border: size.border }}
+                                          key={size.size}
+                                          onClick={() => switchSelectedPhoto( index + 1, index )}
+                                          onKeyDown={() => switchSelectedPhoto( index + 1, index )}>
+                                {size.size}
+                            </span>
+                                ) )
+                        }</li>
+                        {isWholesaleUser && screenName === WHOLESALE &&
+                            <li>Orden Mínima (MOQ): <span className='description-detail'> {minOrderQuantity}</span></li>
+                        }
+                        {isWholesaleUser && screenName === WHOLESALE &&
+                            <li>Orden Máxima (MXOQ): <span className='description-detail'> {maxOrderQuantity}</span>
+                            </li>
+
+                        }
+                    </ul>
+                </div>
+                <Button className="buy--btn"
+                        disabled={checkForSoldOutAndNewItem !== SOLD_OUT || screenName !== WHOLESALE}>
+                    Agregar al Carrito</Button>
+            </div>
         </Flex>
     );
 };
 
 DetailProductScreen.propTypes = {
+    screenName: PropTypes.string.isRequired,
     isWholesaleUser: PropTypes.bool.isRequired
 };
 

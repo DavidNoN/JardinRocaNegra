@@ -2,20 +2,26 @@ import { TbPlant2 } from "react-icons/tb";
 import { PiCactusFill } from "react-icons/pi";
 import { GiBulb, GiCarnivorousPlant } from "react-icons/gi";
 import { Badge, Button, Tag, Tooltip } from "antd";
-import { BsCloudsFill, BsSunFill } from "react-icons/bs";
-import { FaCloudSun } from "react-icons/fa6";
 import React from "react";
 import { dateDiffInDays } from "./CalcDiffDays";
-import { FaShoppingCart } from "react-icons/fa";
-import { currencyFormat, currencyFormatWithDiscount, discountFormat } from "./PipesNumber";
+import { FaShoppingCart, FaSun } from "react-icons/fa";
+import { FaCloudSun } from "react-icons/fa6";
+import { IoCloudyNight } from "react-icons/io5";
+import {
+    currencyFormat,
+    currencyFormatForDetail,
+    currencyFormatWithDiscount,
+    currencyFormatWithDiscountForDetail,
+    discountFormat
+} from "./PipesNumber";
 import { CARNIVOROUS, COLLECTOR, NEW, NEW_PLANTS, SOLD_OUT, WHOLESALE } from "../constants/Constants";
 
 export const checkCategory = ( value, size ) => {
-    if ( value === 'Succulent' ) {
+    if ( value === 'Succulents' ) {
         return <TbPlant2 size={size} color={'#90486D'}/>
     } else if ( value === 'Cactus' ) {
         return <PiCactusFill size={size} color={'#2C5920'}/>
-    } else if ( value === 'Bulb' ) {
+    } else if ( value === 'Bulbs' ) {
         return <GiBulb size={size} color={'#2C5920'}/>;
     } else {
         return <GiCarnivorousPlant size={size} color={'#2C5920'}/>;
@@ -25,6 +31,7 @@ export const checkCategory = ( value, size ) => {
 export const checkConservation = ( value, size ) => {
 
     return value.map( ( cons ) => {
+        // fff03e
         if ( cons === 'sun' ) {
             return <Tooltip key={'sun'}
                             placement="top"
@@ -32,7 +39,7 @@ export const checkConservation = ( value, size ) => {
                             trigger={[ 'click', 'hover' ]}
                             mouseLeaveDelay={0.1}
                             title={'Sol directo'}>
-                <BsSunFill size={size} color={'#FDD30F'}/>
+                <FaSun size={size} color={'#ffeb00'}/>
             </Tooltip>;
         } else if ( cons === 'light-shade' ) {
             return <Tooltip key={'light-shade'}
@@ -40,14 +47,21 @@ export const checkConservation = ( value, size ) => {
                             autoAdjustOverflow={true}
                             trigger={[ 'click', 'hover' ]}
                             title={'Sol de la mañana o filtrado'}>
-                <FaCloudSun size={size} color={'#FFA500'}/> </Tooltip>
+                <svg width="0" height="0">
+                    <linearGradient id="blue-gradient" x1="50%" y1="30%" x2="65%" y2="50%">
+                        <stop stopColor="#ffeb00" offset="73%"/>
+                        <stop stopColor="#c1e7ff" offset="75%"/>
+                    </linearGradient>
+                </svg>
+                <FaCloudSun size={size} style={{ stroke: 'url(#blue-gradient)', fill: 'url(#blue-gradient)' }}/>
+            </Tooltip>
         } else {
             return <Tooltip key={'shade'}
                             placement="top"
                             autoAdjustOverflow={true}
                             trigger={[ 'click', 'hover' ]}
                             title={'Buena iluminación sin sol directo'}>
-                <BsCloudsFill size={size} color={'#008AF6'}/> </Tooltip>
+                <IoCloudyNight size={size} color={'#99d7ff'}/> </Tooltip>
         }
     } );
 }
@@ -61,9 +75,10 @@ export const checkTitleForSoldOutAndNewItem = ( quantity, date ) => {
 
     return 'no-title';
 }
-export const checkScreenForShoppingCart = ( screen, priceCollector, priceWholesale, isWholesaleUser, plantObj ) => {
-    if ( ( screen === NEW_PLANTS || screen === COLLECTOR || screen === CARNIVOROUS ) && priceCollector && checkTitleForSoldOutAndNewItem(plantObj.quantity, plantObj.publishedDate) !== 'SOLD-OUT' ) {
+export const checkScreenForShoppingCart = ( screen, priceCollector, priceWholesale, isWholesaleUser, plantObj, title ) => {
+    if ( ( screen === NEW_PLANTS || screen === COLLECTOR || screen === CARNIVOROUS ) && priceCollector && checkTitleForSoldOutAndNewItem( plantObj.quantity, plantObj.publishedDate ) !== 'SOLD-OUT' ) {
         return <Button key={"Cart"}
+                       title={title}
                        style={{ backgroundColor: '#D6249F', width: '80%' }}
                        icon={<FaShoppingCart color={'#FFFFFF'}/>}/>;
     }
@@ -72,8 +87,8 @@ export const checkScreenForShoppingCart = ( screen, priceCollector, priceWholesa
         return <span className='wholesale-quantity'>{`MXOQ ${plantObj.minOrder}`}</span>;
     }
 
-    if (( screen === NEW_PLANTS || screen === COLLECTOR || screen === CARNIVOROUS ) &&
-        checkTitleForSoldOutAndNewItem(plantObj.quantity, plantObj.publishedDate) === 'SOLD-OUT') {
+    if ( ( screen === NEW_PLANTS || screen === COLLECTOR || screen === CARNIVOROUS ) &&
+        checkTitleForSoldOutAndNewItem( plantObj.quantity, plantObj.publishedDate ) === 'SOLD-OUT' ) {
         return <Button key={"Cart"}
                        className='disable-cart-button'
                        disabled={true}
@@ -84,14 +99,15 @@ export const checkScreenForShoppingCart = ( screen, priceCollector, priceWholesa
     return <div></div>;
 }
 
-export const checkDiscountRibbonWhenWholesalePlant = ( discountCollector, priceCollector, discountWholesale, priceWholesale, isWholesaleUser ) => {
-    if ( priceCollector && discountCollector ) {
+export const checkDiscountRibbonWhenWholesalePlant = ( discountCollector, priceCollector, discountWholesale, priceWholesale, isWholesaleUser, screen ) => {
+
+    if ( discountCollector && screen !== WHOLESALE ) {
         return <Badge.Ribbon className='ribbon-card-discount'
                              placement={'start'} color='volcano'
                              text={discountFormat( discountCollector )}/>;
     }
 
-    if ( !priceCollector && isWholesaleUser && priceWholesale && discountWholesale ) {
+    if ( screen === WHOLESALE && isWholesaleUser && discountWholesale ) {
         return <Badge.Ribbon className='ribbon-card-discount'
                              placement={'start'} color='volcano'
                              text={discountFormat( discountWholesale )}/>;
@@ -101,21 +117,10 @@ export const checkDiscountRibbonWhenWholesalePlant = ( discountCollector, priceC
     return <div></div>;
 }
 
-export const checkDiscountWhenWholesalePlant = ( discountCollector, priceCollector, discountWholesale, priceWholesale, isWholesaleUser ) => {
-    if ( priceCollector && discountCollector ) {
-        return discountFormat( discountCollector );
-    }
 
-    if ( !priceCollector && isWholesaleUser && priceWholesale && discountWholesale ) {
-        return discountFormat( discountWholesale );
-    }
+export const checkPriceRibbonPlant = ( discountCollector, priceCollector, discountWholesale, priceWholesale, isWholesaleUser, screen ) => {
 
-
-    return <div></div>;
-}
-
-export const checkPriceRibbonWhenWholesalePlant = ( discountCollector, priceCollector, discountWholesale, priceWholesale, isWholesaleUser ) => {
-    if ( priceCollector ) {
+    if ( priceCollector && screen !== WHOLESALE ) {
         return <Badge.Ribbon className='ribbon-card-price'
                              placement={'start'} color={'#1677FF'}
                              text={
@@ -124,7 +129,7 @@ export const checkPriceRibbonWhenWholesalePlant = ( discountCollector, priceColl
                                      currencyFormat( priceCollector )}/>
     }
 
-    if ( !priceCollector && isWholesaleUser && priceWholesale ) {
+    if ( screen === WHOLESALE && isWholesaleUser && priceWholesale ) {
         return <Badge.Ribbon className='ribbon-card-price'
                              placement={'start'} color='purple'
                              text={discountWholesale ?
@@ -132,37 +137,60 @@ export const checkPriceRibbonWhenWholesalePlant = ( discountCollector, priceColl
                                  currencyFormat( priceWholesale )}/>;
     }
 
-    if ( !priceCollector && !isWholesaleUser && priceWholesale ) {
+    if ( screen === WHOLESALE && !isWholesaleUser ) {
         return <Badge.Ribbon className='ribbon-card-price'
                              placement={'start'} color='purple'
                              text='Mayorista'/>;
     }
 
-    return <div></div>;
+    return <Badge.Ribbon className='ribbon-card-price'
+                         placement={'start'} color='purple'
+                         text={discountWholesale ?
+                             currencyFormatWithDiscount( priceWholesale, discountWholesale ) :
+                             currencyFormat( priceWholesale )}/>;
+
 }
 
-export const checkPriceWhenWholesalePlant = ( discountCollector, priceCollector, discountWholesale, priceWholesale, isWholesaleUser ) => {
+export const checkPricePlantForDetail = ( discountCollector, priceCollector, discountWholesale, priceWholesale, isWholesaleUser, screen ) => {
 
-    if ( priceCollector ) {
+    if ( priceCollector && screen !== WHOLESALE ) {
         return discountCollector ?
-            currencyFormatWithDiscount( priceCollector, discountCollector ) :
-            currencyFormat( priceCollector );
+            currencyFormatWithDiscountForDetail( priceCollector, discountCollector ) :
+            currencyFormatForDetail( priceCollector );
     }
 
-    if ( !priceCollector && isWholesaleUser && priceWholesale ) {
+    if ( screen === WHOLESALE && isWholesaleUser && priceWholesale ) {
         return discountWholesale ?
-            currencyFormatWithDiscount( priceWholesale, discountWholesale ) :
-            currencyFormat( priceWholesale );
+            currencyFormatWithDiscountForDetail( priceWholesale, discountWholesale ) :
+            currencyFormatForDetail( priceWholesale );
     }
 
-    if ( !priceCollector && !isWholesaleUser && priceWholesale ) {
+    if ( screen === WHOLESALE && !isWholesaleUser ) {
         return <Tag color="purple">Mayorista</Tag>;
     }
 
-    return <div></div>;
+    return discountWholesale ?
+        currencyFormatWithDiscountForDetail( priceWholesale, discountWholesale ) :
+        currencyFormatForDetail( priceWholesale );
 }
 
-export const checkConservationWhenWholesalePlant = ( discountCollector, priceCollector, discountWholesale, priceWholesale, isWholesaleUser, plantObj ) => {
+export const checkDiscountRibbonPlantForDetail = ( discountCollector, priceCollector, discountWholesale, priceWholesale, isWholesaleUser, screen ) => {
+
+    if ( discountCollector && screen !== WHOLESALE ) {
+        return <Badge.Ribbon placement={'end'} color='geekblue'
+                             text={discountFormat( discountCollector )}/>;
+    }
+
+    if ( screen === WHOLESALE && isWholesaleUser && discountWholesale ) {
+        return <Badge.Ribbon placement={'end'} color='geekblue'
+                             text={discountFormat( discountWholesale )}/>;
+    }
+
+
+    return null;
+}
+
+export const checkConservationPlant = ( discountCollector, priceCollector, discountWholesale, priceWholesale, isWholesaleUser, plantObj ) => {
     if ( priceCollector ) {
         return <div key={"Cons"} className='conservation-icons'>
             {checkConservation( plantObj.conservation, 20 )}
@@ -170,6 +198,40 @@ export const checkConservationWhenWholesalePlant = ( discountCollector, priceCol
     }
 
     if ( !priceCollector && isWholesaleUser ) {
-        return <span className='wholesale-quantity'>{`MOQ ${plantObj.minOrder}`}</span>
+        return <span className='wholesale-quantity'>{`MOQ ${plantObj.minOrder[0]}`}</span>
     }
+}
+
+export const checkSelectorScreenPlant = (newPlants, wholesalePlants, collectionPlants, carnivorousPlants, screenName ) => {
+
+    if (screenName === NEW_PLANTS) {
+        return newPlants;
+    }
+    if (screenName === WHOLESALE) {
+        return wholesalePlants;
+    }
+    if (screenName === COLLECTOR) {
+        return collectionPlants;
+    }
+    if (screenName === CARNIVOROUS) {
+        return carnivorousPlants;
+    }
+
+    return [];
+
+}
+
+export const validateIfNeedToReloadPlants = (newPlants, wholesalePlants, collectionPlants, carnivorousPlants, screenName ) => {
+
+    if (screenName === NEW_PLANTS && newPlants.length === 0) {
+        return true;
+    }
+    if (screenName === WHOLESALE && wholesalePlants.length === 0) {
+        return true;
+    }
+    if (screenName === COLLECTOR && collectionPlants.length === 0) {
+        return true;
+    }
+    return !!( screenName === CARNIVOROUS && carnivorousPlants.length === 0 );
+
 }

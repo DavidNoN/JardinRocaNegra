@@ -43,6 +43,7 @@ const SignUpScreen = ( { handleSignInClick } ) => {
             <Form
                 form={formSignUp}
                 onFinish={onFinish}
+                className='sign-up-form'
                 initialValues={{
                     prefixPhone: '57'
                 }}

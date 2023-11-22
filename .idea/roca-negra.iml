@@ -12,6 +12,7 @@
     <orderEntry type="library" name="all" level="application" />
     <orderEntry type="library" name="solid" level="application" />
     <orderEntry type="library" name="fontawesome" level="application" />
+    <orderEntry type="library" name="animate.css" level="application" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="bdf550db-b1b5-43fd-a6e3-bbf1faf8b941" />

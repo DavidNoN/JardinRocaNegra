@@ -11,6 +11,8 @@ export const getNameByPathname = ( pathname ) => {
             return 'Lo Nuevo'
         case '/other-products':
             return 'Otros Productos'
+        case '/frequently-questions':
+            return 'FAQ'
         default:
             return '';
     }
@@ -34,6 +36,8 @@ export const getUriNameByPathname = ( pathname ) => {
             return 'new'
         case '/other-products':
             return 'other'
+        case '/frequently-questions':
+            return 'FAQ'
         default:
             return '';
     }
