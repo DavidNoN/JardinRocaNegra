@@ -30,7 +30,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "prepublish": "npm run build",
-    "publish": "git add . && git commit -m GhPages && gh-pages -d build"
+    "publish-git": "git add . && git commit -m GhPages && gh-pages -d build",
+    "publish": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
