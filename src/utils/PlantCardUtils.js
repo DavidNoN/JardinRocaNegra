@@ -205,16 +205,16 @@ export const checkConservationPlant = ( discountCollector, priceCollector, disco
 export const checkSelectorScreenPlant = (newPlants, wholesalePlants, collectionPlants, carnivorousPlants, screenName ) => {
 
     if (screenName === NEW_PLANTS) {
-        return newPlants;
+        return newPlants || [];
     }
     if (screenName === WHOLESALE) {
-        return wholesalePlants;
+        return wholesalePlants || [];
     }
     if (screenName === COLLECTOR) {
-        return collectionPlants;
+        return collectionPlants || [];
     }
     if (screenName === CARNIVOROUS) {
-        return carnivorousPlants;
+        return carnivorousPlants || [];
     }
 
     return [];
@@ -223,13 +223,13 @@ export const checkSelectorScreenPlant = (newPlants, wholesalePlants, collectionP
 
 export const validateIfNeedToReloadPlants = (newPlants, wholesalePlants, collectionPlants, carnivorousPlants, screenName ) => {
 
-    if (screenName === NEW_PLANTS && newPlants.length === 0) {
+    if (screenName === NEW_PLANTS && newPlants?.length === 0) {
         return true;
     }
-    if (screenName === WHOLESALE && wholesalePlants.length === 0) {
+    if (screenName === WHOLESALE && wholesalePlants?.length === 0) {
         return true;
     }
-    if (screenName === COLLECTOR && collectionPlants.length === 0) {
+    if (screenName === COLLECTOR && collectionPlants?.length === 0) {
         return true;
     }
     return !!( screenName === CARNIVOROUS && carnivorousPlants.length === 0 );

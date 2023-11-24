@@ -1,40 +1,26 @@
 import React, { useState } from 'react';
-import {
-    AutoComplete,
-    Button,
-    Checkbox,
-    Col,
-    DatePicker,
-    Divider,
-    Flex,
-    Form,
-    Input,
-    message,
-    Select,
-    Upload
-} from "antd";
+import { AutoComplete, Button, DatePicker, Form, Input, message, Select, Upload } from "antd";
 import {
     categoriesPlant,
     COLLECTION_CHECKBOX,
     conservationOptions,
-    optionsCollectionWholesale,
-    sizePots,
     WHOLESALE_CHECKBOX
-} from "../constants/Constants";
-import '../styles/CreateNewPlant.scss';
+} from "../../constants/Constants";
+import '../../styles/CreateNewPlant.scss';
 import { useDispatch, useSelector } from "react-redux";
-import { getAllFamilies, getAllGenres } from "../utils/categoriesUtils";
+import { getAllFamilies, getAllGenres } from "../../utils/categoriesUtils";
 import Dragger from "antd/es/upload/Dragger";
 import { HiOutlineInboxArrowDown } from "react-icons/hi2";
-import { buildFinalPlantObj, convertToArrays, isOnlyCollector, isOnlyWholesale } from "../utils/plantObjUtils";
-import { titleCase } from "../utils/textUtils";
-import { addUpdateCategory, postPlant } from "../services/PlantService";
-import { getCategories } from "../store/category/categoryThunks";
+import { buildFinalPlantObj, convertToArrays, isOnlyCollector, isOnlyWholesale } from "../../utils/plantObjUtils";
+import { titleCase } from "../../utils/textUtils";
+import { addUpdateCategory, postPlant } from "../../services/PlantService";
+import { getCategories } from "../../store/category/categoryThunks";
+import DiscountPlantComponentScreen from "./DiscountPlantComponentScreen";
 
 
 const CreateNewPlantScreen = () => {
 
-    const [ formCreateNewPlant ] = Form.useForm()
+    const [ formCreateNewPlant ] = Form.useForm();
 
     const { categories } = useSelector( state => state.category );
 
@@ -54,7 +40,7 @@ const CreateNewPlantScreen = () => {
 
     const [ familyOptions, setFamilyOptions ] = useState( families );
     const [ genreOptions, setGenreOptions ] = useState( genres );
-    const [ collectorWholesaleOptions, setCollectorWholesaleOptions ] = useState( '' );
+    const [ collectorWholesaleOptions, setCollectorWholesaleOptions ] = useState( [] );
     const [ collectorSizePots, setCollectorSizePots ] = useState( [] );
     const [ wholesaleSizePots, setWholesaleSizePots ] = useState( [] );
     const [ fileList, setFileList ] = useState( [] );
@@ -102,15 +88,16 @@ const CreateNewPlantScreen = () => {
             setIsLoading( false )
             return;
         }
-        message.success( "Planta Guardada Correctamente" );
-        message.success( result.msg );
+        message.success( "Planta Guardada Correctamente", 4 );
+        message.success( result.msg, 4 );
         setCollectorSizePots( [] );
         setWholesaleSizePots( [] );
         setFileList( [] );
-        setCollectorWholesaleOptions( '' );
+        setCollectorWholesaleOptions( null );
+        // formCreateNewPlant.setFieldValue('collWhole', []);
         formCreateNewPlant.resetFields();
         setIsLoading( false );
-        return await getCategories(dispatch);
+        return await getCategories( dispatch );
     };
 
     const uploadPhotosProps = {
@@ -139,7 +126,7 @@ const CreateNewPlantScreen = () => {
             }
         },
         onDrop() {
-            message.success('Archivo removido');
+            message.success( 'Archivo removido' );
         },
     };
 
@@ -289,184 +276,12 @@ const CreateNewPlantScreen = () => {
             >
                 <DatePicker placeholder='Fecha de Publicación' format='DD-MMM-YYYY'/>
             </Form.Item>
-            <Form.Item
-                className='form-item-check'
-                label="Coleccionista & Por Mayor"
-                name="collWhole"
-                rules={[
-                    {
-                        message: "Por favor elije uno de los dos",
-                        required: true,
-                    }
-                ]}
-            >
-                <Checkbox.Group options={optionsCollectionWholesale}
-                                onChange={( value ) => setCollectorWholesaleOptions( value )}/>
-            </Form.Item>
-            {collectorWholesaleOptions.includes( COLLECTION_CHECKBOX ) &&
-                <Form.Item
-                    className='form-item'
-                    label="Tamaños Coleccionista"
-                    name="sizeCollector"
-                    rules={[
-                        {
-                            message: "Por favor elije al menos un tamaño",
-                            required: true,
-                        }
-                    ]}
-                >
-                    <Select
-                        mode="multiple"
-                        placeholder="Tamaños"
-                        onChange={setCollectorSizePots}
-                        options={sizePots}
-                    />
-                </Form.Item>
-            }
-            {collectorWholesaleOptions.includes( WHOLESALE_CHECKBOX ) &&
-                <Form.Item
-                    className='form-item'
-                    label="Tamaños Por Mayor"
-                    name="sizeWholesale"
-                    rules={[
-                        {
-                            message: "Por favor elije al menos un tamaño",
-                            required: true,
-                        }
-                    ]}
-                >
-                    <Select
-                        mode="multiple"
-                        placeholder="Tamaños"
-                        onChange={setWholesaleSizePots}
-                        options={sizePots}
-                    />
-                </Form.Item>}
-            {collectorWholesaleOptions.includes( COLLECTION_CHECKBOX ) && collectorSizePots.length > 0 &&
-                <Divider plain>Coleccionista</Divider>
-            }
-            {collectorWholesaleOptions.includes( COLLECTION_CHECKBOX ) && collectorSizePots.map( ( size, index ) => (
-                <Flex key={size} justify='space-around' style={{ width: '55%' }}>
-                    <Col span={10}>
-                        <Form.Item
-                            style={{ width: '100%' }}
-                            label={`Precio Collecionista [${size}]`}
-                            name={`priceCollector${index}`}
-                            rules={[
-                                {
-                                    message: "Por favor Ingrese precio coleccionista",
-                                    required: true,
-                                }
-                            ]}
-                        >
-                            <Input style={{ width: '100%' }} placeholder="Precio Coleccionista" type="number"
-                                   prefix={`[${size}] - COP$`}/>
-                        </Form.Item>
-                    </Col>
-                    <Col span={10}>
-                        <Form.Item
-                            style={{ width: '100%' }}
-                            label={`Descuento Collecionista [${size}]`}
-                            key={size}
-                            name={`discountCollector${index}`}
-                            rules={[
-                                {
-                                    message: "Por favor ingrese descuento coleccionista",
-                                    required: true,
-                                }
-                            ]}
-                        >
-                            <Input placeholder="Descuento Coleccionista" type="number" prefix={`[${size}] - %`}/>
-                        </Form.Item>
-                    </Col>
-                </Flex>
-            ) )}
-            {collectorWholesaleOptions.includes( WHOLESALE_CHECKBOX ) && wholesaleSizePots.length > 0 &&
-                <Divider plain>Por Mayor</Divider>
-            }
-            {collectorWholesaleOptions.includes( WHOLESALE_CHECKBOX ) && wholesaleSizePots.map( ( size, index ) => (
-                <Flex key={size} justify='space-around' style={{ width: '55%' }}>
-                    <Col span={10}>
-                        <Form.Item
-                            style={{ width: '100%' }}
-                            label={`Precio Por Mayor [${size}]`}
-                            name={`priceWholesale${index}`}
-                            rules={[
-                                {
-                                    message: "Por favor ingrese precio al por mayor",
-                                    required: true,
-                                }
-                            ]}
-                        >
-                            <Input style={{ width: '100%' }} placeholder="Precio Por Mayor" type="number"
-                                   prefix={`[${size}] - COP$`}/>
-                        </Form.Item>
-                    </Col>
-                    <Col span={10}>
-                        <Form.Item
-                            style={{ width: '100%' }}
-                            label={`Descuento Por Mayor [${size}]`}
-                            key={size}
-                            name={`discountWholesale${index}`}
-                            rules={[
-                                {
-
-                                    message: "Por favor ingresa descuento al por mayor",
-                                    required: true,
-                                }
-                            ]}
-                        >
-                            <Input placeholder="Descuento Por Mayor" type="number" prefix={`[${size}] - %`}/>
-                        </Form.Item>
-                    </Col>
-                </Flex>
-            ) )}
-            {collectorWholesaleOptions.includes( WHOLESALE_CHECKBOX ) && wholesaleSizePots.length > 0 &&
-                <Divider plain>Orden Máxima y Mínima</Divider>
-            }
-            {collectorWholesaleOptions.includes( WHOLESALE_CHECKBOX ) && wholesaleSizePots.map( ( size, index ) => (
-                <Flex key={size} justify='space-around' style={{ width: '55%' }}>
-                    <Col span={10}>
-                        <Form.Item
-                            style={{ width: '100%' }}
-                            label={`MOQ [${size}]`}
-                            name={`minOrder${index}`}
-                            rules={[
-                                {
-                                    message: "Por favor ingresa orden mínima",
-                                    required: true,
-                                }
-                            ]}
-                        >
-                            <Input style={{ width: '100%' }} placeholder="Orden Mínima" type="number"/>
-                        </Form.Item>
-                    </Col>
-                    <Col span={10}>
-                        <Form.Item
-                            style={{ width: '100%' }}
-                            label={`MOXQ [${size}]`}
-                            key={size}
-                            name={`maxOrder${index}`}
-                            rules={[
-                                {
-                                    required: true,
-                                    message: "Por favor ingresa orden máxima",
-                                },
-                                ( { getFieldValue } ) => ( {
-                                    validator( _, value ) {
-                                        if ( value >= getFieldValue( `minOrder${index}` ) ) {
-                                            return Promise.resolve();
-                                        }
-                                        return Promise.reject( new Error( 'El MOXQ debe ser mayor al MOQ !' ) );
-                                    },
-                                } )
-                            ]}
-                        >
-                            <Input placeholder="Orden Máxima" type="number"/>
-                        </Form.Item>
-                    </Col>
-                </Flex>
-            ) )}
+            <DiscountPlantComponentScreen collectorWholesaleOptions={collectorWholesaleOptions}
+                                          collectorSizePots={collectorSizePots}
+                                          setCollectorWholesaleOptions={setCollectorWholesaleOptions}
+                                          setWholesaleSizePots={setWholesaleSizePots}
+                                          setCollectorSizePots={setCollectorSizePots}
+                                          wholesaleSizePots={wholesaleSizePots}/>
             <Form.Item
                 className='form-item-dragger'
                 name="photos"

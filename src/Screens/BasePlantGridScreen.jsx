@@ -21,7 +21,6 @@ const BasePlantGridScreen = ( { isWholesaleUser, screenName } ) => {
 
     const getPlants = async () => {
         if (!validateIfNeedToReloadPlants(newPlants, wholesalePlants, collectionPlants, carnivorousPlants, screenName)) {
-            console.log('no reloading');
             return;
         }
         setIsLoading( true );
@@ -38,7 +37,7 @@ const BasePlantGridScreen = ( { isWholesaleUser, screenName } ) => {
         <>
             {pathname.includes( 'detail-product' ) ? <Outlet/> :
                 <Row gutter={[ 16, 16 ]}>
-                    {plants.length === 0 ? <EmptyComponent/> : plants.map( ( plant ) => (
+                    {(!plants || plants.length === 0) ? <EmptyComponent/> : plants.map( ( plant ) => (
                         <Col key={plant[ '_id' ]} xs={{ span: 21, offset: 1 }} sm={{ span: 21, offset: 1 }}
                              md={{ span: 11, offset: 1 }}
                              lg={{ span: 11, offset: 1 }} xl={{ span: 7, offset: 1 }} xxl={{ span: 5, offset: 1 }}

@@ -5,12 +5,13 @@ import Search from "antd/es/input/Search";
 import { searchForAPlant } from "../services/PlantService";
 import { useDispatch, useSelector } from "react-redux";
 import { CARNIVOROUS, COLLECTOR, WHOLESALE } from "../constants/Constants";
-import { getCollectionPlants, getWholesalePlants } from "../store/plant/plantSlice";
+import { getCarnivorousPlants, getCollectionPlants, getWholesalePlants } from "../store/plant/plantSlice";
 import { buildFilterTreeObj, createDefaultExpanded, createDefaultSelected } from "../utils/filterUtils";
 import { getPlantsThunk } from "../store/plant/plantThunks";
 import { getUriNameByPathname } from "../utils/routerUtils";
 import '../styles/FilterDrawer.scss';
-import { FaTrashAlt } from "react-icons/fa";
+import { MdFilterAltOff } from "react-icons/md";
+import { titleCase } from "../utils/textUtils";
 
 const FilterDrawer = ( { showDrawer, setShowDrawer, screenName, filterObj, setFilterObj } ) => {
 
@@ -19,6 +20,7 @@ const FilterDrawer = ( { showDrawer, setShowDrawer, screenName, filterObj, setFi
     const dispatch = useDispatch();
 
     const [ open, setOpen ] = useState( false );
+    const [ searchTerm, setSearchTerm ] = useState( false );
 
     useEffect( () => {
         setOpen( showDrawer );
@@ -32,7 +34,8 @@ const FilterDrawer = ( { showDrawer, setShowDrawer, screenName, filterObj, setFi
     const onSearch = async ( value ) => {
         setOpen( false );
         setShowDrawer( false );
-        setFilterObj( { searchTerm: value } )
+        setSearchTerm( value );
+        setFilterObj( { searchTerm: value } );
         const result = await searchForAPlant( value, null, screenName );
         dispatchValue( result );
     }
@@ -47,7 +50,7 @@ const FilterDrawer = ( { showDrawer, setShowDrawer, screenName, filterObj, setFi
             createFilterObj = { category: valueSplit[ 0 ].toString() };
             await setFilterObj( createFilterObj );
             const copyCreateFilterObj = { ...createFilterObj };
-            result = searchForAPlant( null, copyCreateFilterObj, screenName );
+            result = await searchForAPlant( null, copyCreateFilterObj, screenName );
         }
         if ( valueSplit.length === 2 ) {
             createFilterObj = { category: valueSplit[ 0 ].toString(), family: valueSplit[ 1 ].toString() };
@@ -77,7 +80,7 @@ const FilterDrawer = ( { showDrawer, setShowDrawer, screenName, filterObj, setFi
             dispatchValue = getCollectionPlants( result );
         }
         if ( screenName === CARNIVOROUS ) {
-            dispatchValue = getCollectionPlants( result );
+            dispatchValue = getCarnivorousPlants( result );
         }
         return dispatch( dispatchValue );
     }
@@ -85,6 +88,7 @@ const FilterDrawer = ( { showDrawer, setShowDrawer, screenName, filterObj, setFi
     const removeFilters = async () => {
         setOpen( false );
         setShowDrawer( false );
+        setFilterObj( {} );
         if ( screenName === WHOLESALE ) {
             await getPlantsThunk( dispatch, getUriNameByPathname( `/${WHOLESALE}` ) );
         }
@@ -105,7 +109,7 @@ const FilterDrawer = ( { showDrawer, setShowDrawer, screenName, filterObj, setFi
             onClose={onClose}
             open={open}
         >
-            <Search defaultValue={filterObj.searchTerm} placeholder="Busca una Planta" onSearch={onSearch} enterButton/>
+            <Search defaultValue={filterObj.searchTerm} placeholder="Busca una Planta" onSearch={onSearch} enterButton onInput={e => e.target.value = titleCase( e.target.value )}/>
             <Divider/>
             <Tree
                 className='filter-tree'
@@ -117,7 +121,8 @@ const FilterDrawer = ( { showDrawer, setShowDrawer, screenName, filterObj, setFi
                 treeData={buildFilterTreeObj( categories, screenName )}
             />
             <Divider/>
-            <Button onClick={removeFilters} icon={<FaTrashAlt />} size='middle'>Remove Filters</Button>
+            <Button onClick={removeFilters} disabled={Object.keys(filterObj).length === 0 && !searchTerm} icon={<MdFilterAltOff size={20}/>} size='middle'>Resetear
+                Filtros</Button>
         </Drawer>
     );
 };

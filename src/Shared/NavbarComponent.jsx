@@ -5,7 +5,7 @@ import { TbHomeEco, TbPlant2 } from "react-icons/tb";
 import { FaShoppingCart } from "react-icons/fa";
 import '../styles/NavBarComponent.scss'
 import { RxHamburgerMenu } from "react-icons/rx";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { AiOutlineUser } from "react-icons/ai";
 import Link from "antd/es/typography/Link";
 import { useDispatch, useSelector } from "react-redux";
@@ -19,6 +19,7 @@ const iconStyle = {
 const NavBarComponent = () => {
 
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const { status } = useSelector( state => state.user );
 
@@ -27,6 +28,7 @@ const NavBarComponent = () => {
     const signOutUser =  async () => {
         await doubleMessageNotification(messageApi, 'loading', 'loading', 'Saliendo de la aplicación...', 1, 'success', 'success', 'Salida Exitosa!', 1);
         localStorage.clear();
+        await navigate('/new-plants');
         return dispatch( signOut() );
     }
 
@@ -34,15 +36,15 @@ const NavBarComponent = () => {
         {
             key: '1',
             label: (
-                <Link target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-                    Editar Perfil
-                </Link>
+                <NavLink to='/my-profile'>
+                    Mi Perfil
+                </NavLink>
             ),
         },
         {
             key: '2',
             label: (
-                <Link target="_blank" rel="noopener noreferrer" onClick={signOutUser}>
+                <Link onClick={signOutUser}>
                     Logout
                 </Link>
             ),

@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { startSignUp } from "../store/auth/authThunks";
 import { doubleMessageNotification, messageNotification } from "../Components/MessageApi";
 import { useNavigate } from "react-router-dom";
+import { titleCase } from "../utils/textUtils";
 
 const { Title, Link } = Typography;
 const { Option } = Select;
@@ -61,6 +62,7 @@ const SignUpScreen = ( { handleSignInClick } ) => {
                     name="nameReg"
                     hasFeedback
                     validateDebounce={400}
+                    normalize={( value ) => titleCase( value )}
                     rules={[
                         {
                             min: 6,
@@ -77,12 +79,13 @@ const SignUpScreen = ( { handleSignInClick } ) => {
                         } )
                     ]}
                 >
-                    <Input type="text" placeholder="Nombre"/>
+                    <Input type="text" placeholder="Nombre" onInput={e => e.target.value = titleCase( e.target.value )}/>
                 </Form.Item>
                 <Form.Item
                     className='form-item'
                     name="emailReg"
                     validateDebounce={400}
+                    normalize={( value ) => titleCase( value )}
                     hasFeedback
                     rules={[ {
                         type: 'email',
@@ -91,7 +94,7 @@ const SignUpScreen = ( { handleSignInClick } ) => {
                         whitespace: true
                     } ]}
                 >
-                    <Input type="email" placeholder="Correo"/>
+                    <Input type="email" placeholder="Correo" onInput={e => e.target.value = titleCase( e.target.value )}/>
                 </Form.Item>
                 <Form.Item
                     className='form-item'

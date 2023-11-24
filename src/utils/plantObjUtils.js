@@ -75,17 +75,41 @@ export const buildFinalPlantObj = ( obj, priceCollector, discountCollector, pric
         sizeCollector: obj.sizeCollector,
         sizeWholesale: obj.sizeWholesale,
         quantity: obj.quantity,
-        conservation: orderedConservation(obj.conservation),
+        conservation: orderedConservation( obj.conservation ),
         minOrder: minOrder.length === 0 ? [ 0 ] : minOrder.map( min => Number( min ) ),
         maxOrder: maxOrder.length === 0 ? [ 0 ] : maxOrder.map( max => Number( max ) ),
-        photos: obj.photos.fileList.map( photo => photo.thumbUrl ),
-        publishedDate: `${obj.publishedDate[ '$M' ] + 1}/${obj.publishedDate[ '$D' ]}/${obj.publishedDate[ '$y' ]}`
+        photos: obj.photos.fileList ? obj.photos.fileList.map( photo => photo.thumbUrl ) : obj.photos,
+        publishedDate: obj.publishedDate[ '$M' ] ? `${obj.publishedDate[ '$M' ] + 1}/${obj.publishedDate[ '$D' ]}/${obj.publishedDate[ '$y' ]}` : obj.publishedDate
     };
 
 }
 
-const orderedConservation = (conservationArray) => {
-    const customSortOrder = ['light-shade', 'sun', 'shade'];
+export const buildFinalPlantObjForUpdate = ( oldObj, newObj ) => {
+    return {
+        category: newObj.category,
+        family: newObj.family,
+        genre: newObj.genre,
+        species: newObj.species,
+        specialFeature: newObj.specialFeature,
+        description: newObj.description || '',
+        priceCollector: oldObj.priceCollector,
+        priceWholesale: oldObj.priceWholesale,
+        discountCollector: oldObj.discountCollector,
+        discountWholesale: oldObj.discountWholesale,
+        sizeCollector: oldObj.sizeCollector,
+        sizeWholesale: oldObj.sizeWholesale,
+        quantity: newObj.quantity,
+        conservation: orderedConservation( newObj.conservation ),
+        minOrder: oldObj.minOrder,
+        maxOrder: oldObj.maxOrder,
+        photos: oldObj.photos,
+        publishedDate: `${newObj.publishedDate[ '$M' ] + 1}/${newObj.publishedDate[ '$D' ]}/${newObj.publishedDate[ '$y' ]}`
+    };
+
+}
+
+const orderedConservation = ( conservationArray ) => {
+    const customSortOrder = [ 'light-shade', 'sun', 'shade' ];
     return conservationArray.sort( ( a, b ) => {
         const indexOfA = customSortOrder.indexOf( a );
         const indexOfB = customSortOrder.indexOf( b );
@@ -94,8 +118,8 @@ const orderedConservation = (conservationArray) => {
     } );
 }
 
-export const buildSearchPlantObj = (searchTerm, searchCriteria, screenName) => {
-    if (searchTerm) {
+export const buildSearchPlantObj = ( searchTerm, searchCriteria, screenName ) => {
+    if ( searchTerm ) {
         return {
             searchCriteria: {
                 category: null,
@@ -111,12 +135,12 @@ export const buildSearchPlantObj = (searchTerm, searchCriteria, screenName) => {
         }
     } else {
 
-        if  (searchCriteria.genre) {
+        if ( searchCriteria.genre ) {
             searchCriteria.category = null;
             searchCriteria.family = null;
         }
 
-        if (searchCriteria.family && !searchCriteria.genre) {
+        if ( searchCriteria.family && !searchCriteria.genre ) {
             searchCriteria.category = null;
         }
 

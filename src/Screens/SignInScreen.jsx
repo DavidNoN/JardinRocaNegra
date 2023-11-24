@@ -5,6 +5,7 @@ import { startSignIn } from "../store/auth/authThunks";
 import { useDispatch } from "react-redux";
 import { messageNotification } from "../Components/MessageApi";
 import { useNavigate } from "react-router-dom";
+import { titleCase } from "../utils/textUtils";
 
 const { Title, Link } = Typography;
 
@@ -19,7 +20,7 @@ const SignInScreen = ( { handleSignUpClick } ) => {
         const result = await dispatch( startSignIn( emailLog, passwordLog ) );
         messageApi.destroy('loading');
         if (!result.payload.ok) {
-            messageNotification(messageApi, 'error', 'error', result.payload['msg'], 4);
+            message.error('Usuario o contraseña incorrecta', 5);
             return;
         }
         messageNotification(messageApi, 'success', 'success', 'Ingreso Exitoso', 4);
@@ -45,6 +46,7 @@ const SignInScreen = ( { handleSignUpClick } ) => {
                     className='form-item'
                     name="emailLog"
                     validateDebounce={400}
+                    normalize={( value ) => titleCase( value )}
                     hasFeedback
                     rules={[ {
                         type: 'email',
@@ -53,7 +55,7 @@ const SignInScreen = ( { handleSignUpClick } ) => {
                         whitespace: true
                     } ]}
                 >
-                    <Input type="email" placeholder="Correo"/>
+                    <Input type="email" placeholder="Correo" onInput={e => e.target.value = titleCase( e.target.value )}/>
                 </Form.Item>
                 <Form.Item
                     className='form-item'

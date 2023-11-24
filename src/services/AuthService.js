@@ -8,7 +8,7 @@ export const signInEmailPassword = async ( email, password ) => {
             `${API_URL}/auth/login`,
             {
                 email,
-                password
+                password: btoa(password)
             }
         );
         return data;

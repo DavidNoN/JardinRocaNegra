@@ -13,6 +13,7 @@ import UnauthorizedScreen from "../Screens/UnauthorizedScreen";
 import { AdminRoute } from "./AdminRoute";
 import AdminBaseScreen from "../Screens/AdminBaseScreen";
 import { getCategories } from "../store/category/categoryThunks";
+import MyProfileScreen from "../Screens/MyProfileScreen";
 
 export const BlackRockRouter = () => {
 
@@ -63,6 +64,7 @@ export const BlackRockRouter = () => {
             <Route path='unauthorized' element={<UnauthorizedScreen/>}></Route>
             <Route path='admin' element={<AdminRoute typeUser={typeUser}><AdminBaseScreen/></AdminRoute>}></Route>
             <Route path="sign-in" element={<SignBaseScreen/>}></Route>
+            <Route path="my-profile" element={<MyProfileScreen/>}></Route>
         </Routes>
     )
 

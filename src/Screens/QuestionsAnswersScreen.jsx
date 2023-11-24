@@ -10,7 +10,6 @@ const text = `
 `;
 
 const expandIcon = ( { isActive } ) => {
-    console.log( isActive );
     return isActive ? <FaMinusCircle size={25}/> : <FaPlusCircle size={25}/>;
 
 }

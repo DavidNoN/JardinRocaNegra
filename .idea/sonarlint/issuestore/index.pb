@@ -140,8 +140,6 @@ R
 "src/Screens/UnauthorizedScreen.jsx,f\f\ff758971320c57358bcf94c43bb9b09edc20d678
 O
 src/styles/AdminBaseScreen.scss,7\3\7343f63e20d4c14d16c721af2e7789dcc4537f08
-T
-$src/Screens/CreateNewPlantScreen.jsx,3\e\3eff893cfd6f729e67d6697e710b2d720f510d22
 N
 src/styles/CreateNewPlant.scss,2\9\29ee21d05072e519ae87829e4278c7ce76faea75
 S
@@ -170,5 +168,31 @@ H
 src/utils/filterUtils.js,a\3\a3563e3c58f13de65aa0680d640bc0e87c61e181
 L
 src/styles/FilterDrawer.scss,f\f\ffb85a262bedbce004d671e23c73fe6b10e21754
-Q
-!src/Screens/UpdatePlantScreen.jsx,9\e\9ef81378ad067a69ff85448306e6ec24db986088
+Y
+)src/Screens/user/UpdateUserTypeScreen.jsx,6\8\68ba6e6f7653d2467afd90c5c248263271a9c030
+F
+src/utils/userUtils.js,b\c\bc9ab80cbd344c0df8103fb5fd6857a98b658448
+]
+-src/Screens/user/UpdateUserPasswordScreen.jsx,d\1\d13ea3a79ec5bbc12b48fc3966f51aecbb548429
+^
+.src/Screens/user/UpdateUserAddressesScreen.jsx,0\4\04fe796402cd91913021c86fda5a258060a48f55
+K
+src/services/UserService.js,8\1\81bf9747002caed17c5bd93a784f21495ac072ec
+P
+ src/styles/UpdateUserScreen.scss,9\d\9dae5d3d968bcf6d65392f6734db87371237b5e3
+O
+src/Screens/MyProfileScreen.jsx,a\f\af771512ae43c2dfd89500fa02a5f68a74fb4e50
+T
+$src/Screens/UpdateUserBaseScreen.jsx,0\d\0d93c8acaf53a34b1a550d1e31154c2b7a3007b1
+Z
+*src/Screens/admin/CreateNewPlantScreen.jsx,a\3\a33607dc34e2b35c2841bbb443c6c7bdeb34469b
+b
+2src/Screens/admin/DiscountPlantComponentScreen.jsx,4\1\41509bf862242dc8bdf6145b35fc0293ec6def10
+\
+,src/Screens/DiscountAdminPlantBaseScreen.jsx,d\c\dc48346dff63e2ad1d7af577547eec5ac91b9acb
+W
+'src/Screens/admin/UpdatePlantScreen.jsx,7\2\725c06f7335eb51fdea4cc3fe6d4bc2b3f5e92c6
+9
+	.env-prod,4\5\451482ec5a3c19648bbb1cccd4c202ba8672fb74
+9
+	.env.prod,a\0\a0177f68c1620a84039b07575ad1a1e25efc0975

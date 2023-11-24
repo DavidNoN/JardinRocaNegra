@@ -29,6 +29,19 @@ export const postPlant = async ( plantObj ) => {
     }
 }
 
+export const putPlant = async ( plantObj, plantId ) => {
+
+    try {
+        const { data } = await axios.put(
+            `${API_URL}/plant/putPlant/${plantId}`,
+            plantObj
+        );
+        return data;
+    } catch ( error ) {
+        return error.response.data;
+    }
+}
+
 export const addUpdateCategory = async ( categoryObj ) => {
 
     try {
@@ -44,12 +57,35 @@ export const addUpdateCategory = async ( categoryObj ) => {
 
 export const searchForAPlant = async ( searchTerm, filterObj, screenName ) => {
 
-    searchTerm = filterObj.category ? '' : searchTerm;
+    searchTerm = filterObj ? '' : searchTerm;
     try {
         const { data } = await axios.post(
             `${API_URL}/plant/searchPlants?value=${searchTerm || ''}`,
             buildSearchPlantObj(searchTerm, filterObj, screenName)
         );
+        if (!data) {
+            return {
+                ok: false,
+                msg: "No se encontró la planta"
+            }
+        }
+        return data;
+    } catch ( error ) {
+        return error.response.data;
+    }
+}
+
+export const findPlantById = async (plantId) => {
+    try {
+        const { data } = await axios.get(
+            `${API_URL}/plant/getPlantById?plantId=${plantId}`,
+        );
+        if (!data) {
+            return {
+                ok: false,
+                msg: "No se encontró la planta"
+            }
+        }
         return data;
     } catch ( error ) {
         return error.response.data;

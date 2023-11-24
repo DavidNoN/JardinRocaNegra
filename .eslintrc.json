@@ -13,7 +13,9 @@
     "Promise": true,
     "console": true,
     "process": true,
-    "localStorage": true
+    "localStorage": true,
+    "btoa": true,
+    "atob": true
   },
   "parserOptions": {
     "ecmaVersion": 2020,

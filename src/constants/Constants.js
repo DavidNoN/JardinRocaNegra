@@ -3,11 +3,14 @@ import { FaCirclePlus, FaCloudSun } from "react-icons/fa6";
 import { FaRegEdit, FaSun, FaUserEdit } from "react-icons/fa";
 import { RiPlantFill } from "react-icons/ri";
 import { MdDiscount } from "react-icons/md";
-import CreateNewPlantScreen from "../Screens/CreateNewPlantScreen";
+import CreateNewPlantScreen from "../Screens/admin/CreateNewPlantScreen";
 import { IoCloudyNight } from "react-icons/io5";
 import { TbPlant2 } from "react-icons/tb";
 import { PiCactusFill } from "react-icons/pi";
 import { GiBulb, GiCarnivorousPlant } from "react-icons/gi";
+import UpdatePlantScreen from "../Screens/admin/UpdatePlantScreen";
+import UpdateUserBaseScreen from "../Screens/UpdateUserBaseScreen";
+import DiscountAdminPlantBaseScreen from "../Screens/DiscountAdminPlantBaseScreen";
 
 export const SOLD_OUT = 'SOLD-OUT';
 export const NEW = 'NEW';
@@ -32,12 +35,12 @@ export const itemsAdminTabs = [
     {
         label: <span> <FaRegEdit size={15}/> &nbsp; <span> Editar Planta </span></span>,
         key: '2',
-        children: `Content of card tab`,
+        children: <UpdatePlantScreen/>,
     },
     {
         label: <span> <RiPlantFill size={15}/> &nbsp; <span> Descuento Planta </span></span>,
         key: '3',
-        children: `Content of card tab`,
+        children: <DiscountAdminPlantBaseScreen/>,
     },
     {
         label: <span> <MdDiscount size={15}/> &nbsp; <span> Descuento General </span></span>,
@@ -47,7 +50,7 @@ export const itemsAdminTabs = [
     {
         label: <span> <FaUserEdit size={15}/> &nbsp; <span> Actualizar Usuario </span></span>,
         key: '5',
-        children: `Content of card tab`,
+        children: <UpdateUserBaseScreen/>,
     }
 ];
 
@@ -61,7 +64,7 @@ export const categoriesPlant = [
         value: 'Cactus'
     },
     {
-        label: <span><GiBulb size={20} color={'#2C5920'}/>&nbsp;Bulbo</span> ,
+        label: <span><GiBulb size={20} color={'#2C5920'}/>&nbsp;Bulbo</span>,
         value: 'Bulbs'
     },
     {
