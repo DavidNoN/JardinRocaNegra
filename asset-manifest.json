@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b5e7298.css",
+    "main.css": "/static/css/main.38f4f8dc.css",
     "main.js": "/static/js/main.ce31cce0.js",
     "static/media/logo192white.png": "/static/media/logo192white.f6d316983c555dbac64c.png",
     "static/media/logo-description.png": "/static/media/logo-description.49c597c008a21d456a20.png",
     "static/media/sidebar.png": "/static/media/sidebar.2aab8c2cbf034328c0df.png",
     "index.html": "/index.html",
     "static/media/Flag_of_Colombia.svg": "/static/media/Flag_of_Colombia.e64922ae3a3e1de075a627c2b184fc9e.svg",
-    "main.8b5e7298.css.map": "/static/css/main.8b5e7298.css.map",
+    "main.38f4f8dc.css.map": "/static/css/main.38f4f8dc.css.map",
     "main.ce31cce0.js.map": "/static/js/main.ce31cce0.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b5e7298.css",
+    "static/css/main.38f4f8dc.css",
     "static/js/main.ce31cce0.js"
   ]
 }
